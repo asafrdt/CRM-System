@@ -34,17 +34,10 @@ namespace Team5_project
         {
 
         }
-<<<<<<< HEAD
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
-            this.Close();
-            Form1 ss = new Form1();
-           ss.Show();
 
         }
-=======
->>>>>>> f82c71b9c47c498db35bb2f4b9f61632638e17ab
     }
 }
