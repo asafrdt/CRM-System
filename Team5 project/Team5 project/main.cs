@@ -29,5 +29,19 @@ namespace Team5_project
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+           
+            this.Close();
+            Form1 ss = new Form1();
+           ss.Show();
+
+        }
     }
 }
