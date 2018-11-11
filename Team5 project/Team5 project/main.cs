@@ -13,7 +13,9 @@ namespace Team5_project
     {
         public Main()
         {
+            Console.WriteLine("ASAF");
             InitializeComponent();
+
         }
 
         private void Main_Load(object sender, EventArgs e)
