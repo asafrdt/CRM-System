@@ -36,13 +36,15 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\project 2018\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
            sda.Fill(dt);
-          //  utype = dt.Rows[0]["type"]
-        
+
+      
+
             if (dt.Rows[0][0].ToString() == "1")
             {
                

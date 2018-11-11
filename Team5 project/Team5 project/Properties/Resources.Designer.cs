@@ -59,5 +59,45 @@ namespace Team5_project.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_12_Still001 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_12.Still001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_121 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_122 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_122", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_123 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_123", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
