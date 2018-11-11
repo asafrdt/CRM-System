@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MongoDB.Bson;
+using MongoDB.Driver;
 namespace Team5_project
 {
     public partial class Form1 : Form
     {
+        public string utype;
         public Form1()
         {
             InitializeComponent();
@@ -33,15 +36,30 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\project 2018\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
-            sda.Fill(dt);
+           sda.Fill(dt);
+          //  utype = dt.Rows[0]["type"]
+        
             if (dt.Rows[0][0].ToString() == "1")
             {
-                this.Hide();
-                Main mm = new Main();
-                mm.Show();
+               
+                if (utype =="A")
+                {
+                    this.Hide();
+                    Admin mm = new Admin();
+                    mm.Show();
+                }
+                else
+                {
+                    {
+                        this.Hide();
+                        Main mm = new Main();
+                        mm.Show();
+                    }
+                }
             }
             else
             {
@@ -53,6 +71,11 @@ namespace Team5_project
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
