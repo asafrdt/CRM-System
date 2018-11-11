@@ -80,17 +80,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="CashierPrivateArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CashierPrivateArea.Designer.cs">
+      <DependentUpon>CashierPrivateArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierStore.Designer.cs">
+      <DependentUpon>CashierStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoCashRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoCashRegister.Designer.cs">
+      <DependentUpon>CeoCashRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoReports.Designer.cs">
+      <DependentUpon>CeoReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoStore.Designer.cs">
+      <DependentUpon>CeoStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exp.Designer.cs">
+      <DependentUpon>Exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpPrivateArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpPrivateArea.Designer.cs">
+      <DependentUpon>ExpPrivateArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpStore.Designer.cs">
+      <DependentUpon>ExpStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoPrivatearea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoPrivatearea.Designer.cs">
+      <DependentUpon>CeoPrivatearea.cs</DependentUpon>
     </Compile>
     <Compile Include="register.cs">
       <SubType>Form</SubType>
@@ -98,22 +152,28 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Ceo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Ceo.Designer.cs">
+      <DependentUpon>Ceo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Exp.resx">
+      <DependentUpon>Exp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoPrivatearea.resx">
+      <DependentUpon>CeoPrivatearea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceo.resx">
+      <DependentUpon>Ceo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
