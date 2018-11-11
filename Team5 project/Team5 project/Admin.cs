@@ -15,5 +15,10 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
