@@ -23,5 +23,12 @@ namespace Team5_project
             ExpStoreproduct1 ss = new ExpStoreproduct1();
             ss.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Exp ss = new Exp();
+            ss.Show();
+        }
     }
 }
