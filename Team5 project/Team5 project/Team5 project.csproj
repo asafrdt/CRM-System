@@ -169,6 +169,9 @@
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CashierPrivateArea.resx">
+      <DependentUpon>CashierPrivateArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ceo.resx">
       <DependentUpon>Ceo.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +221,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הקודם.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

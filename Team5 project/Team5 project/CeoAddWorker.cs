@@ -21,7 +21,7 @@ namespace Team5_project
 
         private void label5_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select username from login where username ='" + textBox1.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -63,6 +63,11 @@ namespace Team5_project
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CeoAddWorker_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
