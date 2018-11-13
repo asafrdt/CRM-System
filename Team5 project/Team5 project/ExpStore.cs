@@ -16,5 +16,12 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ExpStoreproduct1 ss = new ExpStoreproduct1();
+            ss.Show();
+        }
     }
 }

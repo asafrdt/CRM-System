@@ -33,6 +33,7 @@ namespace Team5_project
             this.Close();
             ExpStore ss = new ExpStore();
             ss.Show();
+
         }
     }
 }
