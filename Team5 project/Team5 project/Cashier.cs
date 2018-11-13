@@ -19,6 +19,7 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             this.Hide();
             CashierPrivateArea mm = new CashierPrivateArea();
             mm.Show();
@@ -29,6 +30,9 @@ namespace Team5_project
             this.Close();
             Login ss = new Login();
             ss.Show();
+=======
+
+>>>>>>> 5b47b6794a943985ed720ef19bd32c329e7540bd
         }
     }
 }
