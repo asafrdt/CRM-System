@@ -37,39 +37,38 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
 
-            
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select type from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
-           sda.Fill(dt);
-            //utype = dt.Rows[0][2].ToString();
-
-
-
-            if (dt.Rows[0][0].ToString() == "1")
+            sda.Fill(dt);
+            if (dt.Rows.Count > 0)
             {
-               
-                if (utype =="A")
+                utype = dt.Rows[0][0].ToString().Trim();
+                if (utype == "A")
                 {
-
+                    this.Hide();
+                    Ceo mm = new Ceo();
+                    mm.Show();
+                }
+                else if (utype == "B")
+                {
                     this.Hide();
                     Exp mm = new Exp();
                     mm.Show();
                 }
+                else if (utype == "C")
+                {
+                    this.Hide();
+                    Cashier mm = new Cashier();
+                    mm.Show();
+                }
                 else
                 {
-                    {
-                        this.Hide();
-                        Ceo mm = new Ceo();
-                        mm.Show();
-                    }
+                    MessageBox.Show("please enter correct username and password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            else
-            {
-                MessageBox.Show("please enter correct username and password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -78,6 +77,11 @@ namespace Team5_project
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

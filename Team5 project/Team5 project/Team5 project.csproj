@@ -98,6 +98,18 @@
     <Compile Include="CashierStore.Designer.cs">
       <DependentUpon>CashierStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ceo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceo.Designer.cs">
+      <DependentUpon>Ceo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoAddWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoAddWorker.Designer.cs">
+      <DependentUpon>CeoAddWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="CeoCashRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,16 +164,19 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ceo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ceo.Designer.cs">
-      <DependentUpon>Ceo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceo.resx">
+      <DependentUpon>Ceo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoAddWorker.resx">
+      <DependentUpon>CeoAddWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoStore.resx">
+      <DependentUpon>CeoStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exp.resx">
       <DependentUpon>Exp.cs</DependentUpon>
@@ -171,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CeoPrivatearea.resx">
       <DependentUpon>CeoPrivatearea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ceo.resx">
-      <DependentUpon>Ceo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

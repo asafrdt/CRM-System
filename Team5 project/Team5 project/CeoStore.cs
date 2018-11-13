@@ -16,5 +16,12 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CeoAddWorker mm = new CeoAddWorker();
+            mm.Show();
+        }
     }
 }
