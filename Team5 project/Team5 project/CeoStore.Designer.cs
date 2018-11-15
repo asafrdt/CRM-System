@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.button3 = new System.Windows.Forms.Button();
+            this.DeleteWorker = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(275, 139);
+            this.button3.Location = new System.Drawing.Point(391, 142);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(260, 162);
@@ -42,11 +44,34 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // DeleteWorker
+            // 
+            this.DeleteWorker.Location = new System.Drawing.Point(105, 142);
+            this.DeleteWorker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DeleteWorker.Name = "DeleteWorker";
+            this.DeleteWorker.Size = new System.Drawing.Size(260, 162);
+            this.DeleteWorker.TabIndex = 13;
+            this.DeleteWorker.Text = "מחיקת עובד";
+            this.DeleteWorker.UseVisualStyleBackColor = true;
+            this.DeleteWorker.Click += new System.EventHandler(this.DeleteWorker_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(313, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 75);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "CeoControlPage";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CeoStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DeleteWorker);
             this.Controls.Add(this.button3);
             this.Name = "CeoStore";
             this.Text = "CeoStore";
@@ -57,5 +82,7 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DeleteWorker;
+        private System.Windows.Forms.Button button1;
     }
 }

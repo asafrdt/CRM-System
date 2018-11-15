@@ -23,5 +23,19 @@ namespace Team5_project
             CeoAddWorker mm = new CeoAddWorker();
             mm.Show();
         }
+
+        private void DeleteWorker_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CeoDeleteWorker mm = new CeoDeleteWorker();
+            mm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CeoControlPage mm = new CeoControlPage();
+            mm.Show();
+        }
     }
 }

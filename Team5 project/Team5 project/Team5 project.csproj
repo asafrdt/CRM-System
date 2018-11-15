@@ -116,6 +116,18 @@
     <Compile Include="CeoCashRegister.Designer.cs">
       <DependentUpon>CeoCashRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="CeoControlPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoControlPage.Designer.cs">
+      <DependentUpon>CeoControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoDeleteWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoDeleteWorker.Designer.cs">
+      <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="CeoReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +158,12 @@
     <Compile Include="ExpStore.Designer.cs">
       <DependentUpon>ExpStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpStoreproduct1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpStoreproduct1.Designer.cs">
+      <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,17 +187,32 @@
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CashierPrivateArea.resx">
+      <DependentUpon>CashierPrivateArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ceo.resx">
       <DependentUpon>Ceo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CeoAddWorker.resx">
       <DependentUpon>CeoAddWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CeoControlPage.resx">
+      <DependentUpon>CeoControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoDeleteWorker.resx">
+      <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CeoStore.resx">
       <DependentUpon>CeoStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exp.resx">
       <DependentUpon>Exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpStore.resx">
+      <DependentUpon>ExpStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpStoreproduct1.resx">
+      <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -218,6 +251,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הקודם.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

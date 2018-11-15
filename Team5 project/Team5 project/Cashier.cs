@@ -16,5 +16,21 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            CashierPrivateArea mm = new CashierPrivateArea();
+            mm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+
+        }
     }
 }

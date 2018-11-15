@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using MongoDB.Bson;
-using MongoDB.Driver;
+
 namespace Team5_project
 {
     public partial class Login : Form
@@ -38,7 +37,8 @@ namespace Team5_project
         {
 
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\login.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select type from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -63,6 +63,7 @@ namespace Team5_project
                     Cashier mm = new Cashier();
                     mm.Show();
                 }
+
             }
             else
             {
