@@ -45,29 +45,28 @@ namespace Team5_project
             if (dt.Rows.Count > 0)
             {
                 utype = dt.Rows[0][0].ToString().Trim();
-                if (utype == "A")
+                if (utype == "Ceo")
                 {
                     this.Hide();
                     Ceo mm = new Ceo();
                     mm.Show();
                 }
-                else if (utype == "B")
+                else if (utype == "Expert")
                 {
                     this.Hide();
                     Exp mm = new Exp();
                     mm.Show();
                 }
-                else if (utype == "C")
+                else if (utype == "Cashier")
                 {
                     this.Hide();
                     Cashier mm = new Cashier();
                     mm.Show();
                 }
-                else
-                {
-                    MessageBox.Show("please enter correct username and password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
+            }
+            else
+            {
+                MessageBox.Show("please enter correct username and password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
