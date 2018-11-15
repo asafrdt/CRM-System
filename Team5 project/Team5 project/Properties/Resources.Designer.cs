@@ -63,6 +63,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow5_left_512 {
+            get {
+                object obj = ResourceManager.GetObject("arrow5-left-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_12_Still001 {
             get {
                 object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_12.Still001", resourceCulture);
@@ -96,16 +106,6 @@ namespace Team5_project.Properties {
         internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_123 {
             get {
                 object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_123", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap הקודם {
-            get {
-                object obj = ResourceManager.GetObject("הקודם", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

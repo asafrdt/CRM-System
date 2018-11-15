@@ -98,6 +98,12 @@
     <Compile Include="CashierStore.Designer.cs">
       <DependentUpon>CashierStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="CashierWorkSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierWorkSchedule.Designer.cs">
+      <DependentUpon>CashierWorkSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ceo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     <EmbeddedResource Include="CashierPrivateArea.resx">
       <DependentUpon>CashierPrivateArea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CashierStore.resx">
+      <DependentUpon>CashierStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierWorkSchedule.resx">
+      <DependentUpon>CashierWorkSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ceo.resx">
       <DependentUpon>Ceo.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,7 +247,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\הקודם.JPG" />
+    <None Include="Resources\arrow5-left-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

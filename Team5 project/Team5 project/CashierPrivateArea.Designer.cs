@@ -38,7 +38,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(442, 105);
+            this.button1.Location = new System.Drawing.Point(429, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(226, 90);
             this.button1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(135, 105);
+            this.button2.Location = new System.Drawing.Point(162, 131);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(226, 90);
             this.button2.TabIndex = 1;
@@ -63,6 +63,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "הגשת סידור עבודה חודשי";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -76,10 +77,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Team5_project.Properties.Resources.הקודם;
-            this.pictureBox1.Location = new System.Drawing.Point(747, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);

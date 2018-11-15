@@ -35,5 +35,12 @@ namespace Team5_project
             Cashier mm = new Cashier();
             mm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CashierWorkSchedule mm = new CashierWorkSchedule();
+            mm.Show();
+        }
     }
 }
