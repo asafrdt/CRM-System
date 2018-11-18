@@ -29,6 +29,7 @@ namespace Team5_project
             this.Close();
             Login ss = new Login();
             ss.Show();
+
         }
     }
 }
