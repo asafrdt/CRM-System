@@ -21,8 +21,8 @@ namespace Team5_project
 
         private void label5_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select username from login where username ='" + textBox1.Text + "'", conn);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select username from login where username ='" + LastnameBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -31,8 +31,8 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda1 = new SqlCommand("INSERT INTO login(username,password,type) VALUES ('" + textBox1.Text +"','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
-                 SqlDataAdapter da = new SqlDataAdapter(sda1);
+                SqlCommand sda1 = new SqlCommand("INSERT INTO login (username,password,type,firstname,lastname,phone,id,gender) VALUES ('" + UsernameBox.Text + "','" + PasswordBox.Text + "','" + TypeBox.Text + "','" + FirstnameBox.Text + "','" + LastnameBox.Text + "','" + PhoneBox.Text + "','" + IDBox.Text + "','" + GenderBox.Text + "')", conn);
+                SqlDataAdapter da = new SqlDataAdapter(sda1);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -67,7 +67,16 @@ namespace Team5_project
 
         private void CeoAddWorker_Load(object sender, EventArgs e)
         {
-            
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TypeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

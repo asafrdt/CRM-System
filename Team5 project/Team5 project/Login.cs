@@ -38,25 +38,30 @@ namespace Team5_project
 
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
 
+<<<<<<< HEAD
+=======
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\login.mdf;Integrated Security=True;Connect Timeout=30");
+>>>>>>> 98f9f9d7be62aea4fab9c936dec0410725426459
             SqlDataAdapter sda = new SqlDataAdapter("select type from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
             {
                 utype = dt.Rows[0][0].ToString().Trim();
-                if (utype == "A")
+                if (utype == "Ceo")
                 {
                     this.Hide();
                     Ceo mm = new Ceo();
                     mm.Show();
                 }
-                else if (utype == "B")
+                else if (utype == "Expert")
                 {
                     this.Hide();
                     Exp mm = new Exp();
                     mm.Show();
                 }
-                else if (utype == "C")
+                else if (utype == "Cashier")
                 {
                     this.Hide();
                     Cashier mm = new Cashier();

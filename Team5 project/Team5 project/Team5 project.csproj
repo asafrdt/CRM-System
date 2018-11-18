@@ -122,6 +122,18 @@
     <Compile Include="CeoCashRegister.Designer.cs">
       <DependentUpon>CeoCashRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="CeoControlPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoControlPage.Designer.cs">
+      <DependentUpon>CeoControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoDeleteWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoDeleteWorker.Designer.cs">
+      <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="CeoReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CeoAddWorker.resx">
       <DependentUpon>CeoAddWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoControlPage.resx">
+      <DependentUpon>CeoControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoDeleteWorker.resx">
+      <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CeoStore.resx">
       <DependentUpon>CeoStore.cs</DependentUpon>
