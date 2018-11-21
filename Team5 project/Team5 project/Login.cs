@@ -36,13 +36,8 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\Login.mdf;Integrated Security=True;Connect Timeout=30");
 
-<<<<<<< HEAD
-=======
-
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\login.mdf;Integrated Security=True;Connect Timeout=30");
->>>>>>> 98f9f9d7be62aea4fab9c936dec0410725426459
             SqlDataAdapter sda = new SqlDataAdapter("select type from login where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);

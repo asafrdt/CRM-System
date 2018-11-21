@@ -16,7 +16,7 @@ namespace Team5_project
         SqlDataAdapter sda;
         SqlCommandBuilder scb;
         DataTable dt;
-        private int username;
+       // private int username;
 
         public CeoControlPage()
         {

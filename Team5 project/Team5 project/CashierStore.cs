@@ -24,13 +24,6 @@ namespace Team5_project
             ss.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Cashier mm = new Cashier();
-            mm.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -44,6 +37,13 @@ namespace Team5_project
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void returnCashier2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cashier mm = new Cashier();
+            mm.Show();
         }
     }
 }

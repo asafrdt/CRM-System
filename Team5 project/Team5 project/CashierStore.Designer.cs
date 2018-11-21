@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierStore));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.returnCashier2 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // returnCashier2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(135, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.returnCashier2.Image = ((System.Drawing.Image)(resources.GetObject("returnCashier2.Image")));
+            this.returnCashier2.Location = new System.Drawing.Point(135, 24);
+            this.returnCashier2.Name = "returnCashier2";
+            this.returnCashier2.Size = new System.Drawing.Size(42, 38);
+            this.returnCashier2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.returnCashier2.TabIndex = 16;
+            this.returnCashier2.TabStop = false;
+            this.returnCashier2.Click += new System.EventHandler(this.returnCashier2_Click);
             // 
             // button5
             // 
@@ -96,18 +96,18 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.returnCashier2);
             this.Controls.Add(this.button5);
             this.Name = "CashierStore";
             this.Text = "CashierStore";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox returnCashier2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

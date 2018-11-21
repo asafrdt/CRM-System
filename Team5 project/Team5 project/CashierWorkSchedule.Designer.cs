@@ -29,35 +29,38 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierWorkSchedule));
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.reveyERV = new System.Windows.Forms.CheckBox();
             this.rishonB = new System.Windows.Forms.CheckBox();
-            this.shishiB = new System.Windows.Forms.CheckBox();
-            this.hamishiB = new System.Windows.Forms.CheckBox();
-            this.reveyB = new System.Windows.Forms.CheckBox();
-            this.shlishiB = new System.Windows.Forms.CheckBox();
             this.sheniB = new System.Windows.Forms.CheckBox();
+            this.shlishiB = new System.Windows.Forms.CheckBox();
+            this.reveyB = new System.Windows.Forms.CheckBox();
+            this.hamishiB = new System.Windows.Forms.CheckBox();
+            this.shishiB = new System.Windows.Forms.CheckBox();
             this.rishonTZ = new System.Windows.Forms.CheckBox();
             this.rishonERV = new System.Windows.Forms.CheckBox();
-            this.sheniERV = new System.Windows.Forms.CheckBox();
             this.sheniTZ = new System.Windows.Forms.CheckBox();
-            this.shishiTZ = new System.Windows.Forms.CheckBox();
-            this.hamishiTZ = new System.Windows.Forms.CheckBox();
-            this.reveyERV = new System.Windows.Forms.CheckBox();
-            this.reveyTZ = new System.Windows.Forms.CheckBox();
-            this.shlishiERV = new System.Windows.Forms.CheckBox();
+            this.sheniERV = new System.Windows.Forms.CheckBox();
             this.shlishiTZ = new System.Windows.Forms.CheckBox();
-            this.shishiERV = new System.Windows.Forms.CheckBox();
+            this.shlishiERV = new System.Windows.Forms.CheckBox();
+            this.reveyTZ = new System.Windows.Forms.CheckBox();
+            this.hamishiTZ = new System.Windows.Forms.CheckBox();
+            this.shishiTZ = new System.Windows.Forms.CheckBox();
             this.hamishiERV = new System.Windows.Forms.CheckBox();
+            this.shishiERV = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.returnCashierStore = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashierStore)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -91,7 +94,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel1.Controls.Add(this.button7, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 1, 0);
@@ -127,15 +130,101 @@
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(375, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(88, 47);
+            this.button7.TabIndex = 23;
+            this.button7.Text = "שני";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(187, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 47);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "רביעי";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(97, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 47);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "חמישי";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(88, 47);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "שישי";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // reveyERV
+            // 
+            this.reveyERV.AutoSize = true;
+            this.reveyERV.Location = new System.Drawing.Point(187, 135);
+            this.reveyERV.Name = "reveyERV";
+            this.reveyERV.Size = new System.Drawing.Size(53, 21);
+            this.reveyERV.TabIndex = 12;
+            this.reveyERV.Text = "ערב";
+            this.reveyERV.UseVisualStyleBackColor = true;
+            // 
             // rishonB
             // 
             this.rishonB.AutoSize = true;
-            this.rishonB.Location = new System.Drawing.Point(470, 56);
+            this.rishonB.Location = new System.Drawing.Point(469, 56);
             this.rishonB.Name = "rishonB";
             this.rishonB.Size = new System.Drawing.Size(57, 21);
             this.rishonB.TabIndex = 0;
             this.rishonB.Text = "בוקר";
             this.rishonB.UseVisualStyleBackColor = true;
+            // 
+            // sheniB
+            // 
+            this.sheniB.AutoSize = true;
+            this.sheniB.Location = new System.Drawing.Point(375, 56);
+            this.sheniB.Name = "sheniB";
+            this.sheniB.Size = new System.Drawing.Size(57, 21);
+            this.sheniB.TabIndex = 5;
+            this.sheniB.Text = "בוקר";
+            this.sheniB.UseVisualStyleBackColor = true;
+            // 
+            // shlishiB
+            // 
+            this.shlishiB.AutoSize = true;
+            this.shlishiB.Location = new System.Drawing.Point(280, 56);
+            this.shlishiB.Name = "shlishiB";
+            this.shlishiB.Size = new System.Drawing.Size(57, 21);
+            this.shlishiB.TabIndex = 4;
+            this.shlishiB.Text = "בוקר";
+            this.shlishiB.UseVisualStyleBackColor = true;
+            // 
+            // reveyB
+            // 
+            this.reveyB.AutoSize = true;
+            this.reveyB.Location = new System.Drawing.Point(187, 56);
+            this.reveyB.Name = "reveyB";
+            this.reveyB.Size = new System.Drawing.Size(57, 21);
+            this.reveyB.TabIndex = 3;
+            this.reveyB.Text = "בוקר";
+            this.reveyB.UseVisualStyleBackColor = true;
+            // 
+            // hamishiB
+            // 
+            this.hamishiB.AutoSize = true;
+            this.hamishiB.Location = new System.Drawing.Point(97, 56);
+            this.hamishiB.Name = "hamishiB";
+            this.hamishiB.Size = new System.Drawing.Size(57, 21);
+            this.hamishiB.TabIndex = 2;
+            this.hamishiB.Text = "בוקר";
+            this.hamishiB.UseVisualStyleBackColor = true;
             // 
             // shishiB
             // 
@@ -148,50 +237,10 @@
             this.shishiB.UseVisualStyleBackColor = true;
             this.shishiB.CheckedChanged += new System.EventHandler(this.shishiB_CheckedChanged);
             // 
-            // hamishiB
-            // 
-            this.hamishiB.AutoSize = true;
-            this.hamishiB.Location = new System.Drawing.Point(98, 56);
-            this.hamishiB.Name = "hamishiB";
-            this.hamishiB.Size = new System.Drawing.Size(57, 21);
-            this.hamishiB.TabIndex = 2;
-            this.hamishiB.Text = "בוקר";
-            this.hamishiB.UseVisualStyleBackColor = true;
-            // 
-            // reveyB
-            // 
-            this.reveyB.AutoSize = true;
-            this.reveyB.Location = new System.Drawing.Point(188, 56);
-            this.reveyB.Name = "reveyB";
-            this.reveyB.Size = new System.Drawing.Size(57, 21);
-            this.reveyB.TabIndex = 3;
-            this.reveyB.Text = "בוקר";
-            this.reveyB.UseVisualStyleBackColor = true;
-            // 
-            // shlishiB
-            // 
-            this.shlishiB.AutoSize = true;
-            this.shlishiB.Location = new System.Drawing.Point(281, 56);
-            this.shlishiB.Name = "shlishiB";
-            this.shlishiB.Size = new System.Drawing.Size(57, 21);
-            this.shlishiB.TabIndex = 4;
-            this.shlishiB.Text = "בוקר";
-            this.shlishiB.UseVisualStyleBackColor = true;
-            // 
-            // sheniB
-            // 
-            this.sheniB.AutoSize = true;
-            this.sheniB.Location = new System.Drawing.Point(376, 56);
-            this.sheniB.Name = "sheniB";
-            this.sheniB.Size = new System.Drawing.Size(57, 21);
-            this.sheniB.TabIndex = 5;
-            this.sheniB.Text = "בוקר";
-            this.sheniB.UseVisualStyleBackColor = true;
-            // 
             // rishonTZ
             // 
             this.rishonTZ.AutoSize = true;
-            this.rishonTZ.Location = new System.Drawing.Point(470, 98);
+            this.rishonTZ.Location = new System.Drawing.Point(469, 98);
             this.rishonTZ.Name = "rishonTZ";
             this.rishonTZ.Size = new System.Drawing.Size(69, 21);
             this.rishonTZ.TabIndex = 6;
@@ -201,32 +250,72 @@
             // rishonERV
             // 
             this.rishonERV.AutoSize = true;
-            this.rishonERV.Location = new System.Drawing.Point(470, 135);
+            this.rishonERV.Location = new System.Drawing.Point(469, 135);
             this.rishonERV.Name = "rishonERV";
             this.rishonERV.Size = new System.Drawing.Size(53, 21);
             this.rishonERV.TabIndex = 7;
             this.rishonERV.Text = "ערב";
             this.rishonERV.UseVisualStyleBackColor = true;
             // 
+            // sheniTZ
+            // 
+            this.sheniTZ.AutoSize = true;
+            this.sheniTZ.Location = new System.Drawing.Point(375, 98);
+            this.sheniTZ.Name = "sheniTZ";
+            this.sheniTZ.Size = new System.Drawing.Size(69, 21);
+            this.sheniTZ.TabIndex = 9;
+            this.sheniTZ.Text = "צהריים";
+            this.sheniTZ.UseVisualStyleBackColor = true;
+            // 
             // sheniERV
             // 
             this.sheniERV.AutoSize = true;
-            this.sheniERV.Location = new System.Drawing.Point(376, 135);
+            this.sheniERV.Location = new System.Drawing.Point(375, 135);
             this.sheniERV.Name = "sheniERV";
             this.sheniERV.Size = new System.Drawing.Size(53, 21);
             this.sheniERV.TabIndex = 8;
             this.sheniERV.Text = "ערב";
             this.sheniERV.UseVisualStyleBackColor = true;
             // 
-            // sheniTZ
+            // shlishiTZ
             // 
-            this.sheniTZ.AutoSize = true;
-            this.sheniTZ.Location = new System.Drawing.Point(376, 98);
-            this.sheniTZ.Name = "sheniTZ";
-            this.sheniTZ.Size = new System.Drawing.Size(69, 21);
-            this.sheniTZ.TabIndex = 9;
-            this.sheniTZ.Text = "צהריים";
-            this.sheniTZ.UseVisualStyleBackColor = true;
+            this.shlishiTZ.AutoSize = true;
+            this.shlishiTZ.Location = new System.Drawing.Point(280, 98);
+            this.shlishiTZ.Name = "shlishiTZ";
+            this.shlishiTZ.Size = new System.Drawing.Size(69, 21);
+            this.shlishiTZ.TabIndex = 15;
+            this.shlishiTZ.Text = "צהריים";
+            this.shlishiTZ.UseVisualStyleBackColor = true;
+            // 
+            // shlishiERV
+            // 
+            this.shlishiERV.AutoSize = true;
+            this.shlishiERV.Location = new System.Drawing.Point(280, 135);
+            this.shlishiERV.Name = "shlishiERV";
+            this.shlishiERV.Size = new System.Drawing.Size(53, 21);
+            this.shlishiERV.TabIndex = 14;
+            this.shlishiERV.Text = "ערב";
+            this.shlishiERV.UseVisualStyleBackColor = true;
+            // 
+            // reveyTZ
+            // 
+            this.reveyTZ.AutoSize = true;
+            this.reveyTZ.Location = new System.Drawing.Point(187, 98);
+            this.reveyTZ.Name = "reveyTZ";
+            this.reveyTZ.Size = new System.Drawing.Size(69, 21);
+            this.reveyTZ.TabIndex = 13;
+            this.reveyTZ.Text = "צהריים";
+            this.reveyTZ.UseVisualStyleBackColor = true;
+            // 
+            // hamishiTZ
+            // 
+            this.hamishiTZ.AutoSize = true;
+            this.hamishiTZ.Location = new System.Drawing.Point(97, 98);
+            this.hamishiTZ.Name = "hamishiTZ";
+            this.hamishiTZ.Size = new System.Drawing.Size(69, 21);
+            this.hamishiTZ.TabIndex = 11;
+            this.hamishiTZ.Text = "צהריים";
+            this.hamishiTZ.UseVisualStyleBackColor = true;
             // 
             // shishiTZ
             // 
@@ -238,55 +327,15 @@
             this.shishiTZ.Text = "צהריים";
             this.shishiTZ.UseVisualStyleBackColor = true;
             // 
-            // hamishiTZ
+            // hamishiERV
             // 
-            this.hamishiTZ.AutoSize = true;
-            this.hamishiTZ.Location = new System.Drawing.Point(98, 98);
-            this.hamishiTZ.Name = "hamishiTZ";
-            this.hamishiTZ.Size = new System.Drawing.Size(69, 21);
-            this.hamishiTZ.TabIndex = 11;
-            this.hamishiTZ.Text = "צהריים";
-            this.hamishiTZ.UseVisualStyleBackColor = true;
-            // 
-            // reveyERV
-            // 
-            this.reveyERV.AutoSize = true;
-            this.reveyERV.Location = new System.Drawing.Point(188, 135);
-            this.reveyERV.Name = "reveyERV";
-            this.reveyERV.Size = new System.Drawing.Size(53, 21);
-            this.reveyERV.TabIndex = 12;
-            this.reveyERV.Text = "ערב";
-            this.reveyERV.UseVisualStyleBackColor = true;
-            // 
-            // reveyTZ
-            // 
-            this.reveyTZ.AutoSize = true;
-            this.reveyTZ.Location = new System.Drawing.Point(188, 98);
-            this.reveyTZ.Name = "reveyTZ";
-            this.reveyTZ.Size = new System.Drawing.Size(69, 21);
-            this.reveyTZ.TabIndex = 13;
-            this.reveyTZ.Text = "צהריים";
-            this.reveyTZ.UseVisualStyleBackColor = true;
-            // 
-            // shlishiERV
-            // 
-            this.shlishiERV.AutoSize = true;
-            this.shlishiERV.Location = new System.Drawing.Point(281, 135);
-            this.shlishiERV.Name = "shlishiERV";
-            this.shlishiERV.Size = new System.Drawing.Size(53, 21);
-            this.shlishiERV.TabIndex = 14;
-            this.shlishiERV.Text = "ערב";
-            this.shlishiERV.UseVisualStyleBackColor = true;
-            // 
-            // shlishiTZ
-            // 
-            this.shlishiTZ.AutoSize = true;
-            this.shlishiTZ.Location = new System.Drawing.Point(281, 98);
-            this.shlishiTZ.Name = "shlishiTZ";
-            this.shlishiTZ.Size = new System.Drawing.Size(69, 21);
-            this.shlishiTZ.TabIndex = 15;
-            this.shlishiTZ.Text = "צהריים";
-            this.shlishiTZ.UseVisualStyleBackColor = true;
+            this.hamishiERV.AutoSize = true;
+            this.hamishiERV.Location = new System.Drawing.Point(97, 135);
+            this.hamishiERV.Name = "hamishiERV";
+            this.hamishiERV.Size = new System.Drawing.Size(53, 21);
+            this.hamishiERV.TabIndex = 17;
+            this.hamishiERV.Text = "ערב";
+            this.hamishiERV.UseVisualStyleBackColor = true;
             // 
             // shishiERV
             // 
@@ -298,76 +347,42 @@
             this.shishiERV.Text = "ערב";
             this.shishiERV.UseVisualStyleBackColor = true;
             // 
-            // hamishiERV
-            // 
-            this.hamishiERV.AutoSize = true;
-            this.hamishiERV.Location = new System.Drawing.Point(98, 135);
-            this.hamishiERV.Name = "hamishiERV";
-            this.hamishiERV.Size = new System.Drawing.Size(53, 21);
-            this.hamishiERV.TabIndex = 17;
-            this.hamishiERV.Text = "ערב";
-            this.hamishiERV.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.CausesValidation = false;
-            this.button2.Location = new System.Drawing.Point(470, 3);
+            this.button2.Location = new System.Drawing.Point(469, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 47);
             this.button2.TabIndex = 18;
             this.button2.Text = "ראשון";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 47);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "שישי";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(98, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 47);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "חמישי";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(188, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 47);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "רביעי";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(281, 3);
+            this.button6.Location = new System.Drawing.Point(280, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(89, 47);
             this.button6.TabIndex = 22;
             this.button6.Text = "שלישי";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // returnCashierStore
             // 
-            this.button7.Location = new System.Drawing.Point(376, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 47);
-            this.button7.TabIndex = 23;
-            this.button7.Text = "שני";
-            this.button7.UseVisualStyleBackColor = true;
+            this.returnCashierStore.Image = ((System.Drawing.Image)(resources.GetObject("returnCashierStore.Image")));
+            this.returnCashierStore.Location = new System.Drawing.Point(65, 12);
+            this.returnCashierStore.Name = "returnCashierStore";
+            this.returnCashierStore.Size = new System.Drawing.Size(42, 38);
+            this.returnCashierStore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.returnCashierStore.TabIndex = 17;
+            this.returnCashierStore.TabStop = false;
+            this.returnCashierStore.Click += new System.EventHandler(this.returnCashierStore_Click);
             // 
             // CashierWorkSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.returnCashierStore);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
@@ -375,6 +390,7 @@
             this.Text = "CashierWorkSchedule";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashierStore)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,5 +425,6 @@
         private System.Windows.Forms.CheckBox shishiERV;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox returnCashierStore;
     }
 }

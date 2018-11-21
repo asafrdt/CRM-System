@@ -55,7 +55,7 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\project 2018\Team5\Team5 project\DataBase\StockDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StockDatabase.mdf;Integrated Security=True;Connect Timeout=30");
            SqlDataAdapter sda1 = new SqlDataAdapter("select productname from product where productname ='" + textBox1.Text + "'", conn);
            DataTable dt2 = new DataTable();
            sda1.Fill(dt2);

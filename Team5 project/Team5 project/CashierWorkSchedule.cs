@@ -52,5 +52,12 @@ namespace Team5_project
         {
 
         }
+
+        private void returnCashierStore_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CashierStore mm = new CashierStore();
+            mm.Show();
+        }
     }
 }

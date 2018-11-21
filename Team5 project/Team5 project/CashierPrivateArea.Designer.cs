@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierPrivateArea));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.returnCashier = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -54,6 +55,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "דוחות מכירה";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -75,29 +77,31 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // pictureBox1
+            // returnCashier
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(123, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.returnCashier.Cursor = System.Windows.Forms.Cursors.Help;
+            this.returnCashier.Image = ((System.Drawing.Image)(resources.GetObject("returnCashier.Image")));
+            this.returnCashier.Location = new System.Drawing.Point(123, 13);
+            this.returnCashier.Name = "returnCashier";
+            this.returnCashier.Size = new System.Drawing.Size(42, 38);
+            this.returnCashier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.returnCashier.TabIndex = 14;
+            this.returnCashier.TabStop = false;
+            this.returnCashier.Click += new System.EventHandler(this.returnCashier_Click);
             // 
             // CashierPrivateArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.returnCashier);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "CashierPrivateArea";
             this.Text = "CashierPrivateArea";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +112,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox returnCashier;
     }
 }
