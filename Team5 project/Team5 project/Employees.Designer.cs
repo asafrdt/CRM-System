@@ -55,7 +55,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.text_documents;
-            this.button4.Location = new System.Drawing.Point(495, 79);
+            this.button4.Location = new System.Drawing.Point(602, 70);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(188, 151);
             this.button4.TabIndex = 8;
@@ -72,7 +72,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.button3.Location = new System.Drawing.Point(334, 89);
+            this.button3.Location = new System.Drawing.Point(441, 80);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 141);
             this.button3.TabIndex = 7;
@@ -89,7 +89,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button2.Location = new System.Drawing.Point(173, 89);
+            this.button2.Location = new System.Drawing.Point(280, 80);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 141);
             this.button2.TabIndex = 6;
@@ -106,7 +106,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.add_user_symbol;
-            this.button1.Location = new System.Drawing.Point(12, 89);
+            this.button1.Location = new System.Drawing.Point(119, 80);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 141);
             this.button1.TabIndex = 5;

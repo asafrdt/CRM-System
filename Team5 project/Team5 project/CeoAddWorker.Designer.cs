@@ -213,7 +213,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1020, 465);
+            this.ClientSize = new System.Drawing.Size(1020, 445);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UsernameBox);
             this.Controls.Add(this.IDBox);
@@ -234,7 +234,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(185, 215);
+            this.Location = new System.Drawing.Point(185, 230);
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "CeoAddWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

@@ -17,10 +17,19 @@ namespace Team5_project
         {
             InitializeComponent();
         }
-  
+
         private void button3_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+
+            foreach (Form f in openForms)
+            {
+                if (f.Name != "Login")
+                    f.Close();
+            }
             Login mm = new Login();
             mm.Show();
         }
@@ -55,6 +64,12 @@ namespace Team5_project
 
         private void button3_Click(object sender, EventArgs e)
         {
+            List<Form> openForms = new List<Form>();
+            Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
+            foreach (Form thisForm in forms)
+            {
+                if (thisForm.Name != "Ceo") thisForm.Close();
+            }
             CeoPrivatearea mm = new CeoPrivatearea();
             mm.Show();
         }
@@ -77,16 +92,7 @@ namespace Team5_project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            List<Form> forms = new List<Form>();
-
-            // All opened myForm instances
-            foreach (Form f in Application.OpenForms)
-                if (f.Name == "Checkout")
-                    forms.Add(f);
-
-            // Now let's close opened myForm instances
-            foreach (Form f in forms)
-                f.Close();
+         
             Checkout mm = new Checkout();
             mm.Show();
         }

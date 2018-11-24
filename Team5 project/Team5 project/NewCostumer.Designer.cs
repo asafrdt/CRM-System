@@ -159,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1020, 465);
+            this.ClientSize = new System.Drawing.Size(1020, 445);
             this.Controls.Add(this.AdressBox);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.PhoneBox);
@@ -175,7 +175,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(185, 215);
+            this.Location = new System.Drawing.Point(185, 230);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "NewCostumer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

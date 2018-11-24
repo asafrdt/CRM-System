@@ -34,10 +34,10 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1018, 465);
+            this.ClientSize = new System.Drawing.Size(1020, 445);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(190, 235);
+            this.Location = new System.Drawing.Point(185, 230);
             this.Name = "MySuplliersControlPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MySuplliersControlPage";
