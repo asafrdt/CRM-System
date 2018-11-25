@@ -35,9 +35,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(161, 160);
+            this.button3.Location = new System.Drawing.Point(181, 200);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(231, 130);
+            this.button3.Size = new System.Drawing.Size(260, 162);
             this.button3.TabIndex = 15;
             this.button3.Text = "הכנסת מוצר";
             this.button3.UseVisualStyleBackColor = true;
@@ -45,19 +46,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(408, 160);
+            this.button1.Location = new System.Drawing.Point(459, 200);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 129);
+            this.button1.Size = new System.Drawing.Size(260, 161);
             this.button1.TabIndex = 14;
             this.button1.Text = "חיפוש מוצר";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
+            this.button2.Location = new System.Drawing.Point(14, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 58);
+            this.button2.Size = new System.Drawing.Size(189, 72);
             this.button2.TabIndex = 16;
             this.button2.Text = "חזרה לדף הבית";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,12 +68,13 @@
             // 
             // ExpStore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ExpStore";
             this.Text = "ExpStore";
             this.ResumeLayout(false);

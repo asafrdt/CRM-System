@@ -41,6 +41,7 @@
             this.CostumerSearch.Name = "CostumerSearch";
             this.CostumerSearch.Size = new System.Drawing.Size(136, 26);
             this.CostumerSearch.TabIndex = 0;
+            this.CostumerSearch.TextChanged += new System.EventHandler(this.CostumerSearch_TextChanged);
             // 
             // button1
             // 
@@ -60,6 +61,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Costumer ID";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -69,6 +71,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(911, 75);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ExitingCoustumer
             // 

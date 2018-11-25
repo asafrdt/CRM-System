@@ -58,6 +58,21 @@ namespace Team5_project
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CostumerSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

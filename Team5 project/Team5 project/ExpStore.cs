@@ -30,5 +30,12 @@ namespace Team5_project
             Exp ss = new Exp();
             ss.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+           FindProduct ss = new FindProduct();
+            ss.Show();
+        }
     }
 }

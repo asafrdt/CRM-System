@@ -176,6 +176,12 @@
     <Compile Include="ExpStoreproduct1.Designer.cs">
       <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FindProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindProduct.Designer.cs">
+      <DependentUpon>FindProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExpStoreproduct1.resx">
       <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindProduct.resx">
+      <DependentUpon>FindProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

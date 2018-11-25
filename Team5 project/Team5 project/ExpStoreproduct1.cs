@@ -55,17 +55,17 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StockDatabase.mdf;Integrated Security=True;Connect Timeout=30");
-           SqlDataAdapter sda1 = new SqlDataAdapter("select productname from product where productname ='" + textBox1.Text + "'", conn);
+           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+           SqlDataAdapter sda1 = new SqlDataAdapter("select productname from Inventory where serialnumber ='" + Serialnumbox.Text + "'", conn);
            DataTable dt2 = new DataTable();
            sda1.Fill(dt2);
-           if (dt2.Rows.Count > 0)
+           if (dt2.Rows.Count ==1)
             {
                 MessageBox.Show("The product allready exists in the system, select another user name for ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                SqlCommand sda = new SqlCommand("INSERT INTO product(productname,productdescription,serialnumber,quantity) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')", conn);
+                SqlCommand sda = new SqlCommand("INSERT INTO Inventory(Productname,product_description,Serialnumber,Quantity,Price) VALUES ('" + Productnamebox.Text + "','" + Productdescbox.Text + "','" + Serialnumbox.Text + "','" + quntitybox.Text + "','" + PriceBox + "')", conn);
                 SqlDataAdapter da2 = new SqlDataAdapter(sda);
                 DataSet ds2 = new DataSet();
                 da2.Fill(ds2);
@@ -83,6 +83,16 @@ namespace Team5_project
                     ss.Show();
                 }
             }
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

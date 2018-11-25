@@ -25,8 +25,8 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select username,password,type,firstname,lastname,phone,id,gender FROM STOREMANGE", con);
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            sda = new SqlDataAdapter(@"select username,password,type FROM Employees", con);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -56,6 +56,11 @@ namespace Team5_project
             //string selected_phone = dataGridView1.CurrentRow.Cells[].Value.ToString();
             //string selected_id = dataGridView1.CurrentRow.Cells[].Value.ToString();
             //string selected_gender = dataGridView1.CurrentRow.Cells[].Value.ToString();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
