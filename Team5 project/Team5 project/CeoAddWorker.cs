@@ -25,7 +25,7 @@ namespace Team5_project
             SqlDataAdapter sda = new SqlDataAdapter("select username from Employees where username ='" + LastnameBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows.Count > 0)
+            if (dt.Rows.Count ==1 )
             {
                 MessageBox.Show("The username allready exists in the system, select another user name", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
