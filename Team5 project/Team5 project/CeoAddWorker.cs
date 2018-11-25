@@ -21,8 +21,8 @@ namespace Team5_project
 
         private void label5_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select username from login where username ='" + LastnameBox.Text + "'", conn);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select username from Employees where username ='" + LastnameBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -31,10 +31,20 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda1 = new SqlCommand("INSERT INTO login (username,password,type,firstname,lastname,phone,id,gender) VALUES ('" + UsernameBox.Text + "','" + PasswordBox.Text + "','" + TypeBox.Text + "','" + FirstnameBox.Text + "','" + LastnameBox.Text + "','" + PhoneBox.Text + "','" + IDBox.Text + "','" + GenderBox.Text + "')", conn);
+                SqlCommand sda1 = new SqlCommand("INSERT INTO Employees (username,password,type) VALUES ('" + UsernameBox.Text + "','" + PasswordBox.Text + "','" + TypeBox.Text + "')",conn); 
+                SqlCommand sda2= new SqlCommand("INSERT INTO Extend_Employees (First_Name, Last_Name, mobile, id, gender) VALUES ('" + FirstnameBox.Text + "','" + LastnameBox.Text + "','" + PhoneBox.Text + "','" + IDBox.Text + "','" + GenderBox.Text + "')", conn);
+                //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
+
                 SqlDataAdapter da = new SqlDataAdapter(sda1);
+                SqlDataAdapter da1 = new SqlDataAdapter(sda2);
+               // SqlDataAdapter da2 = new SqlDataAdapter(sda3);
+
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+                DataSet ds1 = new DataSet();
+                da1.Fill(ds1);
+               // DataSet ds2 = new DataSet();
+               // da1.Fill(ds2);
                 MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                
             }
@@ -75,6 +85,11 @@ namespace Team5_project
         }
 
         private void TypeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IDBox_TextChanged(object sender, EventArgs e)
         {
 
         }

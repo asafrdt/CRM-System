@@ -36,12 +36,21 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlDataAdapter sda = new SqlDataAdapter("select type from Employees where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
+=======
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select type from Employees where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+       
+            if (dt.Rows.Count>0)
+>>>>>>> 91884f1ce539f469a35cba8a247dec04d30fd271
             {
                 utype = dt.Rows[0][0].ToString().Trim();
                 if (utype == "Ceo")
