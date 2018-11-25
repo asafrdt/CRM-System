@@ -182,6 +182,18 @@
     <Compile Include="CeoPrivatearea.Designer.cs">
       <DependentUpon>CeoPrivatearea.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewCostumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCostumer.Designer.cs">
+      <DependentUpon>NewCostumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Placingacostumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Placingacostumer.Designer.cs">
+      <DependentUpon>Placingacostumer.cs</DependentUpon>
+    </Compile>
     <Compile Include="register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +202,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellMainPage.Designer.cs">
+      <DependentUpon>SellMainPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +250,12 @@
     <EmbeddedResource Include="CeoPrivatearea.resx">
       <DependentUpon>CeoPrivatearea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewCostumer.resx">
+      <DependentUpon>NewCostumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Placingacostumer.resx">
+      <DependentUpon>Placingacostumer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -239,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellMainPage.resx">
+      <DependentUpon>SellMainPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />

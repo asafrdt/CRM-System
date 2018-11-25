@@ -37,5 +37,12 @@ namespace Team5_project
             CeoControlPage mm = new CeoControlPage();
             mm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SellMainPage mm = new SellMainPage();
+            mm.Show();
+        }
     }
 }
