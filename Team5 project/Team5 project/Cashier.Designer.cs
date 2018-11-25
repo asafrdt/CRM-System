@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1_Cashier = new System.Windows.Forms.Timer(this.components);
+            this.Time_Cashier = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button5
@@ -64,18 +67,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1_Cashier
+            // 
+            this.timer1_Cashier.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Time_Cashier
+            // 
+            this.Time_Cashier.AutoSize = true;
+            this.Time_Cashier.Font = new System.Drawing.Font("Aharoni", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Time_Cashier.Location = new System.Drawing.Point(0, 329);
+            this.Time_Cashier.Name = "Time_Cashier";
+            this.Time_Cashier.Size = new System.Drawing.Size(98, 34);
+            this.Time_Cashier.TabIndex = 13;
+            this.Time_Cashier.Text = "Time:";
+            this.Time_Cashier.Click += new System.EventHandler(this.Time_Cashier_Click);
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 360);
+            this.Controls.Add(this.Time_Cashier);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cashier";
-            this.Text = "Cashier";
+            this.Text = " ";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -84,5 +104,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1_Cashier;
+        private System.Windows.Forms.Label Time_Cashier;
     }
 }
