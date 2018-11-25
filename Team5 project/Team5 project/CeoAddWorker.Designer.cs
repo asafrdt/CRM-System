@@ -43,9 +43,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 111);
+            this.label1.Location = new System.Drawing.Point(44, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "First Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -53,18 +53,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(350, 39);
+            this.label3.Location = new System.Drawing.Point(311, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 20);
+            this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Add Worker";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(452, 274);
+            this.label4.Location = new System.Drawing.Point(402, 219);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 20);
+            this.label4.Size = new System.Drawing.Size(35, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = "type";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -73,9 +73,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label5.Location = new System.Drawing.Point(350, 353);
+            this.label5.Location = new System.Drawing.Point(311, 282);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 20);
+            this.label5.Size = new System.Drawing.Size(51, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "Submit";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -83,62 +83,61 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 159);
+            this.label6.Location = new System.Drawing.Point(44, 127);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.Size = new System.Drawing.Size(76, 17);
             this.label6.TabIndex = 16;
             this.label6.Text = "Last Name";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(452, 219);
+            this.label7.Location = new System.Drawing.Point(402, 175);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 20);
+            this.label7.Size = new System.Drawing.Size(69, 17);
             this.label7.TabIndex = 13;
             this.label7.Text = "Password";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(452, 162);
+            this.label8.Location = new System.Drawing.Point(402, 130);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 20);
+            this.label8.Size = new System.Drawing.Size(75, 17);
             this.label8.TabIndex = 12;
             this.label8.Text = "UserName";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(50, 270);
+            this.label9.Location = new System.Drawing.Point(44, 216);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 20);
+            this.label9.Size = new System.Drawing.Size(56, 17);
             this.label9.TabIndex = 18;
             this.label9.Text = "Gender";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(452, 111);
+            this.label10.Location = new System.Drawing.Point(402, 89);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 20);
+            this.label10.Size = new System.Drawing.Size(21, 17);
             this.label10.TabIndex = 21;
             this.label10.Text = "ID";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 23;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(50, 208);
+            this.label11.Location = new System.Drawing.Point(44, 166);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.Size = new System.Drawing.Size(49, 17);
             this.label11.TabIndex = 24;
             this.label11.Text = "Phone";
             // 
@@ -148,9 +147,10 @@
             this.GenderBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderBox.Location = new System.Drawing.Point(159, 262);
+            this.GenderBox.Location = new System.Drawing.Point(141, 210);
+            this.GenderBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GenderBox.Name = "GenderBox";
-            this.GenderBox.Size = new System.Drawing.Size(140, 28);
+            this.GenderBox.Size = new System.Drawing.Size(125, 24);
             this.GenderBox.TabIndex = 25;
             // 
             // TypeBox
@@ -160,60 +160,68 @@
             "Admin",
             "Expert",
             "Cashier"});
-            this.TypeBox.Location = new System.Drawing.Point(562, 274);
+            this.TypeBox.Location = new System.Drawing.Point(500, 219);
+            this.TypeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TypeBox.Name = "TypeBox";
-            this.TypeBox.Size = new System.Drawing.Size(133, 28);
+            this.TypeBox.Size = new System.Drawing.Size(119, 24);
             this.TypeBox.TabIndex = 26;
             this.TypeBox.SelectedIndexChanged += new System.EventHandler(this.TypeBox_SelectedIndexChanged);
             // 
             // FirstnameBox
             // 
-            this.FirstnameBox.Location = new System.Drawing.Point(159, 111);
+            this.FirstnameBox.Location = new System.Drawing.Point(141, 89);
+            this.FirstnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FirstnameBox.Name = "FirstnameBox";
-            this.FirstnameBox.Size = new System.Drawing.Size(140, 26);
+            this.FirstnameBox.Size = new System.Drawing.Size(125, 22);
             this.FirstnameBox.TabIndex = 27;
             this.FirstnameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // LastnameBox
             // 
-            this.LastnameBox.Location = new System.Drawing.Point(159, 162);
+            this.LastnameBox.Location = new System.Drawing.Point(141, 130);
+            this.LastnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LastnameBox.Name = "LastnameBox";
-            this.LastnameBox.Size = new System.Drawing.Size(140, 26);
+            this.LastnameBox.Size = new System.Drawing.Size(125, 22);
             this.LastnameBox.TabIndex = 28;
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(159, 213);
+            this.PhoneBox.Location = new System.Drawing.Point(141, 170);
+            this.PhoneBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(140, 26);
+            this.PhoneBox.Size = new System.Drawing.Size(125, 22);
             this.PhoneBox.TabIndex = 29;
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(562, 105);
+            this.IDBox.Location = new System.Drawing.Point(500, 84);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDBox.Name = "IDBox";
-            this.IDBox.Size = new System.Drawing.Size(133, 26);
+            this.IDBox.Size = new System.Drawing.Size(119, 22);
             this.IDBox.TabIndex = 30;
+            this.IDBox.TextChanged += new System.EventHandler(this.IDBox_TextChanged);
             // 
             // UsernameBox
             // 
-            this.UsernameBox.Location = new System.Drawing.Point(562, 162);
+            this.UsernameBox.Location = new System.Drawing.Point(500, 130);
+            this.UsernameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsernameBox.Name = "UsernameBox";
-            this.UsernameBox.Size = new System.Drawing.Size(133, 26);
+            this.UsernameBox.Size = new System.Drawing.Size(119, 22);
             this.UsernameBox.TabIndex = 31;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(562, 213);
+            this.PasswordBox.Location = new System.Drawing.Point(500, 170);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(133, 26);
+            this.PasswordBox.Size = new System.Drawing.Size(119, 22);
             this.PasswordBox.TabIndex = 32;
             // 
             // CeoAddWorker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UsernameBox);
             this.Controls.Add(this.IDBox);
