@@ -30,8 +30,6 @@ namespace Team5_project
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)

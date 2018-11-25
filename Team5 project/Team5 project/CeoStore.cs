@@ -44,5 +44,20 @@ namespace Team5_project
             SellMainPage mm = new SellMainPage();
             mm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            ExpStoreproduct1 ss = new ExpStoreproduct1();
+            ss.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FindProduct ss = new FindProduct();
+            ss.Show();
+        }
     }
 }
