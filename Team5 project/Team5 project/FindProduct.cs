@@ -35,7 +35,7 @@ namespace Team5_project
             }
             else
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
                     string sql = "SELECT * FROM Inventory WHERE Serialnumber = '" + ProductSearch.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
@@ -61,6 +61,20 @@ namespace Team5_project
 
             }
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
+
+        private void returnCashier_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ExpStore ss = new ExpStore();
+            ss.Show();
         }
     }
 }

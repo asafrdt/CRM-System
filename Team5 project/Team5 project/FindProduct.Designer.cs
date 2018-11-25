@@ -28,27 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FindProduct));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ProductSearch = new System.Windows.Forms.TextBox();
+            this.returnCashier = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 156);
+            this.dataGridView1.Location = new System.Drawing.Point(96, 251);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(911, 75);
+            this.dataGridView1.Size = new System.Drawing.Size(810, 60);
             this.dataGridView1.TabIndex = 7;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(21, 58);
+            this.button2.Location = new System.Drawing.Point(203, 182);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 25);
+            this.button2.Size = new System.Drawing.Size(128, 28);
             this.button2.TabIndex = 6;
             this.button2.Text = "Serial Number";
             this.button2.UseVisualStyleBackColor = true;
@@ -56,9 +62,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(451, 57);
+            this.button1.Location = new System.Drawing.Point(634, 182);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 44);
+            this.button1.Size = new System.Drawing.Size(108, 28);
             this.button1.TabIndex = 5;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,23 +73,50 @@
             // 
             // ProductSearch
             // 
-            this.ProductSearch.Location = new System.Drawing.Point(197, 57);
+            this.ProductSearch.Location = new System.Drawing.Point(385, 188);
+            this.ProductSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProductSearch.Name = "ProductSearch";
-            this.ProductSearch.Size = new System.Drawing.Size(222, 26);
+            this.ProductSearch.Size = new System.Drawing.Size(198, 22);
             this.ProductSearch.TabIndex = 4;
+            // 
+            // returnCashier
+            // 
+            this.returnCashier.Cursor = System.Windows.Forms.Cursors.Help;
+            this.returnCashier.Image = ((System.Drawing.Image)(resources.GetObject("returnCashier.Image")));
+            this.returnCashier.Location = new System.Drawing.Point(129, 22);
+            this.returnCashier.Name = "returnCashier";
+            this.returnCashier.Size = new System.Drawing.Size(42, 38);
+            this.returnCashier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.returnCashier.TabIndex = 46;
+            this.returnCashier.TabStop = false;
+            this.returnCashier.Click += new System.EventHandler(this.returnCashier_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(21, 21);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(74, 39);
+            this.button6.TabIndex = 45;
+            this.button6.Text = "Logout";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // FindProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 499);
+            this.ClientSize = new System.Drawing.Size(1009, 399);
+            this.Controls.Add(this.returnCashier);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ProductSearch);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FindProduct";
             this.Text = "FindProduct";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,5 +128,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox ProductSearch;
+        private System.Windows.Forms.PictureBox returnCashier;
+        private System.Windows.Forms.Button button6;
     }
 }

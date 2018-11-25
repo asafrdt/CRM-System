@@ -35,20 +35,19 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 13);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Location = new System.Drawing.Point(11, 10);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 49);
+            this.button5.Size = new System.Drawing.Size(74, 39);
             this.button5.TabIndex = 9;
             this.button5.Text = "Logout";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(214, 178);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(190, 142);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 162);
+            this.button3.Size = new System.Drawing.Size(231, 130);
             this.button3.TabIndex = 7;
             this.button3.Text = "חנות";
             this.button3.UseVisualStyleBackColor = true;
@@ -56,10 +55,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(492, 179);
+            this.button1.Location = new System.Drawing.Point(437, 143);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 161);
+            this.button1.Size = new System.Drawing.Size(231, 129);
             this.button1.TabIndex = 5;
             this.button1.Text = "איזור אישי";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,13 +66,12 @@
             // 
             // Exp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Exp";
             this.Text = "ExpMainPage";
             this.Load += new System.EventHandler(this.Admin_Load);

@@ -36,7 +36,7 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlDataAdapter sda = new SqlDataAdapter("select type from Employees where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();

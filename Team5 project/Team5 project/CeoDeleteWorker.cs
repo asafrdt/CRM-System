@@ -23,7 +23,7 @@ namespace Team5_project
 
         private void SubmitBox_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\Login.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda2 = new SqlDataAdapter("select ID from login where ID ='" + DeleteIDBox.Text + "'", conn);
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
@@ -41,6 +41,20 @@ namespace Team5_project
                 conn.Close();
                 MessageBox.Show("USER HAS BEEN DELETED", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
+
+        private void returnCashier_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            CeoStore ss = new CeoStore();
+            ss.Show();
         }
     }
 }

@@ -59,5 +59,19 @@ namespace Team5_project
             FindProduct ss = new FindProduct();
             ss.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
+
+        private void returnCashier_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Ceo ss = new Ceo();
+            ss.Show();
+        }
     }
 }

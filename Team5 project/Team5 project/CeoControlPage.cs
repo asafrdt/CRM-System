@@ -25,7 +25,7 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
             sda = new SqlDataAdapter(@"select username,password,type FROM Employees", con);
             dt = new DataTable();
             sda.Fill(dt);
@@ -60,6 +60,20 @@ namespace Team5_project
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
+
+        private void returnCashier_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            CeoStore ss = new CeoStore();
+            ss.Show();
         }
     }
 }

@@ -22,5 +22,12 @@ namespace Team5_project
             Placingacostumer mm = new Placingacostumer();
             mm.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
     }
 }

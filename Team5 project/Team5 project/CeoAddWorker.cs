@@ -21,7 +21,7 @@ namespace Team5_project
 
         private void label5_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select username from Employees where username ='" + LastnameBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -92,6 +92,20 @@ namespace Team5_project
         private void IDBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
+
+        private void returnCashier_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            CeoStore ss = new CeoStore();
+            ss.Show();
         }
     }
 }

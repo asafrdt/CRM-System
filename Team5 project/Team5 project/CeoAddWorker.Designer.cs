@@ -19,6 +19,7 @@
        
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CeoAddWorker));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -28,7 +29,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.GenderBox = new System.Windows.Forms.ComboBox();
             this.TypeBox = new System.Windows.Forms.ComboBox();
@@ -38,6 +38,9 @@
             this.IDBox = new System.Windows.Forms.TextBox();
             this.UsernameBox = new System.Windows.Forms.TextBox();
             this.PasswordBox = new System.Windows.Forms.TextBox();
+            this.returnCashier = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,13 +128,6 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "ID";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -217,11 +213,35 @@
             this.PasswordBox.Size = new System.Drawing.Size(119, 22);
             this.PasswordBox.TabIndex = 32;
             // 
+            // returnCashier
+            // 
+            this.returnCashier.Cursor = System.Windows.Forms.Cursors.Help;
+            this.returnCashier.Image = ((System.Drawing.Image)(resources.GetObject("returnCashier.Image")));
+            this.returnCashier.Location = new System.Drawing.Point(123, 13);
+            this.returnCashier.Name = "returnCashier";
+            this.returnCashier.Size = new System.Drawing.Size(42, 38);
+            this.returnCashier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.returnCashier.TabIndex = 34;
+            this.returnCashier.TabStop = false;
+            this.returnCashier.Click += new System.EventHandler(this.returnCashier_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(74, 39);
+            this.button5.TabIndex = 33;
+            this.button5.Text = "Logout";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // CeoAddWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 360);
+            this.Controls.Add(this.returnCashier);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UsernameBox);
             this.Controls.Add(this.IDBox);
@@ -237,7 +257,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -245,6 +264,7 @@
             this.Name = "CeoAddWorker";
             this.Text = "CeoAddWorker";
             this.Load += new System.EventHandler(this.CeoAddWorker_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +283,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox GenderBox;
         private System.Windows.Forms.ComboBox TypeBox;
@@ -273,5 +292,7 @@
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.TextBox UsernameBox;
         private System.Windows.Forms.TextBox PasswordBox;
+        private System.Windows.Forms.PictureBox returnCashier;
+        private System.Windows.Forms.Button button5;
     }
 }

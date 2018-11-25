@@ -19,7 +19,9 @@ namespace Team5_project
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Login mm = new Login();
+            mm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

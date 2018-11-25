@@ -35,5 +35,12 @@ namespace Team5_project
             ss.Show();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login ss = new Login();
+            ss.Show();
+        }
     }
 }
