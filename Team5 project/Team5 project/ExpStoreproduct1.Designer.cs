@@ -43,7 +43,7 @@
             // 
             // Serialnumbox
             // 
-            this.Serialnumbox.Location = new System.Drawing.Point(277, 123);
+            this.Serialnumbox.Location = new System.Drawing.Point(277, 107);
             this.Serialnumbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Serialnumbox.Name = "Serialnumbox";
             this.Serialnumbox.Size = new System.Drawing.Size(641, 26);
@@ -53,7 +53,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(118, 123);
+            this.label4.Location = new System.Drawing.Point(121, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 16;

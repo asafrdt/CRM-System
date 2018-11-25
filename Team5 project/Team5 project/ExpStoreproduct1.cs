@@ -65,7 +65,7 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda = new SqlCommand("INSERT INTO Inventory(Productname,product_description,Serialnumber,Quantity,Price) VALUES ('" + Productnamebox.Text + "','" + Productdescbox.Text + "','" + Serialnumbox.Text + "','" + quntitybox.Text + "','" + PriceBox + "')", conn);
+                SqlCommand sda = new SqlCommand("INSERT INTO Inventory(Serialnumber,product_description,Productname,Quantity,Price) VALUES ('" + Serialnumbox.Text + "','" + Productdescbox.Text + "','" + Productnamebox.Text + "','" + quntitybox.Text + "','" + PriceBox.Text + "')", conn);
                 SqlDataAdapter da2 = new SqlDataAdapter(sda);
                 DataSet ds2 = new DataSet();
                 da2.Fill(ds2);
