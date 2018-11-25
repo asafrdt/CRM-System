@@ -146,6 +146,12 @@
     <Compile Include="CeoStore.Designer.cs">
       <DependentUpon>CeoStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExitingCoustumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitingCoustumer.Designer.cs">
+      <DependentUpon>ExitingCoustumer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CeoStore.resx">
       <DependentUpon>CeoStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitingCoustumer.resx">
+      <DependentUpon>ExitingCoustumer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exp.resx">
       <DependentUpon>Exp.cs</DependentUpon>

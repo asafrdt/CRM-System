@@ -41,12 +41,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
+            this.AdressBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // IDBox
             // 
-            this.IDBox.Location = new System.Drawing.Point(386, 265);
+            this.IDBox.Location = new System.Drawing.Point(386, 116);
             this.IDBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(140, 26);
@@ -54,7 +54,7 @@
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(386, 216);
+            this.PhoneBox.Location = new System.Drawing.Point(386, 263);
             this.PhoneBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PhoneBox.Name = "PhoneBox";
             this.PhoneBox.Size = new System.Drawing.Size(140, 26);
@@ -62,7 +62,7 @@
             // 
             // LastnameBox
             // 
-            this.LastnameBox.Location = new System.Drawing.Point(386, 166);
+            this.LastnameBox.Location = new System.Drawing.Point(386, 213);
             this.LastnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LastnameBox.Name = "LastnameBox";
             this.LastnameBox.Size = new System.Drawing.Size(140, 26);
@@ -70,7 +70,7 @@
             // 
             // FirstnameBox
             // 
-            this.FirstnameBox.Location = new System.Drawing.Point(386, 115);
+            this.FirstnameBox.Location = new System.Drawing.Point(386, 162);
             this.FirstnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FirstnameBox.Name = "FirstnameBox";
             this.FirstnameBox.Size = new System.Drawing.Size(140, 26);
@@ -79,7 +79,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(277, 212);
+            this.label11.Location = new System.Drawing.Point(277, 259);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 20);
             this.label11.TabIndex = 43;
@@ -88,7 +88,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(277, 259);
+            this.label10.Location = new System.Drawing.Point(277, 116);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(26, 20);
             this.label10.TabIndex = 41;
@@ -97,7 +97,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(277, 274);
+            this.label9.Location = new System.Drawing.Point(539, 74);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 20);
             this.label9.TabIndex = 40;
@@ -105,7 +105,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(277, 163);
+            this.label6.Location = new System.Drawing.Point(277, 210);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 39;
@@ -120,6 +120,7 @@
             this.label5.Size = new System.Drawing.Size(59, 20);
             this.label5.TabIndex = 36;
             this.label5.Text = "Submit";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button1
             // 
@@ -141,7 +142,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(277, 115);
+            this.label1.Location = new System.Drawing.Point(277, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 33;
@@ -156,20 +157,20 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "Adress";
             // 
-            // PasswordBox
+            // AdressBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(386, 311);
-            this.PasswordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(140, 26);
-            this.PasswordBox.TabIndex = 51;
+            this.AdressBox.Location = new System.Drawing.Point(386, 311);
+            this.AdressBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AdressBox.Name = "AdressBox";
+            this.AdressBox.Size = new System.Drawing.Size(140, 26);
+            this.AdressBox.TabIndex = 51;
             // 
             // NewCostumer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.PasswordBox);
+            this.Controls.Add(this.AdressBox);
             this.Controls.Add(this.IDBox);
             this.Controls.Add(this.PhoneBox);
             this.Controls.Add(this.LastnameBox);
@@ -204,6 +205,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox PasswordBox;
+        private System.Windows.Forms.TextBox AdressBox;
     }
 }

@@ -28,5 +28,12 @@ namespace Team5_project
             NewCostumer mm = new NewCostumer();
             mm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ExitingCoustumer mm = new ExitingCoustumer();
+            mm.Show();
+        }
     }
 }
