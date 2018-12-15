@@ -140,11 +140,29 @@
     <Compile Include="CeoReports.Designer.cs">
       <DependentUpon>CeoReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeoStore.cs">
+    <Compile Include="Checkout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CeoStore.Designer.cs">
-      <DependentUpon>CeoStore.cs</DependentUpon>
+    <Compile Include="Checkout.Designer.cs">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CeoStoreNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoStoreNew.Designer.cs">
+      <DependentUpon>CeoStoreNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costumers_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costumers_Orders.Designer.cs">
+      <DependentUpon>Costumers_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
     <Compile Include="ExitingCoustumer.cs">
       <SubType>Form</SubType>
@@ -194,6 +212,18 @@
     <Compile Include="CeoPrivatearea.Designer.cs">
       <DependentUpon>CeoPrivatearea.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyStockControlPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyStockControlPage.Designer.cs">
+      <DependentUpon>MyStockControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySuplliersControlPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MySuplliersControlPage.Designer.cs">
+      <DependentUpon>MySuplliersControlPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewCostumer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,11 +244,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SellMainPage.cs">
+    <Compile Include="Stock_Suppliers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SellMainPage.Designer.cs">
-      <DependentUpon>SellMainPage.cs</DependentUpon>
+    <Compile Include="Stock_Suppliers.Designer.cs">
+      <DependentUpon>Stock_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
@@ -244,8 +280,17 @@
     <EmbeddedResource Include="CeoDeleteWorker.resx">
       <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CeoStore.resx">
-      <DependentUpon>CeoStore.cs</DependentUpon>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeoStoreNew.resx">
+      <DependentUpon>CeoStoreNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costumers_Orders.resx">
+      <DependentUpon>Costumers_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitingCoustumer.resx">
       <DependentUpon>ExitingCoustumer.cs</DependentUpon>
@@ -268,6 +313,12 @@
     <EmbeddedResource Include="CeoPrivatearea.resx">
       <DependentUpon>CeoPrivatearea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyStockControlPage.resx">
+      <DependentUpon>MyStockControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySuplliersControlPage.resx">
+      <DependentUpon>MySuplliersControlPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewCostumer.resx">
       <DependentUpon>NewCostumer.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,8 +333,11 @@
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SellMainPage.resx">
-      <DependentUpon>SellMainPage.cs</DependentUpon>
+    <EmbeddedResource Include="Stock_Suppliers.resx">
+      <DependentUpon>Stock_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -311,6 +365,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrow5-left-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-carttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut-down-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63933.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workers-team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logistics-delivery-truck-in-movement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-register1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-group1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-carttt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-computer-screen-with-magnifying-glass-and-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-computer-screen-with-magnifying-glass-and-list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-a-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7d2d754d25f4abbd9de1e97f031f62b9--navy-blue-wallpaper-iphone-plain-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_112158140.00_00_03_12.Still0012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-black-leather-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-a-person1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

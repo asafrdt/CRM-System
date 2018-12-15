@@ -28,30 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CeoDeleteWorker));
             this.DeleteIDBox = new System.Windows.Forms.TextBox();
             this.SubmitBox = new System.Windows.Forms.Button();
             this.label1234 = new System.Windows.Forms.Label();
-            this.label2423 = new System.Windows.Forms.Label();
-            this.returnCashier = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).BeginInit();
             this.SuspendLayout();
             // 
             // DeleteIDBox
             // 
-            this.DeleteIDBox.Location = new System.Drawing.Point(266, 244);
-            this.DeleteIDBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleteIDBox.Location = new System.Drawing.Point(426, 23);
+            this.DeleteIDBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteIDBox.Name = "DeleteIDBox";
-            this.DeleteIDBox.Size = new System.Drawing.Size(158, 22);
+            this.DeleteIDBox.Size = new System.Drawing.Size(173, 37);
             this.DeleteIDBox.TabIndex = 2;
+            this.DeleteIDBox.TextChanged += new System.EventHandler(this.DeleteIDBox_TextChanged);
             // 
             // SubmitBox
             // 
-            this.SubmitBox.Location = new System.Drawing.Point(304, 284);
-            this.SubmitBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubmitBox.Location = new System.Drawing.Point(341, 78);
+            this.SubmitBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.SubmitBox.Name = "SubmitBox";
-            this.SubmitBox.Size = new System.Drawing.Size(67, 24);
+            this.SubmitBox.Size = new System.Drawing.Size(117, 45);
             this.SubmitBox.TabIndex = 4;
             this.SubmitBox.Text = "Submit";
             this.SubmitBox.UseVisualStyleBackColor = true;
@@ -60,60 +56,29 @@
             // label1234
             // 
             this.label1234.AutoSize = true;
-            this.label1234.Font = new System.Drawing.Font("Aharoni", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1234.Location = new System.Drawing.Point(32, 202);
+            this.label1234.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1234.Location = new System.Drawing.Point(187, 28);
+            this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(618, 16);
+            this.label1234.Size = new System.Drawing.Size(229, 28);
             this.label1234.TabIndex = 5;
-            this.label1234.Text = "Please enter the ID of the worker that you want to delete from the system";
-            // 
-            // label2423
-            // 
-            this.label2423.AutoSize = true;
-            this.label2423.Font = new System.Drawing.Font("Aharoni", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2423.Location = new System.Drawing.Point(272, 167);
-            this.label2423.Name = "label2423";
-            this.label2423.Size = new System.Drawing.Size(128, 16);
-            this.label2423.TabIndex = 6;
-            this.label2423.Text = "Delete Worker";
-            // 
-            // returnCashier
-            // 
-            this.returnCashier.Cursor = System.Windows.Forms.Cursors.Help;
-            this.returnCashier.Image = ((System.Drawing.Image)(resources.GetObject("returnCashier.Image")));
-            this.returnCashier.Location = new System.Drawing.Point(146, 26);
-            this.returnCashier.Name = "returnCashier";
-            this.returnCashier.Size = new System.Drawing.Size(42, 38);
-            this.returnCashier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.returnCashier.TabIndex = 38;
-            this.returnCashier.TabStop = false;
-            this.returnCashier.Click += new System.EventHandler(this.returnCashier_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(35, 25);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 39);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "Logout";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.label1234.Text = "Enter Employee ID:";
             // 
             // CeoDeleteWorker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.returnCashier);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label2423);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.ClientSize = new System.Drawing.Size(912, 144);
             this.Controls.Add(this.label1234);
             this.Controls.Add(this.SubmitBox);
             this.Controls.Add(this.DeleteIDBox);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "CeoDeleteWorker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CeoDeleteWorker";
-            ((System.ComponentModel.ISupportInitialize)(this.returnCashier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,8 +88,5 @@
         private System.Windows.Forms.TextBox DeleteIDBox;
         private System.Windows.Forms.Button SubmitBox;
         private System.Windows.Forms.Label label1234;
-        private System.Windows.Forms.Label label2423;
-        private System.Windows.Forms.PictureBox returnCashier;
-        private System.Windows.Forms.Button button5;
     }
 }

@@ -28,11 +28,47 @@ namespace Team5_project
             NewCostumer mm = new NewCostumer();
             mm.Show();
         }
+        private void ExitingCostumerButton_Click(object sender, EventArgs e)
+        {
+            ExitingCoustumer mm = new ExitingCoustumer();
+            mm.Show();
+        }
+
+        private void AddnewCostumerbutton_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void CashRegister_Click(object sender, EventArgs e)
+        {
+            List<Form> forms = new List<Form>();
+
+            // All opened myForm instances
+            foreach (Form f in Application.OpenForms)
+                if (f.Name == "NewCostumer")
+                    forms.Add(f);
+
+            // Now let's close opened myForm instances
+            foreach (Form f in forms)
+                f.Close();
+
+            ExitingCoustumer mm = new ExitingCoustumer();
+            mm.Show();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ExitingCoustumer mm = new ExitingCoustumer();
+            List<Form> forms = new List<Form>();
+
+            // All opened myForm instances
+            foreach (Form f in Application.OpenForms)
+                if (f.Name == "ExitingCoustumer")
+                    forms.Add(f);
+
+            // Now let's close opened myForm instances
+            foreach (Form f in forms)
+                f.Close();
+            NewCostumer mm = new NewCostumer();
             mm.Show();
         }
     }

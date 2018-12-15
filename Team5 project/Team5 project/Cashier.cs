@@ -54,5 +54,10 @@ namespace Team5_project
         {
             
         }
+
+        private void Cashier_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

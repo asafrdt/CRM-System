@@ -25,11 +25,12 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select username,password,type FROM Employees", con);
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            // sda = new SqlDataAdapter(@"select username,password,type FROM Employees", con);
+            sda = new SqlDataAdapter(@"select Id,First_Name,Last_Name,mobile,Gender FROM Extend_Employees", con);
             dt = new DataTable();
             sda.Fill(dt);
-            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,7 +73,7 @@ namespace Team5_project
         private void returnCashier_Click(object sender, EventArgs e)
         {
             this.Close();
-            CeoStore ss = new CeoStore();
+            Checkout ss = new Checkout();
             ss.Show();
         }
     }

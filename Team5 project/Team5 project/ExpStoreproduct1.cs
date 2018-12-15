@@ -55,7 +55,7 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project\Team5\Team5 project\DataBase\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+           SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
            SqlDataAdapter sda1 = new SqlDataAdapter("select productname from Inventory where serialnumber ='" + Serialnumbox.Text + "'", conn);
            DataTable dt2 = new DataTable();
            sda1.Fill(dt2);

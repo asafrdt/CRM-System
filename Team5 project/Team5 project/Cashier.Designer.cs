@@ -38,9 +38,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(9, 8);
+            this.button5.Location = new System.Drawing.Point(10, 10);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 39);
+            this.button5.Size = new System.Drawing.Size(83, 49);
             this.button5.TabIndex = 12;
             this.button5.Text = "Logout";
             this.button5.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(153, 114);
+            this.button3.Location = new System.Drawing.Point(172, 142);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(231, 130);
+            this.button3.Size = new System.Drawing.Size(260, 162);
             this.button3.TabIndex = 11;
             this.button3.Text = "חנות";
             this.button3.UseVisualStyleBackColor = true;
@@ -58,10 +60,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(400, 114);
+            this.button1.Location = new System.Drawing.Point(450, 142);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 129);
+            this.button1.Size = new System.Drawing.Size(260, 161);
             this.button1.TabIndex = 10;
             this.button1.Text = "איזור אישי";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,25 +77,26 @@
             // 
             this.Time_Cashier.AutoSize = true;
             this.Time_Cashier.Font = new System.Drawing.Font("Aharoni", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.Time_Cashier.Location = new System.Drawing.Point(0, 329);
+            this.Time_Cashier.Location = new System.Drawing.Point(0, 411);
             this.Time_Cashier.Name = "Time_Cashier";
-            this.Time_Cashier.Size = new System.Drawing.Size(98, 34);
+            this.Time_Cashier.Size = new System.Drawing.Size(116, 39);
             this.Time_Cashier.TabIndex = 13;
             this.Time_Cashier.Text = "Time:";
             this.Time_Cashier.Click += new System.EventHandler(this.Time_Cashier_Click);
             // 
             // Cashier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Time_Cashier);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cashier";
-            this.Text = " ";
+            this.Text = " CashirMainPage";
+            this.Load += new System.EventHandler(this.Cashier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
