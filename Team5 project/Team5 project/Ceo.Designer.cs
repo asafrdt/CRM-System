@@ -89,7 +89,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1292, 85);
+            this.panel1.Size = new System.Drawing.Size(1280, 85);
             this.panel1.TabIndex = 35;
             // 
             // panel2
@@ -102,7 +102,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(182, 596);
+            this.panel2.Size = new System.Drawing.Size(182, 595);
             this.panel2.TabIndex = 36;
             // 
             // button1
@@ -112,7 +112,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.shut_down_icon;
-            this.button1.Location = new System.Drawing.Point(1215, 609);
+            this.button1.Location = new System.Drawing.Point(1208, 608);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 59);
@@ -129,7 +129,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Team5_project.Properties.Resources.icon1;
-            this.button5.Location = new System.Drawing.Point(6, 354);
+            this.button5.Location = new System.Drawing.Point(3, 348);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(176, 121);
@@ -147,7 +147,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.logistics_delivery_truck_in_movement;
-            this.button4.Location = new System.Drawing.Point(6, 230);
+            this.button4.Location = new System.Drawing.Point(6, 224);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(173, 116);
@@ -165,7 +165,7 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Team5_project.Properties.Resources.edit_document;
-            this.button3.Location = new System.Drawing.Point(6, 478);
+            this.button3.Location = new System.Drawing.Point(6, 477);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(173, 105);
@@ -183,7 +183,7 @@
             this.Store_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Store_button.ForeColor = System.Drawing.Color.White;
             this.Store_button.Image = global::Team5_project.Properties.Resources.workers_team;
-            this.Store_button.Location = new System.Drawing.Point(6, 135);
+            this.Store_button.Location = new System.Drawing.Point(3, 129);
             this.Store_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Store_button.Name = "Store_button";
             this.Store_button.Size = new System.Drawing.Size(176, 87);
@@ -201,7 +201,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.cash_register1;
-            this.button2.Location = new System.Drawing.Point(3, 30);
+            this.button2.Location = new System.Drawing.Point(3, 23);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 97);
@@ -219,7 +219,7 @@
             this.Logout_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_button.ForeColor = System.Drawing.Color.White;
             this.Logout_button.Image = global::Team5_project.Properties.Resources.door_exit;
-            this.Logout_button.Location = new System.Drawing.Point(1163, 13);
+            this.Logout_button.Location = new System.Drawing.Point(1160, 4);
             this.Logout_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Logout_button.Name = "Logout_button";
             this.Logout_button.Size = new System.Drawing.Size(117, 68);
@@ -234,14 +234,14 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1292, 681);
+            this.ClientSize = new System.Drawing.Size(1280, 680);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ceo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Ceo";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

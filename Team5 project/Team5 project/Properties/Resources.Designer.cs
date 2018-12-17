@@ -133,6 +133,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cash_register2 {
+            get {
+                object obj = ResourceManager.GetObject("cash-register2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desktop_computer_screen_with_magnifying_glass_and_list {
             get {
                 object obj = ResourceManager.GetObject("desktop-computer-screen-with-magnifying-glass-and-list", resourceCulture);
