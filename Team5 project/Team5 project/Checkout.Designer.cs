@@ -31,6 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.CashRegister = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -41,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(11, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 55);
+            this.label1.Size = new System.Drawing.Size(279, 62);
             this.label1.TabIndex = 2;
             this.label1.Text = "Checkout";
             this.label1.UseWaitCursor = true;
@@ -82,14 +86,57 @@
             this.CashRegister.UseWaitCursor = true;
             this.CashRegister.Click += new System.EventHandler(this.CashRegister_Click);
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(17, 228);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 45);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Customer ID: ";
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(674, 228);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 45);
+            this.label3.TabIndex = 4;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(186, 228);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 45);
+            this.label4.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(484, 228);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(236, 45);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Product Serial: ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // Checkout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(860, 680);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CashRegister);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(185, 0);
@@ -108,5 +155,9 @@
         private System.Windows.Forms.Button CashRegister;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
     }
 }

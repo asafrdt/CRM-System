@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace Team5_project
 {
+
     public partial class Checkout : Form
     {
         public Checkout()
         {
             InitializeComponent();
+
+
         }
 
         private void CashRegister_Click(object sender, EventArgs e)
@@ -47,6 +50,16 @@ namespace Team5_project
                 f.Close();
             FindProduct mm = new FindProduct();
             mm.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

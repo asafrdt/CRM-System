@@ -12,6 +12,8 @@ namespace Team5_project
 {
     public partial class FindProduct : Form
     {
+        public static string Product;
+
         public FindProduct()
         {
             InitializeComponent();
@@ -75,6 +77,21 @@ namespace Team5_project
             this.Close();
             ExpStore ss = new ExpStore();
             ss.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FindProduct.Product = ProductSearch.Text;
+            MessageBox.Show(Product, "you place this Product:", MessageBoxButtons.OK);
+            this.Close();
+            Checkout ss = new Checkout();
+            ss.label3.Text = FindProduct.Product;
+            ss.Show();
+        }
+
+        private void ProductSearch_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

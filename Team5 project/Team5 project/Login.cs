@@ -51,11 +51,10 @@ namespace Team5_project
                 Login.UserID = textBox1.Text;
                 utype = dt.Rows[0][0].ToString().Trim();
                 if (utype == "Ceo")
-                {
-                    this.Hide();
-                    Ceo mm = new Ceo();
+                { Ceo mm = new Ceo();
                     mm.label2.Text = UserID;
                     mm.label3.Text = utype;
+                    this.Hide();
                     mm.Show();
                 }
                 else if (utype == "Expert")

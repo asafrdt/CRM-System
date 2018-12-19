@@ -146,12 +146,6 @@
     <Compile Include="Checkout.Designer.cs">
       <DependentUpon>Checkout.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeoStoreNew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CeoStoreNew.Designer.cs">
-      <DependentUpon>CeoStoreNew.cs</DependentUpon>
-    </Compile>
     <Compile Include="Costumers_Orders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,9 +276,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CeoStoreNew.resx">
-      <DependentUpon>CeoStoreNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Costumers_Orders.resx">
       <DependentUpon>Costumers_Orders.cs</DependentUpon>

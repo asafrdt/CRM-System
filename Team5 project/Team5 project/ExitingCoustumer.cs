@@ -13,6 +13,7 @@ namespace Team5_project
 {
     public partial class ExitingCoustumer : Form
     {
+        public static string Customer;
         public ExitingCoustumer()
         {
             InitializeComponent();
@@ -46,6 +47,8 @@ namespace Team5_project
                         if (dt.Rows.Count > 0)
                         { //check if the query returns any data
                             dataGridView1.DataSource = dt;
+                            ExitingCoustumer.Customer = CostumerSearch.Text;
+
                             //dg1.DataBind();
                         }
                         else
@@ -85,6 +88,18 @@ namespace Team5_project
         {
             this.Close();
             Checkout ss = new Checkout();
+            ss.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ExitingCoustumer.Customer = CostumerSearch.Text;
+            MessageBox.Show(Customer, "you place this customer:", MessageBoxButtons.OK);
+            
+            //mm.label3.Text = utype;
+            this.Close();
+            Checkout ss = new Checkout();
+            ss.label4.Text = ExitingCoustumer.Customer;
             ss.Show();
         }
     }
