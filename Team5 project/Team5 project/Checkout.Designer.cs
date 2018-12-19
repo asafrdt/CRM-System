@@ -41,7 +41,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(11, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 62);
+            this.label1.Size = new System.Drawing.Size(236, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "Checkout";
             this.label1.UseWaitCursor = true;

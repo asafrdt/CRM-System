@@ -9,11 +9,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 
+
 namespace Team5_project
 {
     public partial class Login : Form
     {
-
+        public static string UserID;
         public string utype;
         public Login()
         {
@@ -47,11 +48,14 @@ namespace Team5_project
 
             if (dt.Rows.Count>0)
             {
+                Login.UserID = textBox1.Text;
                 utype = dt.Rows[0][0].ToString().Trim();
                 if (utype == "Ceo")
                 {
                     this.Hide();
                     Ceo mm = new Ceo();
+                    mm.label2.Text = UserID;
+                    mm.label3.Text = utype;
                     mm.Show();
                 }
                 else if (utype == "Expert")
@@ -64,6 +68,7 @@ namespace Team5_project
                 {
                     this.Hide();
                     Cashier mm = new Cashier();
+                    
                     mm.Show();
                 }
 
@@ -101,6 +106,11 @@ namespace Team5_project
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

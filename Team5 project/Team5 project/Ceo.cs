@@ -124,5 +124,23 @@ namespace Team5_project
             Costumers_Orders mm = new Costumers_Orders();
             mm.Show();
         }
+
+        private void Ceo_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+       
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

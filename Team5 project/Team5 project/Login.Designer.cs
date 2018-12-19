@@ -44,7 +44,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(772, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 30);
+            this.label1.Size = new System.Drawing.Size(111, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -56,7 +56,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(772, 293);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 30);
+            this.label2.Size = new System.Drawing.Size(103, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -68,7 +68,7 @@
             this.textBox1.Location = new System.Drawing.Point(772, 212);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 37);
+            this.textBox1.Size = new System.Drawing.Size(229, 32);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -80,7 +80,7 @@
             this.textBox2.Location = new System.Drawing.Point(772, 327);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 37);
+            this.textBox2.Size = new System.Drawing.Size(229, 32);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -121,6 +121,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
