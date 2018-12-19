@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Team5_project
 {
     public partial class Cashier : Form
     {
+
         public Cashier()
         {
             InitializeComponent();
@@ -27,10 +29,11 @@ namespace Team5_project
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        { this.Close();
+            System.Windows.Forms.Application.Exit();
             Login ss = new Login();
             ss.Show();
+
 
         }
 

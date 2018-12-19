@@ -53,6 +53,9 @@
     <Reference Include="DnsClient, Version=1.0.7.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
       <HintPath>..\packages\DnsClient.1.0.7\lib\net45\DnsClient.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\ExcelLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="MongoDB.Bson, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Bson.2.7.0\lib\net45\MongoDB.Bson.dll</HintPath>
     </Reference>
@@ -200,6 +203,12 @@
     <Compile Include="FindProduct.Designer.cs">
       <DependentUpon>FindProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoursReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoursReport.Designer.cs">
+      <DependentUpon>HoursReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +283,9 @@
     <EmbeddedResource Include="CeoAddWorker.resx">
       <DependentUpon>CeoAddWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CeoCashRegister.resx">
+      <DependentUpon>CeoCashRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CeoControlPage.resx">
       <DependentUpon>CeoControlPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FindProduct.resx">
       <DependentUpon>FindProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoursReport.resx">
+      <DependentUpon>HoursReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
