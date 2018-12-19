@@ -64,12 +64,7 @@ namespace Team5_project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Form> openForms = new List<Form>();
-            Form[] forms = Application.OpenForms.Cast<Form>().ToArray();
-            foreach (Form thisForm in forms)
-            {
-                if (thisForm.Name != "Ceo") thisForm.Close();
-            }
+           
             CeoPrivatearea mm = new CeoPrivatearea();
             mm.Show();
         }
