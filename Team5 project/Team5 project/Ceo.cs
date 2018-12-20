@@ -142,5 +142,10 @@ namespace Team5_project
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -86,18 +86,6 @@
     <Compile Include="Cashier.Designer.cs">
       <DependentUpon>Cashier.cs</DependentUpon>
     </Compile>
-    <Compile Include="CashierPrivateArea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CashierPrivateArea.Designer.cs">
-      <DependentUpon>CashierPrivateArea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CashierStore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CashierStore.Designer.cs">
-      <DependentUpon>CashierStore.cs</DependentUpon>
-    </Compile>
     <Compile Include="CashierWorkSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +140,11 @@
     <Compile Include="Costumers_Orders.Designer.cs">
       <DependentUpon>Costumers_Orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Employees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,29 +157,11 @@
     <Compile Include="ExitingCoustumer.Designer.cs">
       <DependentUpon>ExitingCoustumer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exp.cs">
+    <Compile Include="Expert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Exp.Designer.cs">
-      <DependentUpon>Exp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ExpPrivateArea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExpPrivateArea.Designer.cs">
-      <DependentUpon>ExpPrivateArea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ExpStore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExpStore.Designer.cs">
-      <DependentUpon>ExpStore.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ExpStoreproduct1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExpStoreproduct1.Designer.cs">
-      <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
+    <Compile Include="Expert.Designer.cs">
+      <DependentUpon>Expert.cs</DependentUpon>
     </Compile>
     <Compile Include="FindProduct.cs">
       <SubType>Form</SubType>
@@ -230,12 +205,6 @@
     <Compile Include="Placingacostumer.Designer.cs">
       <DependentUpon>Placingacostumer.cs</DependentUpon>
     </Compile>
-    <Compile Include="register.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="register.Designer.cs">
-      <DependentUpon>register.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stock_Suppliers.cs">
@@ -244,20 +213,8 @@
     <Compile Include="Stock_Suppliers.Designer.cs">
       <DependentUpon>Stock_Suppliers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Store.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Store.Designer.cs">
-      <DependentUpon>Store.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CashierPrivateArea.resx">
-      <DependentUpon>CashierPrivateArea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CashierStore.resx">
-      <DependentUpon>CashierStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CashierWorkSchedule.resx">
       <DependentUpon>CashierWorkSchedule.cs</DependentUpon>
@@ -286,14 +243,8 @@
     <EmbeddedResource Include="ExitingCoustumer.resx">
       <DependentUpon>ExitingCoustumer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Exp.resx">
-      <DependentUpon>Exp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExpStore.resx">
-      <DependentUpon>ExpStore.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExpStoreproduct1.resx">
-      <DependentUpon>ExpStoreproduct1.cs</DependentUpon>
+    <EmbeddedResource Include="Expert.resx">
+      <DependentUpon>Expert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindProduct.resx">
       <DependentUpon>FindProduct.cs</DependentUpon>
@@ -321,16 +272,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="register.resx">
-      <DependentUpon>register.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Stock_Suppliers.resx">
       <DependentUpon>Stock_Suppliers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Store.resx">
-      <DependentUpon>Store.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

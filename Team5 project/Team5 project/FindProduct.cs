@@ -72,12 +72,12 @@ namespace Team5_project
             ss.Show();
         }
 
-        private void returnCashier_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            ExpStore ss = new ExpStore();
-            ss.Show();
-        }
+        //private void returnCashier_Click(object sender, EventArgs e)
+        //{
+        //    this.Close();
+        //    ExpStore ss = new ExpStore();
+        //    ss.Show();
+        //}
 
         private void button2_Click_1(object sender, EventArgs e)
         {

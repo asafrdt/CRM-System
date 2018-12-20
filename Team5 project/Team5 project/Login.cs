@@ -60,14 +60,19 @@ namespace Team5_project
                 else if (utype == "Expert")
                 {
                     this.Hide();
-                    Exp mm = new Exp();
+                    Expert mm = new Expert();
+                    mm.label2.Text = UserID;
+                    mm.label3.Text = utype;
+                    this.Hide();
                     mm.Show();
                 }
                 else if (utype == "Cashier")
                 {
                     this.Hide();
                     Cashier mm = new Cashier();
-                    
+                    mm.label2.Text = UserID;
+                    mm.label3.Text = utype;
+                    this.Hide();
                     mm.Show();
                 }
 
