@@ -35,6 +35,7 @@ namespace Team5_project
         {
             this.timer1.Start();
             MailMessage mail = new MailMessage(from.Text, to.Text, subject.Text, body.Text);
+            mail.Attachments.Add(new Attachment(Attachment1.Text));
             SmtpClient client = new SmtpClient(smtp.Text);
             client.Port = 587;
             client.Credentials = new System.Net.NetworkCredential(Username.Text, Password.Text);
@@ -84,6 +85,29 @@ namespace Team5_project
         private void body_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            //dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                string picPath = dlg.FileName.ToString();
+                //textBox_inage_path.Text = picPath;
+                Attachment1.Text = picPath;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialogl = new FontDialog();
+            fontDialogl.ShowColor = true;
+            if (fontDialogl.ShowDialog() == DialogResult.OK && !string.IsNullOrEmpty(body.Text))
+            {
+                body.SelectionFont = fontDialogl.Font;
+                body.SelectionColor = fontDialogl.Color;
+            }
         }
     }
 }

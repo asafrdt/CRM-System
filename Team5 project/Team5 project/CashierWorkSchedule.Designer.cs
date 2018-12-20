@@ -55,6 +55,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Attachment1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -322,11 +325,46 @@
             this.label15.TabIndex = 52;
             this.label15.Text = "yoni6232@gmail.com";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(59, 338);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 29);
+            this.button2.TabIndex = 54;
+            this.button2.Text = "Attach";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Attachment1
+            // 
+            this.Attachment1.Location = new System.Drawing.Point(185, 334);
+            this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Attachment1.Name = "Attachment1";
+            this.Attachment1.Size = new System.Drawing.Size(216, 32);
+            this.Attachment1.TabIndex = 55;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(486, 22);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 29);
+            this.button3.TabIndex = 56;
+            this.button3.Text = "Change Font ";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // CashierWorkSchedule
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1020, 465);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Attachment1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -393,5 +431,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox Attachment1;
+        private System.Windows.Forms.Button button3;
     }
 }
