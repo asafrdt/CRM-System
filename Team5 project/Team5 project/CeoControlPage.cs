@@ -27,7 +27,7 @@ namespace Team5_project
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             // sda = new SqlDataAdapter(@"select username,password,type FROM Employees", con);
-            sda = new SqlDataAdapter(@"select Id,First_Name,Last_Name,mobile,Gender FROM Extend_Employees", con);
+            sda = new SqlDataAdapter(@"select Id,Full_name,mobile,Gender FROM Extend_Employees", con);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView2.DataSource = dt;

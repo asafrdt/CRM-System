@@ -31,7 +31,7 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,First_name,Last_name, Mobile, Adress) VALUES ('" + IDBox.Text + "','" + FirstnameBox.Text + "','" + LastnameBox.Text + "','" + PhoneBox.Text + "','" + AdressBox.Text + "')", conn);
+                SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "')", conn);
                 //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
 
                 SqlDataAdapter da = new SqlDataAdapter(sda1);
@@ -45,6 +45,16 @@ namespace Team5_project
                 MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void IDBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
