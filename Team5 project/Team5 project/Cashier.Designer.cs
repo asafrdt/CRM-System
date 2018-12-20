@@ -90,6 +90,7 @@
             this.button1.Tag = "Store";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -119,6 +120,7 @@
             this.button5.Text = "Costumers and Orders";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -136,6 +138,7 @@
             this.button4.Text = "Stock and Suppliers";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -153,6 +156,7 @@
             this.button3.Text = "Private Area";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -170,6 +174,7 @@
             this.button2.Text = "Checkout";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -230,6 +235,7 @@
             this.Logout_button.Text = " Logout";
             this.Logout_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Logout_button.UseVisualStyleBackColor = true;
+            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
             // 
             // Cashier
             // 
