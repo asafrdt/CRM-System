@@ -32,17 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.smtp = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.to = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Username = new System.Windows.Forms.TextBox();
-            this.subject = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.body = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,8 +48,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.Attachment1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.Username = new System.Windows.Forms.TextBox();
+            this.to = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
+            this.subject = new System.Windows.Forms.TextBox();
+            this.smtp = new System.Windows.Forms.TextBox();
+            this.body = new System.Windows.Forms.RichTextBox();
+            this.Attachment1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -82,18 +82,6 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // smtp
-            // 
-            this.smtp.FormattingEnabled = true;
-            this.smtp.Items.AddRange(new object[] {
-            "smtp.gmail.com",
-            "smtp.yahoo.com"});
-            this.smtp.Location = new System.Drawing.Point(185, 243);
-            this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.smtp.Name = "smtp";
-            this.smtp.Size = new System.Drawing.Size(216, 31);
-            this.smtp.TabIndex = 32;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -114,14 +102,6 @@
             this.label9.TabIndex = 30;
             this.label9.Text = "smtp";
             // 
-            // to
-            // 
-            this.to.Location = new System.Drawing.Point(185, 95);
-            this.to.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(216, 32);
-            this.to.TabIndex = 35;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -132,58 +112,25 @@
             this.label1.TabIndex = 34;
             this.label1.Text = "to";
             // 
-            // Username
-            // 
-            this.Username.Location = new System.Drawing.Point(185, 40);
-            this.Username.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(216, 32);
-            this.Username.TabIndex = 39;
-            // 
-            // subject
-            // 
-            this.subject.Location = new System.Drawing.Point(185, 143);
-            this.subject.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(216, 32);
-            this.subject.TabIndex = 37;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 146);
+            this.label3.Location = new System.Drawing.Point(55, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 23);
             this.label3.TabIndex = 36;
             this.label3.Text = "subject";
             // 
-            // Password
-            // 
-            this.Password.Location = new System.Drawing.Point(185, 196);
-            this.Password.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(216, 32);
-            this.Password.TabIndex = 41;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 199);
+            this.label4.Location = new System.Drawing.Point(55, 193);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 23);
             this.label4.TabIndex = 40;
             this.label4.Text = "Password";
-            // 
-            // body
-            // 
-            this.body.Location = new System.Drawing.Point(486, 54);
-            this.body.Name = "body";
-            this.body.Size = new System.Drawing.Size(518, 190);
-            this.body.TabIndex = 42;
-            this.body.Text = "";
-            this.body.TextChanged += new System.EventHandler(this.body_TextChanged);
             // 
             // label2
             // 
@@ -317,14 +264,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Attachment1
-            // 
-            this.Attachment1.Location = new System.Drawing.Point(185, 292);
-            this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Attachment1.Name = "Attachment1";
-            this.Attachment1.Size = new System.Drawing.Size(216, 32);
-            this.Attachment1.TabIndex = 55;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,13 +276,75 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // Username
+            // 
+            this.Username.Location = new System.Drawing.Point(185, 40);
+            this.Username.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(216, 32);
+            this.Username.TabIndex = 57;
+            // 
+            // to
+            // 
+            this.to.Location = new System.Drawing.Point(185, 89);
+            this.to.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.to.Name = "to";
+            this.to.Size = new System.Drawing.Size(216, 32);
+            this.to.TabIndex = 58;
+            // 
+            // Password
+            // 
+            this.Password.Location = new System.Drawing.Point(185, 188);
+            this.Password.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(216, 32);
+            this.Password.TabIndex = 60;
+            // 
+            // subject
+            // 
+            this.subject.Location = new System.Drawing.Point(185, 137);
+            this.subject.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.subject.Name = "subject";
+            this.subject.Size = new System.Drawing.Size(216, 32);
+            this.subject.TabIndex = 59;
+            // 
+            // smtp
+            // 
+            this.smtp.Location = new System.Drawing.Point(185, 237);
+            this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.smtp.Name = "smtp";
+            this.smtp.Size = new System.Drawing.Size(216, 32);
+            this.smtp.TabIndex = 61;
+            // 
+            // body
+            // 
+            this.body.Location = new System.Drawing.Point(488, 57);
+            this.body.Name = "body";
+            this.body.Size = new System.Drawing.Size(518, 190);
+            this.body.TabIndex = 62;
+            this.body.Text = "";
+            // 
+            // Attachment1
+            // 
+            this.Attachment1.Location = new System.Drawing.Point(185, 292);
+            this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.Attachment1.Name = "Attachment1";
+            this.Attachment1.Size = new System.Drawing.Size(216, 32);
+            this.Attachment1.TabIndex = 63;
+            // 
             // CashierWorkSchedule
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1020, 465);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.Attachment1);
+            this.Controls.Add(this.body);
+            this.Controls.Add(this.smtp);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.subject);
+            this.Controls.Add(this.to);
+            this.Controls.Add(this.Username);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -355,15 +356,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.body);
-            this.Controls.Add(this.Password);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Username);
-            this.Controls.Add(this.subject);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.to);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.smtp);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.progressBar1);
@@ -386,17 +381,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ComboBox smtp;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox to;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Username;
-        private System.Windows.Forms.TextBox subject;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox body;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -408,7 +397,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox Attachment1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox Username;
+        private System.Windows.Forms.TextBox to;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.TextBox subject;
+        private System.Windows.Forms.TextBox smtp;
+        private System.Windows.Forms.RichTextBox body;
+        private System.Windows.Forms.TextBox Attachment1;
     }
 }

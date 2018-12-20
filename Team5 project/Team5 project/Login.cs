@@ -14,6 +14,8 @@ namespace Team5_project
 {
     public partial class Login : Form
     {
+        public static string date;
+        public static string time;
         public static string UserID;
         public string utype;
         public Login()
@@ -49,6 +51,17 @@ namespace Team5_project
             if (dt.Rows.Count>0)
             {
                 Login.UserID = textBox1.Text;
+                DateTime time = DateTime.Now;
+                String format = "dd/mm/yyyy HH:mm";
+                Console.WriteLine(time.ToString(format));
+                for (int i=0; i<16; i++)
+                {
+                    if (i < 10)
+                        Login.date += time.ToString(format)[i];
+                    else if (i>10)
+                        Login.time += time.ToString(format)[i];
+                }
+
                 utype = dt.Rows[0][0].ToString().Trim();
                 if (utype == "Ceo")
                 { Ceo mm = new Ceo();
