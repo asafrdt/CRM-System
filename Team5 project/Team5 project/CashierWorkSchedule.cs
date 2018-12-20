@@ -11,6 +11,8 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Web;
 using System.Net.Mail;
+
+
 namespace Team5_project
 {
     public partial class CashierWorkSchedule : Form
@@ -33,21 +35,63 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.timer1.Start();
-            MailMessage mail = new MailMessage(from.Text, to.Text, subject.Text, body.Text);
-            mail.Attachments.Add(new Attachment(Attachment1.Text));
-            SmtpClient client = new SmtpClient(smtp.Text);
-            client.Port = 587;
-            client.Credentials = new System.Net.NetworkCredential(Username.Text, Password.Text);
-            client.EnableSsl = true;
-            client.Send(mail);
-            MessageBox.Show("Mail Sent!", "Success", MessageBoxButtons.OK);
+            if (Username.Text == "" || to.Text == "" || body.Text == "")
+            {
+                if (Username.Text == "")
+                    MessageBox.Show("from could not be empty field!");
+                else if (to.Text == "")
+                    MessageBox.Show("to could not be empty field!");
+                else if (body.Text == "")
+                    MessageBox.Show(" !לא הוכנסו אילוצים");
+            }
+            else
+            {
+
+                MailMessage mail = new MailMessage(Username.Text, to.Text, subject.Text, body.Text);
+
+                if (Attachment1.Text != "")
+                {
+                    mail.Attachments.Add(new Attachment(Attachment1.Text));
+                }
+                SmtpClient client = new SmtpClient(smtp.Text);
+                client.Port = 587;
+                client.Credentials = new System.Net.NetworkCredential(Username.Text, Password.Text);
+                client.EnableSsl = true;
+                try
+                {
+                    client.Send(mail);
+                    this.timer1.Start();
+                    MessageBox.Show("Mail Sent!", "Success", MessageBoxButtons.OK);
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("wrong password!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Diagnostics.Debug.WriteLine("Exception Message: " + ex.Message);
+                    if (ex.InnerException != null)
+                        System.Diagnostics.Debug.WriteLine("Exception Inner:   " + ex.InnerException);
+                }
+            }
+
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Attachment1.Text != null)
+            {
+                OpenFileDialog dlg = new OpenFileDialog();
+                //dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)";
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    string picPath = dlg.FileName.ToString();
+                    //textBox_inage_path.Text = picPath;
+                    Attachment1.Text = picPath;
+                }
+            }
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.progressBar1.Increment(10);
-
+            this.progressBar1.Increment(15);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -67,9 +111,6 @@ namespace Team5_project
 
         private void returnCashierStore_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            CashierPrivateArea mm = new CashierPrivateArea();
-            mm.Show();
         }
 
         private void CashierWorkSchedule_Load(object sender, EventArgs e)
@@ -87,17 +128,7 @@ namespace Team5_project
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dlg = new OpenFileDialog();
-            //dlg.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)";
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                string picPath = dlg.FileName.ToString();
-                //textBox_inage_path.Text = picPath;
-                Attachment1.Text = picPath;
-            }
-        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -108,6 +139,15 @@ namespace Team5_project
                 body.SelectionFont = fontDialogl.Font;
                 body.SelectionColor = fontDialogl.Color;
             }
+        }
+
+        private void Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
         }
     }
 }

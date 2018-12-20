@@ -32,14 +32,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.from = new System.Windows.Forms.TextBox();
             this.smtp = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.to = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.TextBox();
-            this.la = new System.Windows.Forms.Label();
             this.subject = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Password = new System.Windows.Forms.TextBox();
@@ -84,21 +82,13 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // from
-            // 
-            this.from.Location = new System.Drawing.Point(185, 46);
-            this.from.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.from.Name = "from";
-            this.from.Size = new System.Drawing.Size(216, 32);
-            this.from.TabIndex = 33;
-            // 
             // smtp
             // 
             this.smtp.FormattingEnabled = true;
             this.smtp.Items.AddRange(new object[] {
             "smtp.gmail.com",
             "smtp.yahoo.com"});
-            this.smtp.Location = new System.Drawing.Point(185, 285);
+            this.smtp.Location = new System.Drawing.Point(185, 243);
             this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.smtp.Name = "smtp";
             this.smtp.Size = new System.Drawing.Size(216, 31);
@@ -117,7 +107,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(55, 288);
+            this.label9.Location = new System.Drawing.Point(55, 246);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 23);
@@ -144,21 +134,11 @@
             // 
             // Username
             // 
-            this.Username.Location = new System.Drawing.Point(185, 192);
+            this.Username.Location = new System.Drawing.Point(185, 40);
             this.Username.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(216, 32);
             this.Username.TabIndex = 39;
-            // 
-            // la
-            // 
-            this.la.AutoSize = true;
-            this.la.Location = new System.Drawing.Point(55, 195);
-            this.la.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.la.Name = "la";
-            this.la.Size = new System.Drawing.Size(108, 23);
-            this.la.TabIndex = 38;
-            this.la.Text = "Username";
             // 
             // subject
             // 
@@ -180,7 +160,7 @@
             // 
             // Password
             // 
-            this.Password.Location = new System.Drawing.Point(185, 238);
+            this.Password.Location = new System.Drawing.Point(185, 196);
             this.Password.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(216, 32);
@@ -189,7 +169,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 241);
+            this.label4.Location = new System.Drawing.Point(55, 199);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 23);
@@ -329,7 +309,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(59, 338);
+            this.button2.Location = new System.Drawing.Point(59, 296);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 29);
             this.button2.TabIndex = 54;
@@ -339,7 +319,7 @@
             // 
             // Attachment1
             // 
-            this.Attachment1.Location = new System.Drawing.Point(185, 334);
+            this.Attachment1.Location = new System.Drawing.Point(185, 292);
             this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Attachment1.Name = "Attachment1";
             this.Attachment1.Size = new System.Drawing.Size(216, 32);
@@ -379,12 +359,10 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Username);
-            this.Controls.Add(this.la);
             this.Controls.Add(this.subject);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.to);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.from);
             this.Controls.Add(this.smtp);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -408,14 +386,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TextBox from;
         private System.Windows.Forms.ComboBox smtp;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox to;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Username;
-        private System.Windows.Forms.Label la;
         private System.Windows.Forms.TextBox subject;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Password;

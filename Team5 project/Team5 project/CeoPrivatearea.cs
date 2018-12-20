@@ -21,5 +21,11 @@ namespace Team5_project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CashierWorkSchedule mm = new CashierWorkSchedule();
+            mm.Show();
+        }
     }
 }
