@@ -68,7 +68,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1020, 299);
+            this.ClientSize = new System.Drawing.Size(897, 299);
             this.Controls.Add(this.label1234);
             this.Controls.Add(this.SubmitBox);
             this.Controls.Add(this.DeleteIDBox);

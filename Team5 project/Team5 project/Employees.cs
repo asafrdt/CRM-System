@@ -34,12 +34,6 @@ namespace Team5_project
             mm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            CeoControlPage mm = new CeoControlPage();
-            mm.Show();
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -65,7 +59,13 @@ namespace Team5_project
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            CeoControlPage mm = new CeoControlPage();
+            Show_Edit_Employees mm = new Show_Edit_Employees();
+            mm.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Work_Hours mm = new Work_Hours();
             mm.Show();
         }
     }

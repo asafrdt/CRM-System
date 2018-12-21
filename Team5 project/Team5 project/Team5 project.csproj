@@ -122,12 +122,6 @@
     <Compile Include="CeoCashRegister.Designer.cs">
       <DependentUpon>CeoCashRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeoControlPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CeoControlPage.Designer.cs">
-      <DependentUpon>CeoControlPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="CeoDeleteWorker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +237,12 @@
     <Compile Include="Remove_Supllier.Designer.cs">
       <DependentUpon>Remove_Supllier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Show_Edit_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Edit_Employees.Designer.cs">
+      <DependentUpon>Show_Edit_Employees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Show_Edit_Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +261,12 @@
     <Compile Include="Stock_Suppliers.Designer.cs">
       <DependentUpon>Stock_Suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Work_Hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work_Hours.Designer.cs">
+      <DependentUpon>Work_Hours.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,9 +278,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CeoAddWorker.resx">
       <DependentUpon>CeoAddWorker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CeoControlPage.resx">
-      <DependentUpon>CeoControlPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CeoDeleteWorker.resx">
       <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
@@ -326,8 +329,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Show_Edit_Employees.resx">
+      <DependentUpon>Show_Edit_Employees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock_Suppliers.resx">
       <DependentUpon>Stock_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work_Hours.resx">
+      <DependentUpon>Work_Hours.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="DataSet1.xsc">

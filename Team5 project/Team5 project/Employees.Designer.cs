@@ -59,10 +59,11 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 140);
             this.button4.TabIndex = 10;
-            this.button4.Text = "Work hours";
+            this.button4.Text = "Hours Report";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // Show_Edit_Button
             // 
@@ -121,7 +122,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(911, 680);
+            this.ClientSize = new System.Drawing.Size(858, 680);
             this.Controls.Add(this.Show_Edit_Button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
