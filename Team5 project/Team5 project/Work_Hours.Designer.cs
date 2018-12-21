@@ -42,6 +42,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
@@ -59,12 +60,13 @@
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.dataGridView2.Location = new System.Drawing.Point(27, 25);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.Size = new System.Drawing.Size(943, 286);
             this.dataGridView2.TabIndex = 4;
+            this.dataGridView2.UseWaitCursor = true;
             // 
             // Work_Hours
             // 
@@ -74,6 +76,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(185, 250);
@@ -81,7 +84,6 @@
             this.Name = "Work_Hours";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CeoStore";
-            this.UseWaitCursor = true;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 

@@ -64,11 +64,39 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*DateTime time = DateTime.Now;
+            String format = "dd/MM/yyyy hh:mm:ss", datatype = "OUT";
+            for (int i = 0; i < 19; i++)
+            {
+                if (i < 10)
+                    Login.dateOut += time.ToString(format)[i];
+                else if (i > 10)
+                    Login.timeOut += time.ToString(format)[i];
+            }
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','" + datatype + "','" + Login.dateOut + "','" + Login.timeOut + "','" + time.ToString(format) + "')", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            DataSet ds = new DataSet();
+            da.Fill(ds);*/
             Application.Exit();
         }
 
         private void Logout_button_Click(object sender, EventArgs e)
         {
+            /*DateTime time = DateTime.Now;
+            String format = "dd/MM/yyyy hh:mm:ss", datatype = "OUT";
+            for (int i = 0; i < 19; i++)
+            {
+                if (i < 10)
+                    Login.dateOut += time.ToString(format)[i];
+                else if (i > 10)
+                    Login.timeOut += time.ToString(format)[i];
+            }
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','" + datatype + "','" + Login.dateOut + "','" + Login.timeOut + "','" + time.ToString(format) + "')", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            DataSet ds = new DataSet();
+            da.Fill(ds);*/
             List<Form> openForms = new List<Form>();
 
             foreach (Form f in Application.OpenForms)

@@ -24,11 +24,26 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select Id FROM Work_card", con);
-            dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView2.DataSource = dt;
+            /*try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                string sql = "select Username,logdate ad 'Date', min(logtime) as 'IN',max(logtime) as 'OUT', " +
+                    " CAST(((strftime('%s', max(logtime)  ) - strftime('%s',  min(logtime)  )) %(60*60*24))/(60*60) AS TEXT) || ':' || " +
+                    " CAST(((strftime('%s', max(logtime)  ) - strftime('%s',  min(logtime)  )) %(60*60*24))%(60*60)) / 60 AS TEXT) as 'HOURS - HH:MM'   " +
+                    "FROM Work_card group by Username,logdate order by logdate";
+               
+                sda = new SqlDataAdapter(sql, con);
+                SqlCommand cmd = new SqlCommand(sql, con);
+                dt = new DataTable(sql);
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;
+            }
+            catch
+            {
+
+            }*/
         }
 
         private void button2_Click(object sender, EventArgs e)
