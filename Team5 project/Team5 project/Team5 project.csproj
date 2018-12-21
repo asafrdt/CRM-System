@@ -80,6 +80,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Supllier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Supllier.Designer.cs">
+      <DependentUpon>Add_Supllier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,12 @@
     <Compile Include="CeoDeleteWorker.Designer.cs">
       <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="CeoEditWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeoEditWorker.Designer.cs">
+      <DependentUpon>CeoEditWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="CeoReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +168,12 @@
     </Compile>
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees_control_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees_control_page.Designer.cs">
+      <DependentUpon>Employees_control_page.cs</DependentUpon>
     </Compile>
     <Compile Include="ExitingCoustumer.cs">
       <SubType>Form</SubType>
@@ -207,6 +231,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remove_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove_Stock.Designer.cs">
+      <DependentUpon>Remove_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_Supllier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove_Supllier.Designer.cs">
+      <DependentUpon>Remove_Supllier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_Edit_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Edit_Stock.Designer.cs">
+      <DependentUpon>Show_Edit_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_edit_Supllier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_edit_Supllier.Designer.cs">
+      <DependentUpon>Show_edit_Supllier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stock_Suppliers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +279,9 @@
     <EmbeddedResource Include="CeoDeleteWorker.resx">
       <DependentUpon>CeoDeleteWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CeoEditWorker.resx">
+      <DependentUpon>CeoEditWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees_control_page.resx">
+      <DependentUpon>Employees_control_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitingCoustumer.resx">
       <DependentUpon>ExitingCoustumer.cs</DependentUpon>
@@ -416,6 +470,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cash-register2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-document1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-in-office-desk-with-computer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

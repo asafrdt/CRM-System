@@ -44,5 +44,29 @@ namespace Team5_project
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Employees_control_page mm = new Employees_control_page();
+            mm.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            CeoAddWorker mm = new CeoAddWorker();
+            mm.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            CeoDeleteWorker mm = new CeoDeleteWorker();
+            mm.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            CeoControlPage mm = new CeoControlPage();
+            mm.Show();
+        }
     }
 }

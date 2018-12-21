@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Show_Edit_Button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,33 +54,33 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Team5_project.Properties.Resources.text_documents;
-            this.button4.Location = new System.Drawing.Point(602, 70);
+            this.button4.Image = global::Team5_project.Properties.Resources.man_in_office_desk_with_computer;
+            this.button4.Location = new System.Drawing.Point(646, 93);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(188, 151);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Work arrangements";
+            this.button4.Size = new System.Drawing.Size(195, 140);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Work hours";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // Show_Edit_Button
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.button3.Location = new System.Drawing.Point(441, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 141);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Edit";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Show_Edit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Show_Edit_Button.FlatAppearance.BorderSize = 0;
+            this.Show_Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Show_Edit_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Show_Edit_Button.ForeColor = System.Drawing.Color.White;
+            this.Show_Edit_Button.Image = global::Team5_project.Properties.Resources.searching_a_person;
+            this.Show_Edit_Button.Location = new System.Drawing.Point(445, 93);
+            this.Show_Edit_Button.Name = "Show_Edit_Button";
+            this.Show_Edit_Button.Size = new System.Drawing.Size(195, 140);
+            this.Show_Edit_Button.TabIndex = 15;
+            this.Show_Edit_Button.Text = "Show and Edit";
+            this.Show_Edit_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Show_Edit_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Show_Edit_Button.UseVisualStyleBackColor = true;
+            this.Show_Edit_Button.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -89,43 +89,43 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button2.Location = new System.Drawing.Point(280, 80);
+            this.button2.Location = new System.Drawing.Point(244, 93);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 141);
-            this.button2.TabIndex = 6;
+            this.button2.Size = new System.Drawing.Size(195, 140);
+            this.button2.TabIndex = 14;
             this.button2.Text = "Remove ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button1
+            // button5
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Team5_project.Properties.Resources.add_user_symbol;
-            this.button1.Location = new System.Drawing.Point(119, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 141);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Add ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::Team5_project.Properties.Resources.add_user_symbol;
+            this.button5.Location = new System.Drawing.Point(43, 93);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(195, 140);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "Add ";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // Employees
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(860, 680);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(911, 680);
+            this.Controls.Add(this.Show_Edit_Button);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -142,9 +142,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Show_Edit_Button;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
     }
 }

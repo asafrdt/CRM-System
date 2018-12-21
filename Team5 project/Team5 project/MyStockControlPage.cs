@@ -26,5 +26,28 @@ namespace Team5_project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddStock mm = new AddStock();
+            mm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Remove_Stock mm = new Remove_Stock();
+            mm.Show();
+        }
+
+        private void Show_Edit_Button_Click(object sender, EventArgs e)
+        {
+            Show_Edit_Stock mm = new Show_Edit_Stock();
+            mm.Show();
+        }
     }
 }

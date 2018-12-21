@@ -53,9 +53,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.button3.Location = new System.Drawing.Point(424, 99);
+            this.button3.Location = new System.Drawing.Point(430, 74);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 116);
+            this.button3.Size = new System.Drawing.Size(159, 106);
             this.button3.TabIndex = 11;
             this.button3.Text = "My Suplliers";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -70,9 +70,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button5.Location = new System.Drawing.Point(263, 86);
+            this.button5.Location = new System.Drawing.Point(254, 74);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(155, 141);
+            this.button5.Size = new System.Drawing.Size(170, 106);
             this.button5.TabIndex = 13;
             this.button5.Text = "My Stock";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;

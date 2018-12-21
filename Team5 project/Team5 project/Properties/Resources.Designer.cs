@@ -183,6 +183,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit_document1 {
+            get {
+                object obj = ResourceManager.GetObject("edit-document1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_black_leather_vector {
             get {
                 object obj = ResourceManager.GetObject("free-black-leather-vector", resourceCulture);
@@ -226,6 +236,16 @@ namespace Team5_project.Properties {
         internal static System.Drawing.Bitmap logistics_delivery_truck_in_movement {
             get {
                 object obj = ResourceManager.GetObject("logistics-delivery-truck-in-movement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man_in_office_desk_with_computer {
+            get {
+                object obj = ResourceManager.GetObject("man-in-office-desk-with-computer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,77 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.ShowRecoedsButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Show_Edit_Button = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ShowRecoedsButton
+            // Show_Edit_Button
             // 
-            this.ShowRecoedsButton.FlatAppearance.BorderSize = 0;
-            this.ShowRecoedsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ShowRecoedsButton.Location = new System.Drawing.Point(357, 327);
-            this.ShowRecoedsButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.ShowRecoedsButton.Name = "ShowRecoedsButton";
-            this.ShowRecoedsButton.Size = new System.Drawing.Size(126, 51);
-            this.ShowRecoedsButton.TabIndex = 2;
-            this.ShowRecoedsButton.Text = "Show";
-            this.ShowRecoedsButton.UseVisualStyleBackColor = true;
-            this.ShowRecoedsButton.Click += new System.EventHandler(this.ShowRecoedsButton_Click);
+            this.Show_Edit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Show_Edit_Button.FlatAppearance.BorderSize = 0;
+            this.Show_Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Show_Edit_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Show_Edit_Button.ForeColor = System.Drawing.Color.White;
+            this.Show_Edit_Button.Image = global::Team5_project.Properties.Resources.searching_a_person;
+            this.Show_Edit_Button.Location = new System.Drawing.Point(598, 12);
+            this.Show_Edit_Button.Name = "Show_Edit_Button";
+            this.Show_Edit_Button.Size = new System.Drawing.Size(195, 140);
+            this.Show_Edit_Button.TabIndex = 19;
+            this.Show_Edit_Button.Text = "Show and Edit";
+            this.Show_Edit_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Show_Edit_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Show_Edit_Button.UseVisualStyleBackColor = true;
+            this.Show_Edit_Button.Click += new System.EventHandler(this.Show_Edit_Button_Click);
             // 
-            // button1
+            // button2
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(532, 327);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 51);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Team5_project.Properties.Resources.Remove;
+            this.button2.Location = new System.Drawing.Point(397, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 140);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Remove ";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // button5
             // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.Location = new System.Drawing.Point(112, 30);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 291);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::Team5_project.Properties.Resources.add_user_symbol;
+            this.button5.Location = new System.Drawing.Point(196, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(195, 140);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Add ";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MyStockControlPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1020, 445);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.ShowRecoedsButton);
+            this.Controls.Add(this.Show_Edit_Button);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button5);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,15 +100,14 @@
             this.Name = "MyStockControlPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MyStockControlPage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button ShowRecoedsButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Show_Edit_Button;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
     }
 }

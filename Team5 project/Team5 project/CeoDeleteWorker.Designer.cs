@@ -38,7 +38,7 @@
             this.DeleteIDBox.Location = new System.Drawing.Point(426, 23);
             this.DeleteIDBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteIDBox.Name = "DeleteIDBox";
-            this.DeleteIDBox.Size = new System.Drawing.Size(173, 57);
+            this.DeleteIDBox.Size = new System.Drawing.Size(173, 37);
             this.DeleteIDBox.TabIndex = 2;
             this.DeleteIDBox.TextChanged += new System.EventHandler(this.DeleteIDBox_TextChanged);
             // 
@@ -60,7 +60,7 @@
             this.label1234.Location = new System.Drawing.Point(187, 28);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(384, 47);
+            this.label1234.Size = new System.Drawing.Size(229, 28);
             this.label1234.TabIndex = 5;
             this.label1234.Text = "Enter Employee ID:";
             // 
@@ -68,14 +68,14 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1239, 753);
+            this.ClientSize = new System.Drawing.Size(1020, 299);
             this.Controls.Add(this.label1234);
             this.Controls.Add(this.SubmitBox);
             this.Controls.Add(this.DeleteIDBox);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(185, 230);
+            this.Location = new System.Drawing.Point(185, 250);
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "CeoDeleteWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

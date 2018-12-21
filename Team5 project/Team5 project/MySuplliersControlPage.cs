@@ -16,5 +16,17 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Add_Supllier mm = new Add_Supllier();
+            mm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Remove_Supllier mm = new Remove_Supllier();
+            mm.Show();
+        }
     }
 }
