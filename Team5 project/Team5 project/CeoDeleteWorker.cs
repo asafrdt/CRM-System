@@ -61,6 +61,11 @@ namespace Team5_project
         {
 
         }
+
+        private void label1234_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 //}

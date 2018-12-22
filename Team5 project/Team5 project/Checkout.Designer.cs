@@ -90,38 +90,42 @@
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(17, 228);
+            this.label2.Location = new System.Drawing.Point(342, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "Customer ID: ";
+            this.label2.UseWaitCursor = true;
             // 
             // label3
             // 
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(674, 228);
+            this.label3.Location = new System.Drawing.Point(584, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 45);
+            this.label3.Size = new System.Drawing.Size(180, 34);
             this.label3.TabIndex = 4;
+            this.label3.UseWaitCursor = true;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(186, 228);
+            this.label4.Location = new System.Drawing.Point(342, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 45);
+            this.label4.Size = new System.Drawing.Size(163, 34);
             this.label4.TabIndex = 6;
+            this.label4.UseWaitCursor = true;
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(484, 228);
+            this.label5.Location = new System.Drawing.Point(584, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(236, 45);
             this.label5.TabIndex = 5;
             this.label5.Text = "Product Serial: ";
+            this.label5.UseWaitCursor = true;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Checkout
@@ -136,7 +140,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CashRegister);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(185, 0);
@@ -144,7 +148,7 @@
             this.Name = "Checkout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CeoStore";
-            this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.Checkout_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

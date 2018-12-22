@@ -55,14 +55,15 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.text_documents;
-            this.button4.Location = new System.Drawing.Point(574, 88);
+            this.button4.Location = new System.Drawing.Point(617, 88);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(253, 141);
+            this.button4.Size = new System.Drawing.Size(192, 141);
             this.button4.TabIndex = 12;
-            this.button4.Text = "Orders history";
+            this.button4.Text = "Orders report";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -71,14 +72,15 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.button3.Location = new System.Drawing.Point(413, 88);
+            this.button3.Location = new System.Drawing.Point(419, 88);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 141);
+            this.button3.Size = new System.Drawing.Size(192, 141);
             this.button3.TabIndex = 11;
-            this.button3.Text = "Edit";
+            this.button3.Text = "Show and edit";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -87,14 +89,15 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button2.Location = new System.Drawing.Point(252, 88);
+            this.button2.Location = new System.Drawing.Point(221, 88);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 141);
+            this.button2.Size = new System.Drawing.Size(192, 141);
             this.button2.TabIndex = 10;
             this.button2.Text = "Remove ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -103,9 +106,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.add_user_symbol;
-            this.button1.Location = new System.Drawing.Point(91, 88);
+            this.button1.Location = new System.Drawing.Point(23, 88);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 141);
+            this.button1.Size = new System.Drawing.Size(192, 141);
             this.button1.TabIndex = 9;
             this.button1.Text = "Add ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -132,6 +135,7 @@
             this.Name = "Costumers_Orders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Private area";
+            this.Load += new System.EventHandler(this.Costumers_Orders_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

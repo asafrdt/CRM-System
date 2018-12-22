@@ -113,6 +113,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap business_report_with_growth {
+            get {
+                object obj = ResourceManager.GetObject("business-report-with-growth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cash_register {
             get {
                 object obj = ResourceManager.GetObject("cash-register", resourceCulture);
@@ -256,6 +266,16 @@ namespace Team5_project.Properties {
         internal static System.Drawing.Bitmap new_user {
             get {
                 object obj = ResourceManager.GetObject("new-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opened_email_envelope {
+            get {
+                object obj = ResourceManager.GetObject("opened-email-envelope", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

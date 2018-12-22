@@ -61,5 +61,11 @@ namespace Team5_project
         {
 
         }
+
+        private void Checkout_Load(object sender, EventArgs e)
+        {
+            label4.Text = ExitingCoustumer.Customer;
+            label3.Text = FindProduct.Product;
+        }
     }
 }

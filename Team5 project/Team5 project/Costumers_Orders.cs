@@ -22,5 +22,28 @@ namespace Team5_project
             NewCostumer mm = new NewCostumer();
             mm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Remove_Customer mm = new Remove_Customer();
+            mm.Show();
+        }
+
+        private void Costumers_Orders_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Show_Edit_Customer mm = new Show_Edit_Customer();
+            mm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Orders_report mm = new Orders_report();
+            mm.Show();
+        }
     }
 }

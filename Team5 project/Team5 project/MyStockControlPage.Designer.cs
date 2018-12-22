@@ -41,7 +41,7 @@
             this.Show_Edit_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Show_Edit_Button.ForeColor = System.Drawing.Color.White;
             this.Show_Edit_Button.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.Show_Edit_Button.Location = new System.Drawing.Point(598, 12);
+            this.Show_Edit_Button.Location = new System.Drawing.Point(544, 12);
             this.Show_Edit_Button.Name = "Show_Edit_Button";
             this.Show_Edit_Button.Size = new System.Drawing.Size(195, 140);
             this.Show_Edit_Button.TabIndex = 19;
@@ -58,7 +58,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button2.Location = new System.Drawing.Point(397, 12);
+            this.button2.Location = new System.Drawing.Point(343, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 140);
             this.button2.TabIndex = 18;
@@ -75,7 +75,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Team5_project.Properties.Resources.add_user_symbol;
-            this.button5.Location = new System.Drawing.Point(196, 12);
+            this.button5.Location = new System.Drawing.Point(142, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 140);
             this.button5.TabIndex = 17;
@@ -89,14 +89,14 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1020, 445);
+            this.ClientSize = new System.Drawing.Size(860, 169);
             this.Controls.Add(this.Show_Edit_Button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(185, 230);
+            this.Location = new System.Drawing.Point(185, 50);
             this.Name = "MyStockControlPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MyStockControlPage";

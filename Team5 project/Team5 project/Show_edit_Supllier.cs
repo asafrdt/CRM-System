@@ -7,14 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Team5_project
 {
     public partial class Show_edit_Supllier : Form
     {
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
         public Show_edit_Supllier()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            sda = new SqlDataAdapter(@"select *FROM Suppllier", con);
+            dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            scb = new SqlCommandBuilder(sda);
+            sda.Update(dt);
         }
     }
 }

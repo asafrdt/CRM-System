@@ -160,6 +160,9 @@
   <data name="edit-document" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="searching-a-person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searching-a-person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="users-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,6 +187,9 @@
   <data name="shopping-carttt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-carttt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="opened-email-envelope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opened-email-envelope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="free-black-leather-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-black-leather-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,17 +199,14 @@
   <data name="new-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shutterstock_112158140.00_00_03_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutterstock_112158140.00_00_03_12.Still0012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopping-cart (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cash-register1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cash-register1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="searching-a-person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\searching-a-person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shopping-cart (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shutterstock_112158140.00_00_03_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutterstock_112158140.00_00_03_12.Still0012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +226,9 @@
   <data name="searching-a-person" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\searching-a-person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="man-in-office-desk-with-computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man-in-office-desk-with-computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logistics-delivery-truck-in-movement" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logistics-delivery-truck-in-movement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,7 +247,7 @@
   <data name="desktop-computer-screen-with-magnifying-glass-and-list1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desktop-computer-screen-with-magnifying-glass-and-list1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="man-in-office-desk-with-computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man-in-office-desk-with-computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="business-report-with-growth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-report-with-growth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

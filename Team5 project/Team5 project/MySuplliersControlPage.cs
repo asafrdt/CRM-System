@@ -28,5 +28,11 @@ namespace Team5_project
             Remove_Supllier mm = new Remove_Supllier();
             mm.Show();
         }
+
+        private void Show_Edit_Button_Click(object sender, EventArgs e)
+        {
+            Show_edit_Supllier mm = new Show_edit_Supllier();
+            mm.Show();
+        }
     }
 }

@@ -63,6 +63,7 @@
             this.label1234.Size = new System.Drawing.Size(229, 28);
             this.label1234.TabIndex = 5;
             this.label1234.Text = "Enter Employee ID:";
+            this.label1234.Click += new System.EventHandler(this.label1234_Click);
             // 
             // CeoDeleteWorker
             // 
