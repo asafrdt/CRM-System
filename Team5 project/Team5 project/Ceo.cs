@@ -85,7 +85,7 @@ namespace Team5_project
             //SqlDataAdapter da = new SqlDataAdapter(sda1);
             //DataSet ds = new DataSet();
             //da.Fill(ds);
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void label1_Click(object sender, EventArgs e)

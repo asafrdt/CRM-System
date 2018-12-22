@@ -49,8 +49,8 @@
             this.to = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
             this.subject = new System.Windows.Forms.TextBox();
-            this.smtp = new System.Windows.Forms.TextBox();
             this.body = new System.Windows.Forms.RichTextBox();
+            this.smtp = new System.Windows.Forms.ComboBox();
             this.Attachment1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -84,7 +84,7 @@
             this.label11.Location = new System.Drawing.Point(55, 49);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 30);
+            this.label11.Size = new System.Drawing.Size(54, 23);
             this.label11.TabIndex = 31;
             this.label11.Text = "from";
             // 
@@ -94,7 +94,7 @@
             this.label9.Location = new System.Drawing.Point(55, 246);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 30);
+            this.label9.Size = new System.Drawing.Size(58, 23);
             this.label9.TabIndex = 30;
             this.label9.Text = "smtp";
             // 
@@ -104,7 +104,7 @@
             this.label1.Location = new System.Drawing.Point(55, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 30);
+            this.label1.Size = new System.Drawing.Size(30, 23);
             this.label1.TabIndex = 34;
             this.label1.Text = "to";
             // 
@@ -114,7 +114,7 @@
             this.label3.Location = new System.Drawing.Point(55, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 30);
+            this.label3.Size = new System.Drawing.Size(80, 23);
             this.label3.TabIndex = 36;
             this.label3.Text = "subject";
             // 
@@ -124,7 +124,7 @@
             this.label4.Location = new System.Drawing.Point(55, 193);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 30);
+            this.label4.Size = new System.Drawing.Size(103, 23);
             this.label4.TabIndex = 40;
             this.label4.Text = "Password";
             // 
@@ -135,7 +135,7 @@
             this.label2.Location = new System.Drawing.Point(622, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(307, 34);
+            this.label2.Size = new System.Drawing.Size(262, 28);
             this.label2.TabIndex = 43;
             this.label2.Text = "Write your text below:";
             // 
@@ -147,7 +147,7 @@
             this.label7.Location = new System.Drawing.Point(613, 313);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(320, 30);
+            this.label7.Size = new System.Drawing.Size(258, 23);
             this.label7.TabIndex = 46;
             this.label7.Text = "Morning shift- 08:00 - 14:00";
             // 
@@ -159,7 +159,7 @@
             this.label8.Location = new System.Drawing.Point(613, 359);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(294, 30);
+            this.label8.Size = new System.Drawing.Size(240, 23);
             this.label8.TabIndex = 47;
             this.label8.Text = "Lunch shift- 12:00 - 18:00";
             // 
@@ -171,7 +171,7 @@
             this.label10.Location = new System.Drawing.Point(613, 406);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(302, 30);
+            this.label10.Size = new System.Drawing.Size(246, 23);
             this.label10.TabIndex = 48;
             this.label10.Text = "Evning shift- 16:00 - 22:00";
             // 
@@ -183,7 +183,7 @@
             this.label12.Location = new System.Drawing.Point(554, 266);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(83, 30);
+            this.label12.Size = new System.Drawing.Size(68, 23);
             this.label12.TabIndex = 49;
             this.label12.Text = "ceo - ";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -196,7 +196,7 @@
             this.label14.Location = new System.Drawing.Point(647, 266);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(246, 30);
+            this.label14.Size = new System.Drawing.Size(200, 23);
             this.label14.TabIndex = 51;
             this.label14.Text = "asafrdt@gmail.com";
             // 
@@ -229,7 +229,7 @@
             this.Username.Location = new System.Drawing.Point(185, 40);
             this.Username.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(216, 37);
+            this.Username.Size = new System.Drawing.Size(216, 32);
             this.Username.TabIndex = 57;
             // 
             // to
@@ -237,7 +237,7 @@
             this.to.Location = new System.Drawing.Point(185, 89);
             this.to.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(216, 37);
+            this.to.Size = new System.Drawing.Size(216, 32);
             this.to.TabIndex = 58;
             // 
             // Password
@@ -245,7 +245,7 @@
             this.Password.Location = new System.Drawing.Point(185, 188);
             this.Password.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(216, 37);
+            this.Password.Size = new System.Drawing.Size(216, 32);
             this.Password.TabIndex = 60;
             // 
             // subject
@@ -253,16 +253,8 @@
             this.subject.Location = new System.Drawing.Point(185, 137);
             this.subject.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(216, 37);
+            this.subject.Size = new System.Drawing.Size(216, 32);
             this.subject.TabIndex = 59;
-            // 
-            // smtp
-            // 
-            this.smtp.Location = new System.Drawing.Point(185, 237);
-            this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.smtp.Name = "smtp";
-            this.smtp.Size = new System.Drawing.Size(216, 37);
-            this.smtp.TabIndex = 61;
             // 
             // body
             // 
@@ -272,13 +264,26 @@
             this.body.TabIndex = 62;
             this.body.Text = "";
             // 
+            // smtp
+            // 
+            this.smtp.FormattingEnabled = true;
+            this.smtp.ItemHeight = 23;
+            this.smtp.Items.AddRange(new object[] {
+            "smtp.gmail.com",
+            "smtp.yahoo.com"});
+            this.smtp.Location = new System.Drawing.Point(185, 238);
+            this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.smtp.Name = "smtp";
+            this.smtp.Size = new System.Drawing.Size(216, 31);
+            this.smtp.TabIndex = 64;
+            // 
             // Attachment1
             // 
             this.Attachment1.Location = new System.Drawing.Point(185, 292);
             this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Attachment1.Name = "Attachment1";
-            this.Attachment1.Size = new System.Drawing.Size(216, 37);
-            this.Attachment1.TabIndex = 63;
+            this.Attachment1.Size = new System.Drawing.Size(216, 32);
+            this.Attachment1.TabIndex = 65;
             // 
             // CashierWorkSchedule
             // 
@@ -286,8 +291,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1020, 465);
             this.Controls.Add(this.Attachment1);
-            this.Controls.Add(this.body);
             this.Controls.Add(this.smtp);
+            this.Controls.Add(this.body);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.subject);
             this.Controls.Add(this.to);
@@ -342,8 +347,8 @@
         private System.Windows.Forms.TextBox to;
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.TextBox subject;
-        private System.Windows.Forms.TextBox smtp;
         private System.Windows.Forms.RichTextBox body;
+        private System.Windows.Forms.ComboBox smtp;
         private System.Windows.Forms.TextBox Attachment1;
     }
 }

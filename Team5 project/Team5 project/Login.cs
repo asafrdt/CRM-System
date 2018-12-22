@@ -63,7 +63,7 @@ namespace Team5_project
                 //    else if (i > 10)
                 //        Login.timeIn += time.ToString(format)[i];
                 //}
-                //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID  + "','" + datatype + "','" + Login.dateIn + "','" + Login.timeIn + "','" + time.ToString(format) + "')", conn);
+                //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','" + datatype + "','" + Login.dateIn + "','" + Login.timeIn + "','" + time.ToString(format) + "')", conn);
                 //SqlDataAdapter da = new SqlDataAdapter(sda1);
                 //DataSet ds = new DataSet();
                 //da.Fill(ds);
