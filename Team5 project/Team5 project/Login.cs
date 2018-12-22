@@ -19,7 +19,7 @@ namespace Team5_project
         public static string dateIn;
         public static string timeIn;
         public static string UserID;
-        
+
         public string utype;
         public Login()
         {
@@ -55,15 +55,15 @@ namespace Team5_project
             {
                 //Login.UserID = textBox1.Text;
                 //DateTime time = DateTime.Now;
-                //String format = "dd/MM/yyyy hh:mm:ss", datatype = "IN";
-                //for (int i=0; i<19; i++)
+                //String format = "yyyy-MM-dd HH:mm:ss", datatype = "IN";
+                //for (int i = 0; i < 19; i++)
                 //{
                 //    if (i < 10)
                 //        Login.dateIn += time.ToString(format)[i];
-                //    else if (i>10)
+                //    else if (i > 10)
                 //        Login.timeIn += time.ToString(format)[i];
                 //}
-                //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','" + datatype + "','" + Login.dateIn + "','" +Login.timeIn + "','" + time.ToString(format) + "')", conn);
+                //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID  + "','" + datatype + "','" + Login.dateIn + "','" + Login.timeIn + "','" + time.ToString(format) + "')", conn);
                 //SqlDataAdapter da = new SqlDataAdapter(sda1);
                 //DataSet ds = new DataSet();
                 //da.Fill(ds);

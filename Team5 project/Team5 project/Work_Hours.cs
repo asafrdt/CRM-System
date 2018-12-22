@@ -14,9 +14,9 @@ namespace Team5_project
   
     public partial class Work_Hours : Form
     {
-        SqlDataAdapter sda;
-        SqlCommandBuilder scb;
         DataTable dt;
+        SqlCommandBuilder scb;
+        SqlDataAdapter sda;
         public Work_Hours()
         {
             InitializeComponent();
@@ -24,26 +24,37 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*try
+            try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                string sql = "select Username,logdate ad 'Date', min(logtime) as 'IN',max(logtime) as 'OUT', " +
-                    " CAST(((strftime('%s', max(logtime)  ) - strftime('%s',  min(logtime)  )) %(60*60*24))/(60*60) AS TEXT) || ':' || " +
-                    " CAST(((strftime('%s', max(logtime)  ) - strftime('%s',  min(logtime)  )) %(60*60*24))%(60*60)) / 60 AS TEXT) as 'HOURS - HH:MM'   " +
-                    "FROM Work_card group by Username,logdate order by logdate";
-               
-                sda = new SqlDataAdapter(sql, con);
+                string sql = "SELECT Username  ,logdate as 'Date' , MIN(logtime) as 'IN' , MAX(logtime) as 'OUT', " +
+                    " CAST(((strftime('%s', max(logtime)) - strftime('%s', min(logtime))) % (60 * 60 * 24)) / (60 * 60) AS TEXT) || ':' || " +
+                    " CAST((((strftime('%s', max(logtime)) - strftime('%s', min(logtime))) % (60 * 60 * 24)) % (60 * 60)) / 60 AS TEXT) as 'HOURS - HH:MM'  " +
+                    " FROM Work_card  group by Username , logdate order by logdate";
+                //group by Username,logdate order by logdate"
+                sda = new SqlDataAdapter();
                 SqlCommand cmd = new SqlCommand(sql, con);
-                dt = new DataTable(sql);
-                SqlDataAdapter ad = new SqlDataAdapter(cmd);
-
+                sda.SelectCommand = cmd;
+                dt = new DataTable();
+                BindingSource bsource = new BindingSource();
                 sda.Fill(dt);
+                bsource.DataSource = dt;
                 dataGridView2.DataSource = dt;
-            }
-            catch
-            {
+                /*BindingSource bsource = new BindingSource();
+                bsource.DataSource = dt;
+                dataGridView2.DataSource = bsource;
 
-            }*/
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                //da.Fill(ds);
+                sda = new SqlDataAdapter(sql, con);
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;*/
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -42,7 +42,6 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
@@ -60,13 +59,12 @@
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Default;
             this.dataGridView2.Location = new System.Drawing.Point(27, 25);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.Size = new System.Drawing.Size(943, 286);
             this.dataGridView2.TabIndex = 4;
-            this.dataGridView2.UseWaitCursor = true;
             // 
             // Work_Hours
             // 
