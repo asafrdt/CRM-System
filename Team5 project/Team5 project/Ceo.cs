@@ -22,20 +22,16 @@ namespace Team5_project
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            //DateTime time = DateTime.Now;
-            //String format = "yyyy-MM-dd HH:mm:ss", datatype = "OUT";
-            //for (int i = 0; i < 19; i++)
-            //{
-            //    if (i < 10)
-            //        Login.dateOut += time.ToString(format)[i];
-            //    else if (i > 10)
-            //        Login.timeOut += time.ToString(format)[i];
-            //}
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
-            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','"  + datatype + "','" + Login.dateOut + "','" + Login.timeOut + "','" + time.ToString(format) + "')", conn);
-            //SqlDataAdapter da = new SqlDataAdapter(sda1);
-            //DataSet ds = new DataSet();
-            //da.Fill(ds);
+            Login.timeLogout = DateTime.Now;
+            Login.timeOut = Login.timeLogout.TimeOfDay;
+            TimeSpan diff = Login.timeLogout.Subtract(Login.timeLogin);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "')", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
             List<Form> openForms = new List<Form>();
 
             foreach (Form f in Application.OpenForms)
@@ -70,21 +66,16 @@ namespace Team5_project
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //DateTime time = DateTime.Now;
-            //String format = "yyyy-MM-dd HH:mm:ss", datatype = "OUT";
-            //for (int i = 0; i < 19; i++)
-            //{
-            //    if (i < 10)
-            //        Login.dateOut += time.ToString(format)[i];
-            //    else if (i > 10)
-            //        Login.timeOut += time.ToString(format)[i];
-            //}
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
+            Login.timeLogout = DateTime.Now;
+            Login.timeOut = Login.timeLogout.TimeOfDay;
+            TimeSpan diff = Login.timeLogout.Subtract(Login.timeLogin);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
 
-            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,datatype,logdate,logtime,logdatetime) VALUES ('" + Login.UserID + "','" + datatype + "','" + Login.dateOut + "','" + Login.timeOut + "','" + time.ToString(format) + "')", conn);
-            //SqlDataAdapter da = new SqlDataAdapter(sda1);
-            //DataSet ds = new DataSet();
-            //da.Fill(ds);
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "')", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
             Application.Exit();
         }
 

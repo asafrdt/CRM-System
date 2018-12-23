@@ -27,29 +27,16 @@ namespace Team5_project
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                string sql = "SELECT Username  ,logdate as 'Date' , MIN(logtime) as 'IN' , MAX(logtime) as 'OUT', " +
-                    " CAST(((strftime('%s', max(logtime)) - strftime('%s', min(logtime))) % (60 * 60 * 24)) / (60 * 60) AS TEXT) || ':' || " +
-                    " CAST((((strftime('%s', max(logtime)) - strftime('%s', min(logtime))) % (60 * 60 * 24)) % (60 * 60)) / 60 AS TEXT) as 'HOURS - HH:MM'  " +
-                    " FROM Work_card  group by Username , logdate order by logdate";
-                //group by Username,logdate order by logdate"
+
+ 
+       
                 sda = new SqlDataAdapter();
-                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlCommand cmd = new SqlCommand(@"select Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card", con);
                 sda.SelectCommand = cmd;
                 dt = new DataTable();
-                BindingSource bsource = new BindingSource();
                 sda.Fill(dt);
-                bsource.DataSource = dt;
                 dataGridView2.DataSource = dt;
-                /*BindingSource bsource = new BindingSource();
-                bsource.DataSource = dt;
-                dataGridView2.DataSource = bsource;
 
-                SqlDataAdapter ad = new SqlDataAdapter(cmd);
-                dt = new DataTable();
-                //da.Fill(ds);
-                sda = new SqlDataAdapter(sql, con);
-                sda.Fill(dt);
-                dataGridView2.DataSource = dt;*/
             }
             catch (Exception ex)
             {
