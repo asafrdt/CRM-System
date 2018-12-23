@@ -403,6 +403,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shopping_carttt2 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-carttt2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shut_down_icon {
             get {
                 object obj = ResourceManager.GetObject("shut-down-icon", resourceCulture);

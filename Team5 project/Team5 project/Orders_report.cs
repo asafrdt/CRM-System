@@ -19,7 +19,7 @@ namespace Team5_project
         {
             InitializeComponent();
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select Id,Product_name,Price, Quantity, Date, Seller_name, Buyer_name FROM Orders", con);
+            sda = new SqlDataAdapter(@"select EId,Product_Serial,Price, Quantity, Date, Seller_name, Buyer_Id FROM Orders", con);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;

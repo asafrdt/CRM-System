@@ -36,16 +36,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Logout_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Store_button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Logout_button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -104,9 +104,9 @@
             // 
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1115, 41);
+            this.label2.Location = new System.Drawing.Point(1108, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 29);
+            this.label2.Size = new System.Drawing.Size(58, 30);
             this.label2.TabIndex = 39;
             this.label2.UseCompatibleTextRendering = true;
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -120,6 +120,24 @@
             this.label5.Size = new System.Drawing.Size(94, 30);
             this.label5.TabIndex = 42;
             this.label5.Text = "Name:";
+            // 
+            // Logout_button
+            // 
+            this.Logout_button.FlatAppearance.BorderSize = 0;
+            this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_button.ForeColor = System.Drawing.Color.White;
+            this.Logout_button.Image = global::Team5_project.Properties.Resources.door_exit;
+            this.Logout_button.Location = new System.Drawing.Point(1160, 4);
+            this.Logout_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Logout_button.Name = "Logout_button";
+            this.Logout_button.Size = new System.Drawing.Size(117, 68);
+            this.Logout_button.TabIndex = 15;
+            this.Logout_button.Tag = "Store";
+            this.Logout_button.Text = " Logout";
+            this.Logout_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Logout_button.UseVisualStyleBackColor = true;
+            this.Logout_button.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label3
             // 
@@ -153,23 +171,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(182, 595);
             this.panel2.TabIndex = 36;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Team5_project.Properties.Resources.shut_down_icon;
-            this.button1.Location = new System.Drawing.Point(1220, 608);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 59);
-            this.button1.TabIndex = 16;
-            this.button1.Tag = "Store";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button5
             // 
@@ -261,23 +262,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // Logout_button
+            // button1
             // 
-            this.Logout_button.FlatAppearance.BorderSize = 0;
-            this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logout_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout_button.ForeColor = System.Drawing.Color.White;
-            this.Logout_button.Image = global::Team5_project.Properties.Resources.door_exit;
-            this.Logout_button.Location = new System.Drawing.Point(1160, 4);
-            this.Logout_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Logout_button.Name = "Logout_button";
-            this.Logout_button.Size = new System.Drawing.Size(117, 68);
-            this.Logout_button.TabIndex = 15;
-            this.Logout_button.Tag = "Store";
-            this.Logout_button.Text = " Logout";
-            this.Logout_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Logout_button.UseVisualStyleBackColor = true;
-            this.Logout_button.Click += new System.EventHandler(this.button3_Click_1);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Team5_project.Properties.Resources.shut_down_icon;
+            this.button1.Location = new System.Drawing.Point(1220, 608);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 59);
+            this.button1.TabIndex = 16;
+            this.button1.Tag = "Store";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Ceo
             // 

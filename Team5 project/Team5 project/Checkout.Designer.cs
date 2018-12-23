@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.CashRegister = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.CashRegister = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,43 +51,6 @@
             this.label1.Size = new System.Drawing.Size(279, 62);
             this.label1.TabIndex = 2;
             this.label1.Text = "Checkout";
-            this.label1.UseWaitCursor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Team5_project.Properties.Resources.desktop_computer_screen_with_magnifying_glass_and_list1;
-            this.button1.Location = new System.Drawing.Point(489, 86);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 124);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Choose Product";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // CashRegister
-            // 
-            this.CashRegister.FlatAppearance.BorderSize = 0;
-            this.CashRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CashRegister.ForeColor = System.Drawing.Color.White;
-            this.CashRegister.Image = global::Team5_project.Properties.Resources.users_group1;
-            this.CashRegister.Location = new System.Drawing.Point(125, 86);
-            this.CashRegister.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.CashRegister.Name = "CashRegister";
-            this.CashRegister.Size = new System.Drawing.Size(283, 124);
-            this.CashRegister.TabIndex = 0;
-            this.CashRegister.Text = "Placing a costumer";
-            this.CashRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.CashRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.CashRegister.UseVisualStyleBackColor = true;
-            this.CashRegister.UseWaitCursor = true;
-            this.CashRegister.Click += new System.EventHandler(this.CashRegister_Click);
             // 
             // label2
             // 
@@ -95,26 +61,14 @@
             this.label2.Size = new System.Drawing.Size(236, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "Customer ID: ";
-            this.label2.UseWaitCursor = true;
-            // 
-            // label3
-            // 
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(584, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 34);
-            this.label3.TabIndex = 4;
-            this.label3.UseWaitCursor = true;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(342, 37);
+            this.label4.Location = new System.Drawing.Point(342, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 34);
             this.label4.TabIndex = 6;
-            this.label4.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -125,17 +79,96 @@
             this.label5.Size = new System.Drawing.Size(236, 45);
             this.label5.TabIndex = 5;
             this.label5.Text = "Product Serial: ";
-            this.label5.UseWaitCursor = true;
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(584, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(163, 34);
+            this.label6.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Team5_project.Properties.Resources.shopping_carttt2;
+            this.button2.Location = new System.Drawing.Point(515, 86);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(283, 124);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Make a sell";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Team5_project.Properties.Resources.desktop_computer_screen_with_magnifying_glass_and_list1;
+            this.button1.Location = new System.Drawing.Point(277, 86);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(228, 124);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Choose Product";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CashRegister
+            // 
+            this.CashRegister.FlatAppearance.BorderSize = 0;
+            this.CashRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CashRegister.ForeColor = System.Drawing.Color.White;
+            this.CashRegister.Image = global::Team5_project.Properties.Resources.users_group1;
+            this.CashRegister.Location = new System.Drawing.Point(14, 86);
+            this.CashRegister.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.CashRegister.Name = "CashRegister";
+            this.CashRegister.Size = new System.Drawing.Size(253, 124);
+            this.CashRegister.TabIndex = 0;
+            this.CashRegister.Text = "Placing a costumer";
+            this.CashRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CashRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.CashRegister.UseVisualStyleBackColor = true;
+            this.CashRegister.Click += new System.EventHandler(this.CashRegister_Click);
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(312, 335);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 34);
+            this.label3.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(312, 311);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(236, 45);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "QUANTITY";
             // 
             // Checkout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(860, 680);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -160,8 +193,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label7;
     }
 }

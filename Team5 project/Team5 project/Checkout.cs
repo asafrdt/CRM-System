@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Team5_project
 {
@@ -65,7 +67,39 @@ namespace Team5_project
         private void Checkout_Load(object sender, EventArgs e)
         {
             label4.Text = ExitingCoustumer.Customer;
-            label3.Text = FindProduct.Product;
+            label6.Text = FindProduct.Product;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (label4.Text == "" && label6.Text == "") MessageBox.Show("You didn't place a costumer and Product!");
+            else if (label4.Text == "") MessageBox.Show("You didn't place a costumer!");
+            else if (label6.Text == "") MessageBox.Show("You didn't place a Product!");
+            else
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                SqlDataAdapter sda = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + FindProduct.Product + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                string New_price = dt.Rows[0]["Price"].ToString();
+                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id) VALUES ('" + FindProduct.Product + "','" + New_price + "','" + FindProduct.Quantity + "','" + Login.dateIn + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "')", conn);
+                SqlDataAdapter da = new SqlDataAdapter(sda2);
+                DataTable dt1 = new DataTable();
+                da.Fill(dt1);
+                if (MessageBox.Show("Greetings, the product was successfully sold.Would you like to choose another product?","", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    this.Close();
+                    FindProduct mm = new FindProduct();
+                    mm.Show();
+                }
+                else
+                {
+                    this.Close();
+                }
+
+            }
+
+
         }
     }
 }

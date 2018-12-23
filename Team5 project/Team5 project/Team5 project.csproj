@@ -249,6 +249,12 @@
     <Compile Include="Remove_Supllier.Designer.cs">
       <DependentUpon>Remove_Supllier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sell.Designer.cs">
+      <DependentUpon>Sell.cs</DependentUpon>
+    </Compile>
     <Compile Include="Show_Edit_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -536,6 +542,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\business-report-with-growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-carttt2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
