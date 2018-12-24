@@ -55,7 +55,7 @@ namespace Team5_project
 
             if (dt.Rows.Count>0)
             {
-                //Login.UserID = textBox1.Text;
+                Login.UserID = textBox1.Text;
                 //timeLogin = DateTime.Now;
                 //String format = "yyyy-MM-dd HH:mm:ss";
                 //for (int i = 0; i < 10; i++)

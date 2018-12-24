@@ -20,11 +20,11 @@ namespace Team5_project
         public Show_Edit_Employees()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select Id,Full_name,mobile,Gender FROM Extend_Employees", con);
-            dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            //sda = new SqlDataAdapter(@"select Id,Full_name,mobile,Gender FROM Extend_Employees", con);
+            //dt = new DataTable();
+            //sda.Fill(dt);
+            //dataGridView1.DataSource = dt;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +41,16 @@ namespace Team5_project
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void Show_Edit_Employees_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
