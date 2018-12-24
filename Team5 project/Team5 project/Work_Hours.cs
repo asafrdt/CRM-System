@@ -54,6 +54,10 @@ namespace Team5_project
                 dt = new DataTable();
                 sda.Fill(dt);
                 dataGridView2.DataSource = dt;
+                if(comboBox1.Text == "")
+                {
+                    MessageBox.Show("Please choose an employee ! ","alert", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                }
 
             }
             catch (Exception ex)
@@ -64,6 +68,24 @@ namespace Team5_project
         private void Work_Hours_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                sda = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand(@"select Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card" + "", con);
+                sda.SelectCommand = cmd;
+                dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
