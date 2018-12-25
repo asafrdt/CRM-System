@@ -41,6 +41,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +60,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(17, 224);
+            this.label2.Location = new System.Drawing.Point(12, 249);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 45);
             this.label2.TabIndex = 3;
@@ -68,7 +69,7 @@
             // label4
             // 
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(187, 224);
+            this.label4.Location = new System.Drawing.Point(117, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 34);
             this.label4.TabIndex = 6;
@@ -77,7 +78,7 @@
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(17, 269);
+            this.label5.Location = new System.Drawing.Point(12, 294);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(236, 45);
             this.label5.TabIndex = 5;
@@ -87,7 +88,7 @@
             // label6
             // 
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(222, 269);
+            this.label6.Location = new System.Drawing.Point(134, 294);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 34);
             this.label6.TabIndex = 7;
@@ -98,10 +99,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.shopping_carttt2;
-            this.button2.Location = new System.Drawing.Point(515, 86);
+            this.button2.Location = new System.Drawing.Point(14, 96);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(283, 124);
+            this.button2.Size = new System.Drawing.Size(253, 124);
             this.button2.TabIndex = 8;
             this.button2.Text = "Make a sell";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -115,10 +116,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.desktop_computer_screen_with_magnifying_glass_and_list1;
-            this.button1.Location = new System.Drawing.Point(277, 86);
+            this.button1.Location = new System.Drawing.Point(540, 96);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 124);
+            this.button1.Size = new System.Drawing.Size(253, 124);
             this.button1.TabIndex = 1;
             this.button1.Text = "Choose Product";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -132,7 +133,7 @@
             this.CashRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CashRegister.ForeColor = System.Drawing.Color.White;
             this.CashRegister.Image = global::Team5_project.Properties.Resources.users_group1;
-            this.CashRegister.Location = new System.Drawing.Point(14, 86);
+            this.CashRegister.Location = new System.Drawing.Point(277, 96);
             this.CashRegister.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.CashRegister.Name = "CashRegister";
             this.CashRegister.Size = new System.Drawing.Size(253, 124);
@@ -146,16 +147,17 @@
             // label3
             // 
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(161, 357);
+            this.label3.Location = new System.Drawing.Point(101, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 34);
             this.label3.TabIndex = 10;
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(17, 357);
+            this.label7.Location = new System.Drawing.Point(12, 382);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 45);
             this.label7.TabIndex = 9;
@@ -165,7 +167,7 @@
             // 
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(272, 520);
+            this.label8.Location = new System.Drawing.Point(12, 427);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 45);
             this.label8.TabIndex = 11;
@@ -174,26 +176,36 @@
             // label9
             // 
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(423, 520);
+            this.label9.Location = new System.Drawing.Point(102, 422);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(163, 34);
             this.label9.TabIndex = 12;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(17, 312);
+            this.label10.Location = new System.Drawing.Point(12, 337);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(236, 45);
             this.label10.TabIndex = 13;
             this.label10.Text = "Product name:";
+            // 
+            // label11
+            // 
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(134, 337);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(163, 34);
+            this.label11.TabIndex = 14;
             // 
             // Checkout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(860, 680);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -236,5 +248,6 @@
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label11;
     }
 }

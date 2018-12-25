@@ -68,6 +68,10 @@ namespace Team5_project
         {
             label4.Text = ExitingCoustumer.Customer;
             label6.Text = FindProduct.Product;
+            label11.Text = FindProduct.Product_name;
+            label3.Text = FindProduct.Quantity;
+            if (FindProduct.int_Product_price !=0) 
+            label9.Text = FindProduct.int_Product_price.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -82,12 +86,15 @@ namespace Team5_project
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 string New_price = dt.Rows[0]["Price"].ToString();
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id) VALUES ('" + FindProduct.Product + "','" + New_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "')", conn);
+                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id) VALUES ('" + FindProduct.Product + "','" + FindProduct.int_Product_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "')", conn);
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);
                 if (MessageBox.Show("Greetings, the product was successfully sold.Would you like to choose another product?","", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
+                    FindProduct.Product="";
+                    FindProduct.Product_name="";
+                    FindProduct.Quantity="";
                     this.Close();
                     FindProduct mm = new FindProduct();
                     mm.Show();
@@ -99,6 +106,11 @@ namespace Team5_project
 
             }
 
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

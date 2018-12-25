@@ -94,10 +94,15 @@ namespace Team5_project
         private void button2_Click_1(object sender, EventArgs e)
         {
             ExitingCoustumer.Customer = CostumerSearch.Text;
-            MessageBox.Show(Customer, "you place this customer:", MessageBoxButtons.OK);            
+            MessageBox.Show(Customer, "You place this customer:", MessageBoxButtons.OK);            
             this.Close();
             Checkout ss = new Checkout();
             ss.label4.Text = ExitingCoustumer.Customer;
+            ss.label6.Text = FindProduct.Product;
+            ss.label3.Text = FindProduct.Quantity;
+            ss.label11.Text = FindProduct.Product_name;
+            if (FindProduct.int_Product_price != 0)
+                ss.label9.Text = FindProduct.int_Product_price.ToString();
             ss.Show();
         }
     }
