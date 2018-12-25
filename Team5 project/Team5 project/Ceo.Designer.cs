@@ -80,9 +80,9 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(25, 13);
+            this.textBox1.Location = new System.Drawing.Point(3, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 88);
+            this.textBox1.Size = new System.Drawing.Size(179, 147);
             this.textBox1.TabIndex = 37;
             this.textBox1.Text = "TAY.PC";
             // 
@@ -117,7 +117,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(1050, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 30);
+            this.label5.Size = new System.Drawing.Size(155, 49);
             this.label5.TabIndex = 42;
             this.label5.Text = "Name:";
             // 
@@ -154,7 +154,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(1050, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 30);
+            this.label4.Size = new System.Drawing.Size(123, 49);
             this.label4.TabIndex = 41;
             this.label4.Text = "Type:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
