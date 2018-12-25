@@ -140,6 +140,12 @@
     <Compile Include="CeoReports.Designer.cs">
       <DependentUpon>CeoReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="Change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_password.Designer.cs">
+      <DependentUpon>Change_password.cs</DependentUpon>
+    </Compile>
     <Compile Include="Checkout.cs">
       <SubType>Form</SubType>
     </Compile>
