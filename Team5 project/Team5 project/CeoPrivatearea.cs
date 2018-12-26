@@ -32,5 +32,11 @@ namespace Team5_project
             CashierWorkSchedule mm = new CashierWorkSchedule();
             mm.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Change_password mm = new Change_password();
+            mm.Show();
+        }
     }
 }

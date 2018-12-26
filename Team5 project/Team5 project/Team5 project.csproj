@@ -325,6 +325,9 @@
     <EmbeddedResource Include="CeoEditWorker.resx">
       <DependentUpon>CeoEditWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Change_password.resx">
+      <DependentUpon>Change_password.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
@@ -555,6 +558,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping-carttt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entering-password2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

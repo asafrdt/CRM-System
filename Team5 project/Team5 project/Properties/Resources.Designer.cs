@@ -203,6 +203,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap entering_password {
+            get {
+                object obj = ResourceManager.GetObject("entering-password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_black_leather_vector {
             get {
                 object obj = ResourceManager.GetObject("free-black-leather-vector", resourceCulture);
