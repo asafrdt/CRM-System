@@ -49,9 +49,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(199, 331);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(390, 49);
+            this.label5.Size = new System.Drawing.Size(511, 49);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Employee to show:";
+            this.label5.Text = "Choose employee name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dataGridView2

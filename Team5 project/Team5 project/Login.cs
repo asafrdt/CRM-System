@@ -91,7 +91,7 @@ namespace Team5_project
             }
             else
             {
-                MessageBox.Show("please enter correct username and password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter correct Username and Password", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -27,8 +27,10 @@ namespace Team5_project
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
             {
-                MessageBox.Show("The ID allready exists in the system, go to 'Exiting Costumer page'", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("This ID is already exists in the system\nPlease go to 'Exiting Costumer page'", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (IDBox.Text == "" || FullnameBox.Text == "" || PhoneBox.Text == "")
+                MessageBox.Show("There is still empty fields\nPlease make sure you fill all fields", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "')", conn);
@@ -39,10 +41,10 @@ namespace Team5_project
 
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-              
+
                 // DataSet ds2 = new DataSet();
                 // da1.Fill(ds2);
-                MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }

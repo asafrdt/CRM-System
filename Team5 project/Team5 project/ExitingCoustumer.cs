@@ -94,7 +94,7 @@ namespace Team5_project
         private void button2_Click_1(object sender, EventArgs e)
         {
             ExitingCoustumer.Customer = CostumerSearch.Text;
-            MessageBox.Show(Customer, "You place this customer:", MessageBoxButtons.OK);            
+            MessageBox.Show(Customer, "You have place this customer:", MessageBoxButtons.OK);            
             this.Close();
             Checkout ss = new Checkout();
             ss.label4.Text = ExitingCoustumer.Customer;

@@ -108,7 +108,7 @@ namespace Team5_project
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);
-                if (MessageBox.Show("Greetings, the product was successfully sold.Would you like to choose another product?","", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Greetings, the product was successfully sold\nWould you like to choose another product?","Success", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     FindProduct.Product="";
                     FindProduct.Product_name="";

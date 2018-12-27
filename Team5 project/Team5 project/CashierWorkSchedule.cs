@@ -38,9 +38,9 @@ namespace Team5_project
             if (Username.Text == "" || to.Text == "" || body.Text == "")
             {
                 if (Username.Text == "")
-                    MessageBox.Show("from could not be empty field!");
+                    MessageBox.Show("FROM field cannot be empty!");
                 else if (to.Text == "")
-                    MessageBox.Show("to could not be empty field!");
+                    MessageBox.Show("TO field cannot be empty!");
                 else if (body.Text == "")
                     MessageBox.Show(" !לא הוכנסו אילוצים");
             }
@@ -61,12 +61,12 @@ namespace Team5_project
                 {
                     client.Send(mail);
                     this.timer1.Start();
-                    MessageBox.Show("Mail Sent!", "Success", MessageBoxButtons.OK);
+                    MessageBox.Show("Mail has been Sent!", "Success", MessageBoxButtons.OK);
                 }
 
                 catch (Exception ex)
                 {
-                    MessageBox.Show("wrong password!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Wrong password!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     System.Diagnostics.Debug.WriteLine("Exception Message: " + ex.Message);
                     if (ex.InnerException != null)
                         System.Diagnostics.Debug.WriteLine("Exception Inner:   " + ex.InnerException);

@@ -89,37 +89,42 @@ namespace Team5_project
         {
             FindProduct.Product = ProductSearch.Text;
             FindProduct.Quantity = textBox1.Text;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda3 = new SqlDataAdapter("select Product_name from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
-            DataTable dt2 = new DataTable();
-            sda3.Fill(dt2);
-            SqlDataAdapter sda = new SqlDataAdapter("select Quantity from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            SqlDataAdapter sda2 = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
-            DataTable dt3 = new DataTable();
-            sda2.Fill(dt3);
-            FindProduct.Product_name = dt2.Rows[0]["Product_name"].ToString();
-            FindProduct.Product_price = dt3.Rows[0]["Price"].ToString();
-            string New_Q1 = dt.Rows[0]["Quantity"].ToString();
-            int Q = Convert.ToInt32(New_Q1);
-            int Q1 = Convert.ToInt32(FindProduct.Quantity);
-            int P = Convert.ToInt32(FindProduct.Product_price);
-            int Total_price = Q1 * P;
-            FindProduct.int_Product_price = Total_price;
-            if (Q1 > Q)
-                MessageBox.Show("There are not enough products in the store inventory","ERROR", MessageBoxButtons.RetryCancel);
+            if (Quantity == "")
+                MessageBox.Show("You have not enter quantity!\nPlease enter quantity!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                int NewQ = Q - Q1;
-          
-                this.Close();
-                Checkout ss = new Checkout();
-                ss.label6.Text = FindProduct.Product;
-                ss.label3.Text = FindProduct.Quantity;
-                ss.label11.Text = FindProduct.Product_name;
-                ss.label9.Text = Total_price.ToString();
-                ss.Show();
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                SqlDataAdapter sda3 = new SqlDataAdapter("select Product_name from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                DataTable dt2 = new DataTable();
+                sda3.Fill(dt2);
+                SqlDataAdapter sda = new SqlDataAdapter("select Quantity from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                SqlDataAdapter sda2 = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                DataTable dt3 = new DataTable();
+                sda2.Fill(dt3);
+                FindProduct.Product_name = dt2.Rows[0]["Product_name"].ToString();
+                FindProduct.Product_price = dt3.Rows[0]["Price"].ToString();
+                string New_Q1 = dt.Rows[0]["Quantity"].ToString();
+                int Q = Convert.ToInt32(New_Q1);
+                int Q1 = Convert.ToInt32(FindProduct.Quantity);
+                int P = Convert.ToInt32(FindProduct.Product_price);
+                int Total_price = Q1 * P;
+                FindProduct.int_Product_price = Total_price;
+                if (Q1 > Q)
+                    MessageBox.Show("There are not enough products in the store inventory", "ERROR", MessageBoxButtons.RetryCancel);
+                else
+                {
+                    int NewQ = Q - Q1;
+
+                    this.Close();
+                    Checkout ss = new Checkout();
+                    ss.label6.Text = FindProduct.Product;
+                    ss.label3.Text = FindProduct.Quantity;
+                    ss.label11.Text = FindProduct.Product_name;
+                    ss.label9.Text = Total_price.ToString();
+                    ss.Show();
+                }
             }
         }
 

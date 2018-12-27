@@ -47,7 +47,7 @@ namespace Team5_project
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
             {
-                MessageBox.Show("Serial number allready exists in the system, Change the quantity on the Edit window." ,"alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Serial number is already exists in the system\nChange the quantity on the Edit window." ,"alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -55,7 +55,7 @@ namespace Team5_project
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("New stock has been added", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }

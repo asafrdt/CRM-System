@@ -37,7 +37,7 @@ namespace Team5_project
             conn.Open();
             cmd = conn.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select username from Employees";
+            cmd.CommandText = "Select username from Employees";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             sda = new SqlDataAdapter(cmd);
@@ -55,7 +55,7 @@ namespace Team5_project
             {
                 if (comboBox1.Text != Login.UserID)
                 {
-                    MessageBox.Show("Your not authorized to see others hour report\nPlease choose your own name! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Your unauthorized to see others hour report\nPlease choose your own name! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

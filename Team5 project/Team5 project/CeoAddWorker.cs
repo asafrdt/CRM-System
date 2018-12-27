@@ -27,7 +27,7 @@ namespace Team5_project
             sda.Fill(dt);
             if (dt.Rows.Count ==1 )
             {
-                MessageBox.Show("The username allready exists in the system, select another user name", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The username is already exists in the system\nPlease select another user name", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -43,7 +43,7 @@ namespace Team5_project
                 da1.Fill(ds1);
                // DataSet ds2 = new DataSet();
                // da1.Fill(ds2);
-                MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                
             }
         }

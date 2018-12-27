@@ -84,7 +84,7 @@
             this.label11.Location = new System.Drawing.Point(55, 49);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 23);
+            this.label11.Size = new System.Drawing.Size(112, 49);
             this.label11.TabIndex = 31;
             this.label11.Text = "from";
             // 
@@ -94,7 +94,7 @@
             this.label9.Location = new System.Drawing.Point(55, 246);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 23);
+            this.label9.Size = new System.Drawing.Size(118, 49);
             this.label9.TabIndex = 30;
             this.label9.Text = "smtp";
             // 
@@ -104,7 +104,7 @@
             this.label1.Location = new System.Drawing.Point(55, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 23);
+            this.label1.Size = new System.Drawing.Size(62, 49);
             this.label1.TabIndex = 34;
             this.label1.Text = "to";
             // 
@@ -114,7 +114,7 @@
             this.label3.Location = new System.Drawing.Point(55, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 23);
+            this.label3.Size = new System.Drawing.Size(164, 49);
             this.label3.TabIndex = 36;
             this.label3.Text = "subject";
             // 
@@ -124,7 +124,7 @@
             this.label4.Location = new System.Drawing.Point(55, 193);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 23);
+            this.label4.Size = new System.Drawing.Size(204, 49);
             this.label4.TabIndex = 40;
             this.label4.Text = "Password";
             // 
@@ -135,7 +135,7 @@
             this.label2.Location = new System.Drawing.Point(622, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 28);
+            this.label2.Size = new System.Drawing.Size(512, 56);
             this.label2.TabIndex = 43;
             this.label2.Text = "Write your text below:";
             // 
@@ -147,7 +147,7 @@
             this.label7.Location = new System.Drawing.Point(613, 313);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 23);
+            this.label7.Size = new System.Drawing.Size(525, 49);
             this.label7.TabIndex = 46;
             this.label7.Text = "Morning shift- 08:00 - 14:00";
             // 
@@ -159,7 +159,7 @@
             this.label8.Location = new System.Drawing.Point(613, 359);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(240, 23);
+            this.label8.Size = new System.Drawing.Size(482, 49);
             this.label8.TabIndex = 47;
             this.label8.Text = "Lunch shift- 12:00 - 18:00";
             // 
@@ -171,7 +171,7 @@
             this.label10.Location = new System.Drawing.Point(613, 406);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(246, 23);
+            this.label10.Size = new System.Drawing.Size(494, 49);
             this.label10.TabIndex = 48;
             this.label10.Text = "Evning shift- 16:00 - 22:00";
             // 
@@ -183,7 +183,7 @@
             this.label12.Location = new System.Drawing.Point(554, 266);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 23);
+            this.label12.Size = new System.Drawing.Size(135, 49);
             this.label12.TabIndex = 49;
             this.label12.Text = "ceo - ";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -193,16 +193,16 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(647, 266);
+            this.label14.Location = new System.Drawing.Point(613, 266);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(200, 23);
+            this.label14.Size = new System.Drawing.Size(406, 49);
             this.label14.TabIndex = 51;
             this.label14.Text = "asafrdt@gmail.com";
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(59, 296);
             this.button2.Name = "button2";
@@ -214,7 +214,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Adobe Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(486, 22);
             this.button3.Name = "button3";
@@ -229,7 +229,7 @@
             this.Username.Location = new System.Drawing.Point(185, 40);
             this.Username.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(216, 32);
+            this.Username.Size = new System.Drawing.Size(216, 57);
             this.Username.TabIndex = 57;
             // 
             // to
@@ -237,7 +237,7 @@
             this.to.Location = new System.Drawing.Point(185, 89);
             this.to.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(216, 32);
+            this.to.Size = new System.Drawing.Size(216, 57);
             this.to.TabIndex = 58;
             // 
             // Password
@@ -245,7 +245,7 @@
             this.Password.Location = new System.Drawing.Point(185, 188);
             this.Password.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(216, 32);
+            this.Password.Size = new System.Drawing.Size(216, 57);
             this.Password.TabIndex = 60;
             // 
             // subject
@@ -253,7 +253,7 @@
             this.subject.Location = new System.Drawing.Point(185, 137);
             this.subject.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(216, 32);
+            this.subject.Size = new System.Drawing.Size(216, 57);
             this.subject.TabIndex = 59;
             // 
             // body
@@ -267,14 +267,14 @@
             // smtp
             // 
             this.smtp.FormattingEnabled = true;
-            this.smtp.ItemHeight = 23;
+            this.smtp.ItemHeight = 49;
             this.smtp.Items.AddRange(new object[] {
             "smtp.gmail.com",
             "smtp.yahoo.com"});
             this.smtp.Location = new System.Drawing.Point(185, 238);
             this.smtp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.smtp.Name = "smtp";
-            this.smtp.Size = new System.Drawing.Size(216, 31);
+            this.smtp.Size = new System.Drawing.Size(216, 57);
             this.smtp.TabIndex = 64;
             // 
             // Attachment1
@@ -282,7 +282,7 @@
             this.Attachment1.Location = new System.Drawing.Point(185, 292);
             this.Attachment1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Attachment1.Name = "Attachment1";
-            this.Attachment1.Size = new System.Drawing.Size(216, 32);
+            this.Attachment1.Size = new System.Drawing.Size(216, 57);
             this.Attachment1.TabIndex = 65;
             // 
             // CashierWorkSchedule

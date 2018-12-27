@@ -66,7 +66,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(296, 254);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 31);
+            this.comboBox1.Size = new System.Drawing.Size(195, 57);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -76,9 +76,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(77, 262);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 23);
+            this.label5.Size = new System.Drawing.Size(511, 49);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Employee to show:";
+            this.label5.Text = "Choose employee name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button3

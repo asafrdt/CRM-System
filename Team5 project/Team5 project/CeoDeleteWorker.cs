@@ -39,7 +39,7 @@ namespace Team5_project
                 cmd.CommandText = "delete from Extend_Employees where id='" + DeleteIDBox.Text + "'";
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("USER HAS BEEN DELETED", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("User has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

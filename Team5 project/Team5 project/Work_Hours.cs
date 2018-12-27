@@ -77,7 +77,7 @@ namespace Team5_project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
+                try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
                 sda = new SqlDataAdapter();

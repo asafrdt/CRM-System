@@ -26,7 +26,7 @@ namespace Team5_project
             sda2.Fill(dt2);
             if (dt2.Rows.Count == 0)
             {
-                MessageBox.Show("the Id not exist in the system, please try again", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("This ID does not exist in the system\nplease try again", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -36,7 +36,7 @@ namespace Team5_project
                 cmd.CommandText = "delete from Suppllier where Id='" + DeleteSerialNumberBox.Text + "'";
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("Product has been deleted", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Product has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

@@ -26,7 +26,7 @@ namespace Team5_project
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
             {
-                MessageBox.Show("Id allready exists in the system!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ID is already exists in the system!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -34,7 +34,7 @@ namespace Team5_project
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                MessageBox.Show("TUDO BOM", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

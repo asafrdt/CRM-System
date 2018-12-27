@@ -28,7 +28,7 @@ namespace Team5_project
                 else if (UpdatePassword2.Text == "")
                     MessageBox.Show("New password is required!");
                 else if (UpdatePassword1.Text.Trim() != UpdatePassword2.Text.Trim())
-                    MessageBox.Show("The entered passwords do not match. try again");
+                    MessageBox.Show("The password you've enter doesn't match\n Please try again!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -40,7 +40,7 @@ namespace Team5_project
                     SqlDataAdapter da = new SqlDataAdapter(sda1);
                     DataTable dt1 = new DataTable();
                     da.Fill(dt1);
-                    MessageBox.Show("Password changed", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Password has been changed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch (Exception ex)
