@@ -40,7 +40,7 @@
             this.label1234.Location = new System.Drawing.Point(286, 9);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(155, 28);
+            this.label1234.Size = new System.Drawing.Size(258, 47);
             this.label1234.TabIndex = 11;
             this.label1234.Text = "Customer ID";
             // 
@@ -64,14 +64,14 @@
             this.DeleteSerialNumberBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteSerialNumberBox.MaximumSize = new System.Drawing.Size(500, 500);
             this.DeleteSerialNumberBox.Name = "DeleteSerialNumberBox";
-            this.DeleteSerialNumberBox.Size = new System.Drawing.Size(116, 37);
+            this.DeleteSerialNumberBox.Size = new System.Drawing.Size(116, 57);
             this.DeleteSerialNumberBox.TabIndex = 9;
             // 
             // Remove_Customer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(778, 394);
             this.Controls.Add(this.label1234);
             this.Controls.Add(this.SubmitBox);
             this.Controls.Add(this.DeleteSerialNumberBox);

@@ -55,7 +55,7 @@ namespace Team5_project
             {
                 if (comboBox1.Text != Login.UserID)
                 {
-                    MessageBox.Show("Please choose your name! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Your not authorized to see others hour report\nPlease choose your own name! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

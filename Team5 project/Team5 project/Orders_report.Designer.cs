@@ -64,7 +64,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(173, 141);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Make a orders report";
+            this.button3.Text = "Export Excel Order Report";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
