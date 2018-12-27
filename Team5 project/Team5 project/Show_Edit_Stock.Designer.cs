@@ -77,9 +77,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.business_report_with_growth;
-            this.button4.Location = new System.Drawing.Point(237, 211);
+            this.button4.Location = new System.Drawing.Point(239, 219);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 147);
+            this.button4.Size = new System.Drawing.Size(193, 147);
             this.button4.TabIndex = 13;
             this.button4.Text = "Export inventory to Excel";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
