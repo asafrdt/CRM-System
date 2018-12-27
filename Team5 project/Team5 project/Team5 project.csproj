@@ -120,12 +120,6 @@
     <Compile Include="CeoAddWorker.Designer.cs">
       <DependentUpon>CeoAddWorker.cs</DependentUpon>
     </Compile>
-    <Compile Include="CeoCashRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CeoCashRegister.Designer.cs">
-      <DependentUpon>CeoCashRegister.cs</DependentUpon>
-    </Compile>
     <Compile Include="CeoDeleteWorker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,12 +131,6 @@
     </Compile>
     <Compile Include="CeoEditWorker.Designer.cs">
       <DependentUpon>CeoEditWorker.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CeoReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CeoReports.Designer.cs">
-      <DependentUpon>CeoReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Change_password.cs">
       <SubType>Form</SubType>
@@ -196,6 +184,18 @@
     </Compile>
     <Compile Include="FindProduct.Designer.cs">
       <DependentUpon>FindProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralPrivateArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralPrivateArea.Designer.cs">
+      <DependentUpon>GeneralPrivateArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralWorkHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralWorkHours.Designer.cs">
+      <DependentUpon>GeneralWorkHours.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -258,12 +258,6 @@
     </Compile>
     <Compile Include="Remove_Supllier.Designer.cs">
       <DependentUpon>Remove_Supllier.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sell.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sell.Designer.cs">
-      <DependentUpon>Sell.cs</DependentUpon>
     </Compile>
     <Compile Include="Show_Edit_Customer.cs">
       <SubType>Form</SubType>
@@ -348,6 +342,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FindProduct.resx">
       <DependentUpon>FindProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralPrivateArea.resx">
+      <DependentUpon>GeneralPrivateArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralWorkHours.resx">
+      <DependentUpon>GeneralWorkHours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

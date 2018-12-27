@@ -49,7 +49,6 @@
             // 
             // dataGridView2
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -60,6 +59,7 @@
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.Size = new System.Drawing.Size(654, 196);
             this.dataGridView2.TabIndex = 4;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // comboBox1
             // 
@@ -68,6 +68,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(195, 57);
             this.comboBox1.TabIndex = 13;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -78,6 +79,7 @@
             this.label5.Size = new System.Drawing.Size(390, 49);
             this.label5.TabIndex = 12;
             this.label5.Text = "Employee to show:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button2
             // 

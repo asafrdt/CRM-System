@@ -105,6 +105,11 @@ namespace Team5_project
                 ss.label9.Text = FindProduct.int_Product_price.ToString();
             ss.Show();
         }
+
+        private void ExitingCoustumer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

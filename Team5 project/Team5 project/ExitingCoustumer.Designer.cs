@@ -46,7 +46,7 @@
             this.CostumerSearch.Location = new System.Drawing.Point(319, 14);
             this.CostumerSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CostumerSearch.Name = "CostumerSearch";
-            this.CostumerSearch.Size = new System.Drawing.Size(229, 37);
+            this.CostumerSearch.Size = new System.Drawing.Size(229, 57);
             this.CostumerSearch.TabIndex = 0;
             this.CostumerSearch.TextChanged += new System.EventHandler(this.CostumerSearch_TextChanged);
             // 
@@ -106,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(198, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 30);
+            this.label1.Size = new System.Drawing.Size(275, 49);
             this.label1.TabIndex = 4;
             this.label1.Text = "Customer ID:";
             // 
@@ -141,6 +141,7 @@
             this.Name = "ExitingCoustumer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ExitingCoustumer";
+            this.Load += new System.EventHandler(this.ExitingCoustumer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -112,6 +112,13 @@ namespace Team5_project
                 //    ds2.Tables.Add(dbdataset2);
                 //    ExcelLibrary.DataSetHelper.CreateWorkbook("Work_Hours_Report.xls", ds2);
                 //    MessageBox.Show("The file has succesfully been created!!!\nThe excel report had been created in folder:\n D:/Project/Team5/Team5/Team5 project/Team5 project/bin/Debug", "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                sda = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand(@"select Eid, Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card ", con);
+                sda.SelectCommand = cmd;
+                dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;
 
                 DataTable dbdataset = new DataTable();
                 BindingSource bSource = new BindingSource();
@@ -133,6 +140,21 @@ namespace Team5_project
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

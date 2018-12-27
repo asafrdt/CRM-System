@@ -120,6 +120,7 @@
             this.label5.Size = new System.Drawing.Size(155, 49);
             this.label5.TabIndex = 42;
             this.label5.Text = "Name:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Logout_button
             // 
