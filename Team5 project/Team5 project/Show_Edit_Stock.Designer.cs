@@ -42,16 +42,19 @@
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(150, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(109, 13);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(636, 190);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 190);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.UseWaitCursor = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -60,9 +63,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.update;
-            this.button1.Location = new System.Drawing.Point(416, 211);
+            this.button1.Location = new System.Drawing.Point(441, 210);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 147);
+            this.button1.Size = new System.Drawing.Size(225, 147);
             this.button1.TabIndex = 14;
             this.button1.Text = "Update";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -77,9 +80,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.business_report_with_growth;
-            this.button4.Location = new System.Drawing.Point(237, 211);
+            this.button4.Location = new System.Drawing.Point(213, 210);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 147);
+            this.button4.Size = new System.Drawing.Size(222, 147);
             this.button4.TabIndex = 13;
             this.button4.Text = "Export inventory to Excel";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,7 +92,7 @@
             // 
             // Show_Edit_Stock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(778, 394);

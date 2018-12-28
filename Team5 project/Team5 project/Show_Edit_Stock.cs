@@ -121,5 +121,10 @@ namespace Team5_project
             scb = new SqlCommandBuilder(sda);
             sda.Update(dt);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

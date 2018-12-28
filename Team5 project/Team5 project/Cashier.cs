@@ -65,7 +65,7 @@ namespace Team5_project
             foreach (Form f in forms)
                 f.Close();
 
-            Stock_Suppliers mm = new Stock_Suppliers();
+            CashierStock mm = new CashierStock();
             mm.Show();
         }
 

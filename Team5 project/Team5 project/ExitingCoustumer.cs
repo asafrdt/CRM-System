@@ -46,9 +46,10 @@ namespace Team5_project
 
                         if (dt.Rows.Count > 0)
                         { //check if the query returns any data
-                            dataGridView1.DataSource = dt;
                             ExitingCoustumer.Customer = CostumerSearch.Text;
+                            dataGridView1.DataSource = dt;
 
+                            
                             //dg1.DataBind();
                         }
                         else
@@ -93,17 +94,24 @@ namespace Team5_project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            ExitingCoustumer.Customer = CostumerSearch.Text;
-            MessageBox.Show(Customer, "You have place this customer:", MessageBoxButtons.OK);            
-            this.Close();
-            Checkout ss = new Checkout();
-            ss.label4.Text = ExitingCoustumer.Customer;
-            ss.label6.Text = FindProduct.Product;
-            ss.label3.Text = FindProduct.Quantity;
-            ss.label11.Text = FindProduct.Product_name;
-            if (FindProduct.int_Product_price != 0)
-                ss.label9.Text = FindProduct.int_Product_price.ToString();
-            ss.Show();
+            if (ExitingCoustumer.Customer != "" && CostumerSearch.Text != "" && ExitingCoustumer.Customer == CostumerSearch.Text)
+            {
+                MessageBox.Show(Customer, "You have place this customer:", MessageBoxButtons.OK);
+                this.Close();
+                Checkout ss = new Checkout();
+                ss.label4.Text = ExitingCoustumer.Customer;
+                ss.label6.Text = FindProduct.Product;
+                ss.label3.Text = FindProduct.Quantity;
+                ss.label11.Text = FindProduct.Product_name;
+                if (FindProduct.int_Product_price != 0)
+                    ss.label9.Text = FindProduct.int_Product_price.ToString();
+                ss.Show();
+            }
+            else
+            {
+                MessageBox.Show("You didnt place a customer, please try again","Error", MessageBoxButtons.OK);
+
+            }
         }
 
         private void ExitingCoustumer_Load(object sender, EventArgs e)

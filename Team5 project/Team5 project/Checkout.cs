@@ -84,15 +84,10 @@ namespace Team5_project
 
         private void Checkout_Load(object sender, EventArgs e)
         {
-            label4.Text = ExitingCoustumer.Customer;
-            label6.Text = FindProduct.Product;
-            label11.Text = FindProduct.Product_name;
-            label3.Text = FindProduct.Quantity;
-            if (FindProduct.int_Product_price !=0) 
-            label9.Text = FindProduct.int_Product_price.ToString();
+            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             if (label4.Text == "" && label6.Text == "") MessageBox.Show("You didn't place a costumer and Product!");
             else if (label4.Text == "") MessageBox.Show("You didn't place a costumer!");
@@ -108,18 +103,44 @@ namespace Team5_project
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);
-                if (MessageBox.Show("Greetings, the product was successfully sold\nWould you like to choose another product?","Success", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                try
                 {
-                    FindProduct.Product="";
-                    FindProduct.Product_name="";
-                    FindProduct.Quantity="";
+                    SqlCommand sda4 = new SqlCommand(" update Inventory set Quantity = '" + FindProduct.int_Update_quaintity + " ' where Serialnumber  ='" + FindProduct.Product + "'", conn);
+                    SqlDataAdapter da4 = new SqlDataAdapter(sda4);
+                    DataTable dt4 = new DataTable();
+                    da4.Fill(dt4);
+                    MessageBox.Show("Inventory Updeated", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (MessageBox.Show("Greetings, the product was successfully sold.Would you like to choose another product?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    FindProduct.Product = "";
+                    FindProduct.Product_name = "";
+                    FindProduct.Quantity = "";
                     this.Close();
                     FindProduct mm = new FindProduct();
                     mm.Show();
                 }
                 else
                 {
+                    FindProduct.Product = "";
+                    FindProduct.Product_name = "";
+                    FindProduct.Quantity = "";
+                    ExitingCoustumer.Customer = "";
+                    label4.Text = "";
                     this.Close();
+                    Checkout mm = new Checkout();
+                    mm.label4.Text = "";
+                    mm.label9.Text = "";
+                    mm.label6.Text = "";
+                    mm.label3.Text = "";
+                    mm.label11.Text = "";
+                    mm.Show();
+                    
                 }
             }
 
