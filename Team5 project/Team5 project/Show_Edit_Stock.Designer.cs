@@ -59,9 +59,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(450, 210);
+            this.button1.Image = global::Team5_project.Properties.Resources.update;
+            this.button1.Location = new System.Drawing.Point(416, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 148);
+            this.button1.Size = new System.Drawing.Size(173, 147);
             this.button1.TabIndex = 14;
             this.button1.Text = "Update";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -88,7 +89,7 @@
             // 
             // Show_Edit_Stock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 49F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(778, 394);
