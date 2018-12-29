@@ -99,7 +99,7 @@ namespace Team5_project
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 string New_price = dt.Rows[0]["Price"].ToString();
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id) VALUES ('" + FindProduct.Product + "','" + FindProduct.int_Product_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "')", conn);
+                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id,Year,Month) VALUES ('" + FindProduct.Product + "','" + FindProduct.int_Product_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "','" + Login.date1.Year + "','" + Login.date1.Month +  "')", conn);
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);

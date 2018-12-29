@@ -27,7 +27,7 @@ namespace Team5_project
             //TimeSpan diff = Login.timeLogout.Subtract(Login.timeLogin);
             //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
 
-            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "')", conn);
+            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours,Year,Month) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "','" + Login.date1.Year + "','" + Login.date1.Month + "')", conn);
             //SqlDataAdapter da = new SqlDataAdapter(sda1);
             //DataSet ds = new DataSet();
             //da.Fill(ds);
@@ -71,7 +71,7 @@ namespace Team5_project
             //TimeSpan diff = Login.timeLogout.Subtract(Login.timeLogin);
             //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
 
-            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "')", conn);
+            //SqlCommand sda1 = new SqlCommand("INSERT INTO Work_card (Username,logdate,logtimeIn,logtimeOut,CalculateHours,Year,Month) VALUES ('" + Login.UserID + "','" + Login.date + "','" + Login.timeLogin.Hour + ":" + Login.timeLogin.Minute + ":" + Login.timeLogin.Second + "','" + Login.timeLogout.Hour + ":" + Login.timeLogout.Minute + ":" + Login.timeLogout.Second + "','" + diff.Hours + ":" + diff.Minutes + ":" + diff.Seconds + "','" + Login.date1.Year + "','" + Login.date1.Month + "')", conn);
             //SqlDataAdapter da = new SqlDataAdapter(sda1);
             //DataSet ds = new DataSet();
             //da.Fill(ds);

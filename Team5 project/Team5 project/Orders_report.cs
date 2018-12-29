@@ -27,11 +27,6 @@ namespace Team5_project
         public Orders_report()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select EId,Product_Serial,Price, Quantity, Date, Seller_name, Buyer_Id FROM Orders", con);
-            dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
         }
 
         private void Orders_report_Load(object sender, EventArgs e)
@@ -98,6 +93,35 @@ namespace Team5_project
         {
 
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                sda = new SqlDataAdapter(@"select Product_Serial,Price, Quantity, Date, Seller_name, Buyer_Id FROM Orders WHERE Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
+                dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView1.DataSource = dt;
+                if (comboBox2.Text == "")
+                {
+                    MessageBox.Show("Please choose an Year ! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBox3.Text == "")
+                {
+                    MessageBox.Show("Please choose an Mobth ! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -21,18 +21,92 @@ namespace Team5_project
         public GeneralWorkHours()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter();
-            SqlCommand cmd = new SqlCommand(@"select Eid,Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + Login.UserID + "'", con);
-            sda.SelectCommand = cmd;
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView2.DataSource = dt;
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+                SqlDataAdapter sda = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand(@"select Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + Login.UserID + "' AND Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
+                sda.SelectCommand = cmd;
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;
+                if (comboBox2.Text == "")
+                {
+                    MessageBox.Show("Please choose an Year ! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBox3.Text == "")
+                {
+                    MessageBox.Show("Please choose an Mobth ! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Microsoft.Office.Interop.Excel.Application aplicacion;
+                Microsoft.Office.Interop.Excel.Workbook libros_trabajo;
+                Microsoft.Office.Interop.Excel.Worksheet hoja_trabajo;
+                aplicacion = new Microsoft.Office.Interop.Excel.Application();
+                libros_trabajo = aplicacion.Workbooks.Add();
+                hoja_trabajo =
+                    (Microsoft.Office.Interop.Excel.Worksheet)libros_trabajo.Worksheets.get_Item(1);
+
+                try
+                {
+                    for (int i = 0; i < dataGridView2.Columns.Count; i++)
+                    {
+                        hoja_trabajo.Cells[1, i + 1] = dataGridView2.Columns[i].HeaderText;
+                    }
+                    for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                    {
+                        for (int j = 0; j < dataGridView2.Columns.Count; j++)
+                        {
+                            if (dataGridView2.Rows[i].Cells[j].Value != null)
+                            {
+                                hoja_trabajo.Cells[i + 2, j + 1] = dataGridView2.Rows[i].Cells[j].Value.ToString();
+                            }
+                            else
+                            {
+                                hoja_trabajo.Cells[i + 2, j + 1] = "";
+                            }
+                        }
+                    }
+
+                    //Getting the location and file name of the excel to save from user. 
+                    SaveFileDialog saveDialog = new SaveFileDialog();
+                    saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    saveDialog.FilterIndex = 2;
+
+                    if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        hoja_trabajo.SaveAs(saveDialog.FileName);
+                        MessageBox.Show("Export Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message.ToString()); }
         }
     }
 }
