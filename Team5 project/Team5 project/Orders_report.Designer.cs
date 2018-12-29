@@ -62,9 +62,9 @@
             this.button3.Image = global::Team5_project.Properties.Resources.business_report_with_growth;
             this.button3.Location = new System.Drawing.Point(332, 229);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 141);
+            this.button3.Size = new System.Drawing.Size(258, 141);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Export Excel Order Report";
+            this.button3.Text = "Export Order Report as Excel file";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;

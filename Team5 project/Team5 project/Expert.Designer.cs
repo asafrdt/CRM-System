@@ -51,7 +51,7 @@
             // 
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1110, 40);
+            this.label2.Location = new System.Drawing.Point(1217, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 29);
             this.label2.TabIndex = 47;
@@ -61,7 +61,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1041, 40);
+            this.label5.Location = new System.Drawing.Point(1155, 113);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 30);
             this.label5.TabIndex = 50;
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1103, 12);
+            this.label3.Location = new System.Drawing.Point(1204, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 48;
@@ -180,7 +180,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(1041, 12);
+            this.label4.Location = new System.Drawing.Point(1155, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 30);
             this.label4.TabIndex = 49;
@@ -188,12 +188,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.Logout_button);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -246,9 +242,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1280, 680);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -257,10 +257,10 @@
             this.Text = "Exp";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

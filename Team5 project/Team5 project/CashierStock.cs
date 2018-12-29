@@ -15,7 +15,6 @@ namespace Team5_project
     public partial class CashierStock : Form
     {
         SqlDataAdapter sda;
-        SqlCommandBuilder scb;
         DataTable dt;
         public CashierStock()
         {

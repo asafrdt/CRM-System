@@ -46,7 +46,6 @@
             this.label1.Size = new System.Drawing.Size(301, 62);
             this.label1.TabIndex = 4;
             this.label1.Text = "Employees";
-            this.label1.UseWaitCursor = true;
             // 
             // button4
             // 

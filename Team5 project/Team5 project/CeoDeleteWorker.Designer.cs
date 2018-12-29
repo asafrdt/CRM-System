@@ -40,13 +40,14 @@
             this.DeleteIDBox.Location = new System.Drawing.Point(426, 23);
             this.DeleteIDBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteIDBox.Name = "DeleteIDBox";
-            this.DeleteIDBox.Size = new System.Drawing.Size(173, 57);
+            this.DeleteIDBox.Size = new System.Drawing.Size(173, 37);
             this.DeleteIDBox.TabIndex = 2;
             this.DeleteIDBox.TextChanged += new System.EventHandler(this.DeleteIDBox_TextChanged);
             // 
             // SubmitBox
             // 
-            this.SubmitBox.Location = new System.Drawing.Point(333, 163);
+            this.SubmitBox.ForeColor = System.Drawing.Color.Black;
+            this.SubmitBox.Location = new System.Drawing.Point(333, 124);
             this.SubmitBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.SubmitBox.Name = "SubmitBox";
             this.SubmitBox.Size = new System.Drawing.Size(117, 45);
@@ -62,27 +63,27 @@
             this.label1234.Location = new System.Drawing.Point(187, 28);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(384, 47);
+            this.label1234.Size = new System.Drawing.Size(229, 28);
             this.label1234.TabIndex = 5;
             this.label1234.Text = "Enter Employee ID:";
             this.label1234.Click += new System.EventHandler(this.label1234_Click);
             // 
             // DeleteUsernameBox
             // 
-            this.DeleteUsernameBox.Location = new System.Drawing.Point(426, 86);
+            this.DeleteUsernameBox.Location = new System.Drawing.Point(426, 74);
             this.DeleteUsernameBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteUsernameBox.Name = "DeleteUsernameBox";
-            this.DeleteUsernameBox.Size = new System.Drawing.Size(173, 57);
+            this.DeleteUsernameBox.Size = new System.Drawing.Size(173, 37);
             this.DeleteUsernameBox.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 86);
+            this.label1.Location = new System.Drawing.Point(187, 74);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(542, 47);
+            this.label1.Size = new System.Drawing.Size(322, 28);
             this.label1.TabIndex = 7;
             this.label1.Text = "Enter Employee Username:";
             // 

@@ -21,61 +21,16 @@ namespace Team5_project
         public GeneralWorkHours()
         {
             InitializeComponent();
-            Fillcombo();
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter();
+            SqlCommand cmd = new SqlCommand(@"select Eid,Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + Login.UserID + "'", con);
+            sda.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView2.DataSource = dt;
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        void Fillcombo()
-        {
-            SqlCommand cmd;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select * from Employees ", conn);
-            comboBox1.Items.Clear();
-            conn.Open();
-            cmd = conn.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select username from Employees";
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            sda = new SqlDataAdapter(cmd);
-            sda.Fill(dt);
-            foreach (DataRow dr in dt.Rows)
-            {
-                comboBox1.Items.Add(dr["username"].ToString());
-            }
-            conn.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (comboBox1.Text != Login.UserID)
-                {
-                    MessageBox.Show("Your unauthorized to see others hour report\nPlease choose your own name! ", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                    SqlDataAdapter sda = new SqlDataAdapter();
-                    SqlCommand cmd = new SqlCommand(@"select Eid,Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + comboBox1.Text + "'", con);
-                    sda.SelectCommand = cmd;
-                    DataTable dt = new DataTable();
-                    sda.Fill(dt);
-                    dataGridView2.DataSource = dt;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
         {
 
         }

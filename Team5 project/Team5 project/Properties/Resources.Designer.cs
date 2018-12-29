@@ -123,6 +123,16 @@ namespace Team5_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap business_report_with_growth1 {
+            get {
+                object obj = ResourceManager.GetObject("business-report-with-growth1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cash_register {
             get {
                 object obj = ResourceManager.GetObject("cash-register", resourceCulture);
@@ -476,6 +486,16 @@ namespace Team5_project.Properties {
         internal static System.Drawing.Bitmap shutterstock_112158140_00_00_03_124 {
             get {
                 object obj = ResourceManager.GetObject("shutterstock_112158140.00_00_03_124", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stock {
+            get {
+                object obj = ResourceManager.GetObject("Stock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

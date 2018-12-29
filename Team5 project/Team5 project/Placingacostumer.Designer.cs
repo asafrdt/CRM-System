@@ -44,7 +44,6 @@
             this.label1.Size = new System.Drawing.Size(520, 62);
             this.label1.TabIndex = 3;
             this.label1.Text = "Placing a costumer";
-            this.label1.UseWaitCursor = true;
             // 
             // button1
             // 
@@ -61,7 +60,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CashRegister
@@ -79,7 +77,6 @@
             this.CashRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.CashRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.CashRegister.UseVisualStyleBackColor = true;
-            this.CashRegister.UseWaitCursor = true;
             this.CashRegister.Click += new System.EventHandler(this.CashRegister_Click);
             // 
             // Placingacostumer
@@ -100,7 +97,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Placingacostumer";
-            this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Placingacostumer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

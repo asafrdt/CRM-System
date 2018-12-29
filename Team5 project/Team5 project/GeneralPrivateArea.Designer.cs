@@ -42,7 +42,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(558, 105);
+            this.label1.Size = new System.Drawing.Size(339, 62);
             this.label1.TabIndex = 21;
             this.label1.Text = "Private area";
             this.label1.UseWaitCursor = true;
@@ -54,7 +54,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.man_in_office_desk_with_computer;
-            this.button4.Location = new System.Drawing.Point(641, 61);
+            this.button4.Location = new System.Drawing.Point(519, 93);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 140);
             this.button4.TabIndex = 24;
@@ -71,7 +71,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.entering_password;
-            this.button1.Location = new System.Drawing.Point(209, 61);
+            this.button1.Location = new System.Drawing.Point(87, 93);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 140);
             this.button1.TabIndex = 23;
@@ -88,7 +88,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.opened_email_envelope;
-            this.button2.Location = new System.Drawing.Point(440, 61);
+            this.button2.Location = new System.Drawing.Point(318, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 140);
             this.button2.TabIndex = 22;
@@ -100,8 +100,7 @@
             // 
             // GeneralPrivateArea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 49F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(860, 680);
             this.Controls.Add(this.button4);

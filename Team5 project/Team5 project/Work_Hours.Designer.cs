@@ -39,7 +39,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(62, 308);
+            this.button1.Location = new System.Drawing.Point(126, 266);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 87);
             this.button1.TabIndex = 2;
@@ -54,7 +54,7 @@
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView2.Location = new System.Drawing.Point(159, 23);
+            this.dataGridView2.Location = new System.Drawing.Point(126, 10);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.Size = new System.Drawing.Size(654, 196);
@@ -64,9 +64,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(296, 254);
+            this.comboBox1.Location = new System.Drawing.Point(360, 212);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(195, 38);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -74,16 +74,16 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(77, 262);
+            this.label5.Location = new System.Drawing.Point(141, 220);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(511, 49);
+            this.label5.Size = new System.Drawing.Size(314, 30);
             this.label5.TabIndex = 12;
             this.label5.Text = "Choose employee name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(296, 308);
+            this.button3.Location = new System.Drawing.Point(360, 266);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(217, 87);
             this.button3.TabIndex = 15;
@@ -98,11 +98,11 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.business_report_with_growth;
-            this.button4.Location = new System.Drawing.Point(802, 278);
+            this.button4.Location = new System.Drawing.Point(609, 236);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(164, 117);
             this.button4.TabIndex = 16;
-            this.button4.Text = "Export hours report to Excel";
+            this.button4.Text = "Export hours report as Excel file";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;

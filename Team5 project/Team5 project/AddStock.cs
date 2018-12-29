@@ -64,5 +64,10 @@ namespace Team5_project
         {
 
         }
+
+        private void AddStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

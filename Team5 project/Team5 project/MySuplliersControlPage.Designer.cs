@@ -31,6 +31,7 @@
             this.Show_Edit_Button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Show_Edit_Button
@@ -41,7 +42,7 @@
             this.Show_Edit_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Show_Edit_Button.ForeColor = System.Drawing.Color.White;
             this.Show_Edit_Button.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.Show_Edit_Button.Location = new System.Drawing.Point(553, 12);
+            this.Show_Edit_Button.Location = new System.Drawing.Point(545, 93);
             this.Show_Edit_Button.Name = "Show_Edit_Button";
             this.Show_Edit_Button.Size = new System.Drawing.Size(195, 140);
             this.Show_Edit_Button.TabIndex = 22;
@@ -59,7 +60,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button2.Location = new System.Drawing.Point(352, 12);
+            this.button2.Location = new System.Drawing.Point(344, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 140);
             this.button2.TabIndex = 21;
@@ -77,7 +78,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Team5_project.Properties.Resources.add_user_symbol;
-            this.button5.Location = new System.Drawing.Point(151, 12);
+            this.button5.Location = new System.Drawing.Point(143, 93);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 140);
             this.button5.TabIndex = 20;
@@ -87,21 +88,35 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(518, 62);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Stock and Suppliers";
+            // 
             // MySuplliersControlPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(860, 169);
+            this.ClientSize = new System.Drawing.Size(860, 294);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Show_Edit_Button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(185, 50);
+            this.Location = new System.Drawing.Point(185, 0);
             this.Name = "MySuplliersControlPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MySuplliersControlPage";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +125,6 @@
         private System.Windows.Forms.Button Show_Edit_Button;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
     }
 }

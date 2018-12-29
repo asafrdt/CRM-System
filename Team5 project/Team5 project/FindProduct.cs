@@ -24,6 +24,27 @@ namespace Team5_project
         public FindProduct()
         {
             InitializeComponent();
+            Fillcombo();
+        }
+        void Fillcombo()
+        {
+            SqlCommand cmd;
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Inventory ", conn);
+            comboBox1.Items.Clear();
+            conn.Open();
+            cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select Serialnumber from Inventory";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                comboBox1.Items.Add(dr["Serialnumber"].ToString());
+            }
+            conn.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -33,11 +54,11 @@ namespace Team5_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            searchbyid(ProductSearch.Text.Trim());
+            searchbyid(comboBox1.Text.Trim());
         }
         protected void searchbyid(string searchText)
         {
-            if (ProductSearch.Text == "")
+            if (comboBox1.Text == "")
             {
                 MessageBox.Show("No Id to search!");
 
@@ -46,11 +67,11 @@ namespace Team5_project
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
-                    string sql = "SELECT * FROM Inventory WHERE Serialnumber = '" + ProductSearch.Text + "'";
+                    string sql = "SELECT * FROM Inventory WHERE Serialnumber = '" + comboBox1.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
 
-                        cmd.Parameters.AddWithValue("Serialnumber", ProductSearch.Text);
+                        cmd.Parameters.AddWithValue("Serialnumber", comboBox1.Text);
 
                         DataTable dt = new DataTable();
                         SqlDataAdapter ad = new SqlDataAdapter(cmd);
@@ -58,7 +79,7 @@ namespace Team5_project
 
                         if (dt.Rows.Count > 0)
                         { //check if the query returns any data
-                            FindProduct.Product = ProductSearch.Text;
+                            FindProduct.Product = comboBox1.Text;
                             dataGridView1.DataSource = dt;
                             //dg1.DataBind();
                         }
@@ -93,16 +114,16 @@ namespace Team5_project
                 MessageBox.Show("Something get wrong, fill the quantity number and try again!", "ERROR", MessageBoxButtons.OK);
             else
             {
-                if (FindProduct.Product == ProductSearch.Text && FindProduct.Product != "" && ProductSearch.Text != "") {
+                if (FindProduct.Product == comboBox1.Text && FindProduct.Product != "" && comboBox1.Text != "") {
                    FindProduct.Quantity = textBox1.Text;
                     SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                    SqlDataAdapter sda3 = new SqlDataAdapter("select Product_name from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                    SqlDataAdapter sda3 = new SqlDataAdapter("select Product_name from Inventory where Serialnumber ='" + comboBox1.Text + "'", conn);
                     DataTable dt2 = new DataTable();
                     sda3.Fill(dt2);
-                    SqlDataAdapter sda = new SqlDataAdapter("select Quantity from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                    SqlDataAdapter sda = new SqlDataAdapter("select Quantity from Inventory where Serialnumber ='" + comboBox1.Text + "'", conn);
                     DataTable dt = new DataTable();
                     sda.Fill(dt);
-                    SqlDataAdapter sda2 = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + ProductSearch.Text + "'", conn);
+                    SqlDataAdapter sda2 = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + comboBox1.Text + "'", conn);
                     DataTable dt3 = new DataTable();
                     sda2.Fill(dt3);
                     FindProduct.Product_name = dt2.Rows[0]["Product_name"].ToString();
@@ -138,6 +159,11 @@ namespace Team5_project
         }
 
         private void ProductSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FindProduct_Load(object sender, EventArgs e)
         {
 
         }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,24 +44,6 @@
             this.label1.Size = new System.Drawing.Size(518, 62);
             this.label1.TabIndex = 5;
             this.label1.Text = "Stock and Suppliers";
-            this.label1.UseWaitCursor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
-            this.button3.Location = new System.Drawing.Point(387, 74);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 106);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "My Suplliers";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -69,8 +51,8 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Team5_project.Properties.Resources.Remove;
-            this.button5.Location = new System.Drawing.Point(211, 74);
+            this.button5.Image = global::Team5_project.Properties.Resources.Stock;
+            this.button5.Location = new System.Drawing.Point(216, 93);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(170, 106);
             this.button5.TabIndex = 13;
@@ -79,6 +61,23 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Team5_project.Properties.Resources.searching_a_person;
+            this.button3.Location = new System.Drawing.Point(392, 93);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 106);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "My Suplliers";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Stock_Suppliers
             // 

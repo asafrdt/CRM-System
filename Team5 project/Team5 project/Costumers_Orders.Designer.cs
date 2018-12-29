@@ -46,7 +46,6 @@
             this.label1.Size = new System.Drawing.Size(592, 62);
             this.label1.TabIndex = 6;
             this.label1.Text = "Costumers and Orders";
-            this.label1.UseWaitCursor = true;
             // 
             // button4
             // 

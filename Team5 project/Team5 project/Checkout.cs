@@ -109,7 +109,6 @@ namespace Team5_project
                     SqlDataAdapter da4 = new SqlDataAdapter(sda4);
                     DataTable dt4 = new DataTable();
                     da4.Fill(dt4);
-                    MessageBox.Show("Inventory Updeated", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch (Exception ex)

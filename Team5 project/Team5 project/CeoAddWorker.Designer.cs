@@ -61,11 +61,11 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(396, 326);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 66);
+            this.label5.Size = new System.Drawing.Size(105, 46);
             this.label5.TabIndex = 32;
             this.label5.Text = "Submit";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

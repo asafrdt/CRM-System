@@ -49,7 +49,7 @@
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(459, 110);
+            this.PhoneBox.Location = new System.Drawing.Point(459, 98);
             this.PhoneBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.PhoneBox.Name = "PhoneBox";
             this.PhoneBox.Size = new System.Drawing.Size(216, 37);
@@ -57,7 +57,7 @@
             // 
             // FullnameBox
             // 
-            this.FullnameBox.Location = new System.Drawing.Point(459, 58);
+            this.FullnameBox.Location = new System.Drawing.Point(459, 55);
             this.FullnameBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.FullnameBox.Name = "FullnameBox";
             this.FullnameBox.Size = new System.Drawing.Size(216, 37);
@@ -66,7 +66,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(290, 113);
+            this.label11.Location = new System.Drawing.Point(290, 101);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 30);
@@ -94,11 +94,12 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label5.Location = new System.Drawing.Point(436, 185);
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(441, 149);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 65);
+            this.label5.Size = new System.Drawing.Size(108, 44);
             this.label5.TabIndex = 36;
             this.label5.Text = "Submit";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 61);
+            this.label1.Location = new System.Drawing.Point(290, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 30);

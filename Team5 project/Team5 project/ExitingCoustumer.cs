@@ -17,15 +17,36 @@ namespace Team5_project
         public ExitingCoustumer()
         {
             InitializeComponent();
+            Fillcombo();
+        }
+        void Fillcombo()
+        {
+            SqlCommand cmd;
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Costumers ", conn);
+            comboBox1.Items.Clear();
+            conn.Open();
+            cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select Id from Costumers";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                comboBox1.Items.Add(dr["Id"].ToString());
+            }
+            conn.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            searchbyid(CostumerSearch.Text.Trim());
+            searchbyid(comboBox1.Text.Trim());
         }
         protected void searchbyid(string searchText)
         {
-            if (CostumerSearch.Text == "")
+            if (comboBox1.Text == "")
             {
                 MessageBox.Show("No Id to search!");
 
@@ -34,11 +55,11 @@ namespace Team5_project
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
-                    string sql = "SELECT * FROM Costumers WHERE Id = '" + CostumerSearch.Text + "'";
+                    string sql = "SELECT * FROM Costumers WHERE Id = '" + comboBox1.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
 
-                        cmd.Parameters.AddWithValue("id", CostumerSearch.Text);
+                        cmd.Parameters.AddWithValue("id", comboBox1.Text);
 
                         DataTable dt = new DataTable();
                         SqlDataAdapter ad = new SqlDataAdapter(cmd);
@@ -46,7 +67,7 @@ namespace Team5_project
 
                         if (dt.Rows.Count > 0)
                         { //check if the query returns any data
-                            ExitingCoustumer.Customer = CostumerSearch.Text;
+                            ExitingCoustumer.Customer = comboBox1.Text;
                             dataGridView1.DataSource = dt;
 
                             
@@ -94,7 +115,7 @@ namespace Team5_project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (ExitingCoustumer.Customer != "" && CostumerSearch.Text != "" && ExitingCoustumer.Customer == CostumerSearch.Text)
+            if (ExitingCoustumer.Customer != "" && comboBox1.Text != "" && ExitingCoustumer.Customer == comboBox1.Text)
             {
                 MessageBox.Show(Customer, "You have place this customer:", MessageBoxButtons.OK);
                 this.Close();
