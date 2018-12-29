@@ -26,7 +26,7 @@ namespace Team5_project
         public Login()
         {
             InitializeComponent();
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,6 +41,33 @@ namespace Team5_project
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+        public bool IsCeo(string u)
+        {
+            if (u == "Ceo")
+                return true;
+            else
+                return false;
+
+
+        }
+        public bool IsExp(string u)
+        {
+            if (u == "Expert")
+                return true;
+            else
+                return false;
+
+
+        }
+        public bool IsCash(string u)
+        {
+            if (u == "Cashier")
+                return true;
+            else
+                return false;
+
 
         }
 
@@ -62,14 +89,15 @@ namespace Team5_project
                     Login.date += timeLogin.ToString(format)[i];
                 Login.timeIn = timeLogin.TimeOfDay;
                 utype = dt.Rows[0][0].ToString().Trim();
-                if (utype == "Ceo")
+                if (IsCeo(utype))
                 { Ceo mm = new Ceo();
                     mm.label2.Text = UserID;
                     mm.label3.Text = utype;
                     this.Hide();
                     mm.Show();
+                    
                 }
-                else if (utype == "Expert")
+                else if (IsExp(utype))
                 {
                     this.Hide();
                     Expert mm = new Expert();
@@ -78,7 +106,7 @@ namespace Team5_project
                     this.Hide();
                     mm.Show();
                 }
-                else if (utype == "Cashier")
+                else if (IsCash(utype))
                 {
                     this.Hide();
                     Cashier mm = new Cashier();

@@ -19,7 +19,13 @@ namespace Team5_project
             InitializeComponent();
         }
 
-
+        public bool Row1(DataTable d1, DataTable d2)
+        {
+            if (d1.Rows.Count == 0 || d2.Rows.Count == 0)
+                return true;
+            else
+                return false;
+        }
 
         private void SubmitBox_Click(object sender, EventArgs e)
         {
@@ -31,7 +37,7 @@ namespace Team5_project
             sda3.Fill(dt3);
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
-            if (dt2.Rows.Count == 0 || dt3.Rows.Count == 0)
+            if (Row1(dt2,dt3))
             {
                 MessageBox.Show("NO ID HAS BEEN FOUND", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
