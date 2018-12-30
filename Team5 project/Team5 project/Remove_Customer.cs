@@ -16,8 +16,20 @@ namespace Team5_project
         public Remove_Customer()
         {
             InitializeComponent();
-        }
 
+        }
+        public void Delete_customer(SqlConnection conn,string id=null)
+        {
+
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from Costumers where Id='" + id + "'";
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Customer has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
         private void SubmitBox_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
@@ -30,14 +42,10 @@ namespace Team5_project
             }
             else
             {
-                conn.Open();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from Costumers where Id='" + DeleteSerialNumberBox.Text + "'";
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Customer has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Delete_customer(conn);
             }
+          
         }
     }
 }

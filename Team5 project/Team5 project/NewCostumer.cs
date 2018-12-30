@@ -18,7 +18,23 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+        public void Add_customer(SqlConnection conn, string Id = null,string Name=null,string Phone=null)
+        {
 
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + Id + "','" + Name + "','" + Phone + "')", conn);
+            //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
+
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            // SqlDataAdapter da2 = new SqlDataAdapter(sda3);
+
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
+            // DataSet ds2 = new DataSet();
+            // da1.Fill(ds2);
+            MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
         private void label5_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
@@ -33,19 +49,22 @@ namespace Team5_project
                 MessageBox.Show("There is still empty fields\nPlease make sure you fill all fields", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "')", conn);
-                //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
+                string Id = IDBox.Text;
+                string Name = FullnameBox.Text;
+                string Phone = PhoneBox.Text;
+                //SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "')", conn);
+                ////SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
 
-                SqlDataAdapter da = new SqlDataAdapter(sda1);
-                // SqlDataAdapter da2 = new SqlDataAdapter(sda3);
+                //SqlDataAdapter da = new SqlDataAdapter(sda1);
+                //// SqlDataAdapter da2 = new SqlDataAdapter(sda3);
 
-                DataSet ds = new DataSet();
-                da.Fill(ds);
+                //DataSet ds = new DataSet();
+                //da.Fill(ds);
 
-                // DataSet ds2 = new DataSet();
-                // da1.Fill(ds2);
-                MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                //// DataSet ds2 = new DataSet();
+                //// da1.Fill(ds2);
+                //MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Add_customer(conn, Id, Name, Phone);
             }
         }
 
