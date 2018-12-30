@@ -123,5 +123,10 @@ namespace Team5_project
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

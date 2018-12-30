@@ -71,7 +71,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(77, 262);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 23);
+            this.label5.Size = new System.Drawing.Size(511, 49);
             this.label5.TabIndex = 12;
             this.label5.Text = "Choose employee name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -108,7 +108,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(296, 254);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 31);
+            this.comboBox1.Size = new System.Drawing.Size(195, 57);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -121,7 +121,7 @@
             "2019"});
             this.comboBox2.Location = new System.Drawing.Point(296, 313);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 31);
+            this.comboBox2.Size = new System.Drawing.Size(195, 57);
             this.comboBox2.TabIndex = 2;
             // 
             // comboBox3
@@ -142,7 +142,7 @@
             "12"});
             this.comboBox3.Location = new System.Drawing.Point(296, 364);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(195, 31);
+            this.comboBox3.Size = new System.Drawing.Size(195, 57);
             this.comboBox3.TabIndex = 3;
             // 
             // label1
@@ -151,7 +151,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(77, 321);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.Size = new System.Drawing.Size(264, 49);
             this.label1.TabIndex = 19;
             this.label1.Text = "Select Year: ";
             // 
@@ -161,7 +161,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(77, 372);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 23);
+            this.label2.Size = new System.Drawing.Size(301, 49);
             this.label2.TabIndex = 20;
             this.label2.Text = "Select Month: ";
             // 
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1020, 429);
+            this.ClientSize = new System.Drawing.Size(800, 420);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox3);
