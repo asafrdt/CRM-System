@@ -17,7 +17,18 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+        public void Delete_Supllier(SqlConnection conn, string id = null)
+        {
 
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from Suppllier where Suppllier_id='" + id + "'";
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Supllier has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
         private void SubmitBox_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
@@ -30,13 +41,14 @@ namespace Team5_project
             }
             else
             {
-                conn.Open();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from Suppllier where Suppllier_id='" + DeleteSerialNumberBox.Text + "'";
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Product has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //conn.Open();
+                //SqlCommand cmd = conn.CreateCommand();
+                //cmd.CommandType = CommandType.Text;
+                //cmd.CommandText = "delete from Suppllier where Suppllier_id='" + DeleteSerialNumberBox.Text + "'";
+                //cmd.ExecuteNonQuery();
+                //conn.Close();
+                //MessageBox.Show("Product has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Delete_Supllier(conn, DeleteSerialNumberBox.Text);
             }
         }
 

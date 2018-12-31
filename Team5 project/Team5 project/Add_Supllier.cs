@@ -17,7 +17,16 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+        public void Add_Sup(SqlConnection conn, string Suppllier_id = null,  string Suppllier_full_name = null, string Employee_mobile = null)
+        {
 
+            SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Suppllier_id,Suppllier_full_name,Suppllier_mobile) VALUES ('" + Suppllier_id + "','" + Suppllier_full_name + "','" + Employee_mobile + "')", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sda2);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
@@ -30,11 +39,12 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Suppllier_id,Suppllier_full_name,Suppllier_mobile) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
-                SqlDataAdapter da = new SqlDataAdapter(sda2);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Suppllier_id,Suppllier_full_name,Suppllier_mobile) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
+                //SqlDataAdapter da = new SqlDataAdapter(sda2);
+                //DataSet ds = new DataSet();
+                //da.Fill(ds);
+                //MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Add_Sup(conn, textBox1.Text, textBox2.Text, textBox3.Text);
             }
         }
 

@@ -45,18 +45,6 @@ namespace Team5_project
                 string Id = IDBox.Text;
                 string Name = FullnameBox.Text;
                 string Phone = PhoneBox.Text;
-                //SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "')", conn);
-                ////SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
-
-                //SqlDataAdapter da = new SqlDataAdapter(sda1);
-                //// SqlDataAdapter da2 = new SqlDataAdapter(sda3);
-
-                //DataSet ds = new DataSet();
-                //da.Fill(ds);
-
-                //// DataSet ds2 = new DataSet();
-                //// da1.Fill(ds2);
-                //MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Add_customer(conn, Id, Name, Phone);
             }
         }

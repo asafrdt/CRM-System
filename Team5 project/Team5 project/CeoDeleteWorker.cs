@@ -19,7 +19,18 @@ namespace Team5_project
             InitializeComponent();
         }
 
+        public void Delete_Worker(SqlConnection conn, string id = null)
+        {
 
+            conn.Open();
+            SqlCommand cmd1 = conn.CreateCommand();
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = "delete from Employees where Employee_id='" + id + "'";
+            cmd1.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
 
         private void SubmitBox_Click(object sender, EventArgs e)
         {
@@ -44,13 +55,14 @@ namespace Team5_project
                 //cmd.ExecuteNonQuery();
                 //conn.Close();
                 //MessageBox.Show("Eployee ID has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                conn2.Open();
-                SqlCommand cmd1 = conn2.CreateCommand();
-                cmd1.CommandType = CommandType.Text;
-                cmd1.CommandText = "delete from Employees where Employee_id='" + DeleteIDBox.Text + "'";
-                cmd1.ExecuteNonQuery();
-                conn2.Close();
-                MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //conn2.Open();
+                //SqlCommand cmd1 = conn2.CreateCommand();
+                //cmd1.CommandType = CommandType.Text;
+                //cmd1.CommandText = "delete from Employees where Employee_id='" + DeleteIDBox.Text + "'";
+                //cmd1.ExecuteNonQuery();
+                //conn2.Close();
+                //MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Delete_Worker(conn2, DeleteIDBox.Text);
             }
         }
 
