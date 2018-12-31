@@ -98,6 +98,7 @@
             this.Name = "Remove_Stock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Remove_Stock";
+            this.Load += new System.EventHandler(this.Remove_Stock_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

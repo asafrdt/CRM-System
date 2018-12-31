@@ -103,5 +103,10 @@ namespace Team5_project
             }
             catch (Exception ex) { MessageBox.Show(ex.Message.ToString()); }
         }
+
+        private void Show_edit_Supllier_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

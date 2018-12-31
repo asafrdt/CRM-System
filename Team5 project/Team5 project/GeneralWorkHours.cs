@@ -34,7 +34,7 @@ namespace Team5_project
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
                 SqlDataAdapter sda = new SqlDataAdapter();
-                SqlCommand cmd = new SqlCommand(@"select Username, logdate, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + Login.UserID + "' AND Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
+                SqlCommand cmd = new SqlCommand(@"select Username, shift_date, logtimeIn, logtimeOut,CalculateHours FROM Work_card WHERE Username='" + Login.UserID + "' AND Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
                 sda.SelectCommand = cmd;
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -107,6 +107,11 @@ namespace Team5_project
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message.ToString()); }
+        }
+
+        private void GeneralWorkHours_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

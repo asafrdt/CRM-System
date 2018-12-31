@@ -97,6 +97,7 @@
             this.Name = "Show_edit_Supllier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Show_edit_Supllier";
+            this.Load += new System.EventHandler(this.Show_edit_Supllier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -95,17 +95,17 @@ namespace Team5_project
             else
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                SqlDataAdapter sda = new SqlDataAdapter("select Price from Inventory where Serialnumber ='" + FindProduct.Product + "'", conn);
+                SqlDataAdapter sda = new SqlDataAdapter("select Price from Inventory where Product_id ='" + FindProduct.Product + "'", conn);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 string New_price = dt.Rows[0]["Price"].ToString();
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_Serial,Price,Quantity,Date,Seller_name,Buyer_Id,Year,Month) VALUES ('" + FindProduct.Product + "','" + FindProduct.int_Product_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "','" + Login.date1.Year + "','" + Login.date1.Month +  "')", conn);
+                SqlCommand sda2 = new SqlCommand("INSERT INTO Orders (Product_id,Order_price,Quantity,Order_date,Employee_full_name,Customer_full_name,Year,Month) VALUES ('" + FindProduct.Product + "','" + FindProduct.int_Product_price + "','" + FindProduct.Quantity + "','" + Login.date + "','" + Login.UserID + "','" + ExitingCoustumer.Customer + "','" + Login.date1.Year + "','" + Login.date1.Month +  "')", conn);
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataTable dt1 = new DataTable();
                 da.Fill(dt1);
                 try
                 {
-                    SqlCommand sda4 = new SqlCommand(" update Inventory set Quantity = '" + FindProduct.int_Update_quaintity + " ' where Serialnumber  ='" + FindProduct.Product + "'", conn);
+                    SqlCommand sda4 = new SqlCommand(" update Inventory set Quantity = '" + FindProduct.int_Update_quaintity + " ' where Product_id  ='" + FindProduct.Product + "'", conn);
                     SqlDataAdapter da4 = new SqlDataAdapter(sda4);
                     DataTable dt4 = new DataTable();
                     da4.Fill(dt4);

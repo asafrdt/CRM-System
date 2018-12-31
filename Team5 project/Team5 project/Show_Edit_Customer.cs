@@ -22,7 +22,7 @@ namespace Team5_project
         {
             InitializeComponent();
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select Id,Full_name,Mobile FROM Costumers", con);
+            sda = new SqlDataAdapter(@"select Costumer_id,Costumer_Full_name,Costumer_Mobile FROM Costumers", con);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -31,7 +31,7 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            sda = new SqlDataAdapter(@"select Id,Full_name,Mobile FROM Costumers", con);
+            sda = new SqlDataAdapter(@"select Costumer_id,Costumer_Full_name,Costumer_Mobile FROM Costumers", con);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;

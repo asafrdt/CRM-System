@@ -104,7 +104,7 @@ namespace Team5_project
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-                sda = new SqlDataAdapter(@"select Product_Serial,Price, Quantity, Date, Seller_name, Buyer_Id FROM Orders WHERE Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
+                sda = new SqlDataAdapter(@"select Product_id,Order_price, Quantity,Order_date, Employee_full_name,Customer_full_name FROM Orders WHERE Year = '" + comboBox2.Text + "' AND Month = '" + comboBox3.Text + "'", con);
                 dt = new DataTable();
                 sda.Fill(dt);
                 dataGridView1.DataSource = dt;

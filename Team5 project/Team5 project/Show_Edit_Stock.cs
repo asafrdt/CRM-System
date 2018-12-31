@@ -126,5 +126,10 @@ namespace Team5_project
         {
 
         }
+
+        private void Show_Edit_Stock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

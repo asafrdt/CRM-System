@@ -38,7 +38,7 @@
             this.DeleteIDBox.Location = new System.Drawing.Point(426, 23);
             this.DeleteIDBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.DeleteIDBox.Name = "DeleteIDBox";
-            this.DeleteIDBox.Size = new System.Drawing.Size(173, 57);
+            this.DeleteIDBox.Size = new System.Drawing.Size(173, 37);
             this.DeleteIDBox.TabIndex = 2;
             this.DeleteIDBox.TextChanged += new System.EventHandler(this.DeleteIDBox_TextChanged);
             // 
@@ -61,7 +61,7 @@
             this.label1234.Location = new System.Drawing.Point(187, 28);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(384, 47);
+            this.label1234.Size = new System.Drawing.Size(229, 28);
             this.label1234.TabIndex = 5;
             this.label1234.Text = "Enter Employee ID:";
             this.label1234.Click += new System.EventHandler(this.label1234_Click);
@@ -82,6 +82,7 @@
             this.Name = "CeoDeleteWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CeoDeleteWorker";
+            this.Load += new System.EventHandler(this.CeoDeleteWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

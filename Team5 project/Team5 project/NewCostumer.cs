@@ -21,24 +21,17 @@ namespace Team5_project
         public void Add_customer(SqlConnection conn, string Id = null,string Name=null,string Phone=null)
         {
 
-            SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Id,Full_name,Mobile) VALUES ('" + Id + "','" + Name + "','" + Phone + "')", conn);
-            //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
-
+            SqlCommand sda1 = new SqlCommand("INSERT INTO Costumers (Costumer_id,Costumer_Full_name,Costumer_Mobile) VALUES ('" + Id + "','" + Name + "','" + Phone + "')", conn);
             SqlDataAdapter da = new SqlDataAdapter(sda1);
-            // SqlDataAdapter da2 = new SqlDataAdapter(sda3);
-
             DataSet ds = new DataSet();
             da.Fill(ds);
-
-            // DataSet ds2 = new DataSet();
-            // da1.Fill(ds2);
             MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
         private void label5_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select Id from Costumers where Id ='" + IDBox.Text + "'", conn);
+            SqlDataAdapter sda = new SqlDataAdapter("select Costumer_id from Costumers where Costumer_id ='" + IDBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
@@ -79,6 +72,11 @@ namespace Team5_project
         }
 
         private void PhoneBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewCostumer_Load(object sender, EventArgs e)
         {
 
         }

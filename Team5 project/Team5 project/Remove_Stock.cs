@@ -21,7 +21,7 @@ namespace Team5_project
         private void SubmitBox_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda2 = new SqlDataAdapter("select Serialnumber from Inventory where Serialnumber ='" + DeleteSerialNumberBox.Text + "'", conn);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Product_id from Inventory where Product_id ='" + DeleteSerialNumberBox.Text + "'", conn);
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
             if (dt2.Rows.Count == 0)
@@ -33,7 +33,7 @@ namespace Team5_project
                 conn.Open();
                 SqlCommand cmd = conn.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from Inventory where Serialnumber='" + DeleteSerialNumberBox.Text + "'";
+                cmd.CommandText = "delete from Inventory where Product_id='" + DeleteSerialNumberBox.Text + "'";
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Product has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -46,6 +46,11 @@ namespace Team5_project
         }
 
         private void DeleteSerialNumberBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Remove_Stock_Load(object sender, EventArgs e)
         {
 
         }

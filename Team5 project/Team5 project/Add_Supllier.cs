@@ -21,7 +21,7 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select Id from Suppllier where Id ='" + textBox1.Text + "'", conn);
+            SqlDataAdapter sda = new SqlDataAdapter("select Suppllier_id from Suppllier where Suppllier_id ='" + textBox1.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
@@ -30,7 +30,7 @@ namespace Team5_project
             }
             else
             {
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Id,Full_name,Mobile) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
+                SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Suppllier_id,Suppllier_full_name,Suppllier_mobile) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
                 SqlDataAdapter da = new SqlDataAdapter(sda2);
                 DataSet ds = new DataSet();
                 da.Fill(ds);

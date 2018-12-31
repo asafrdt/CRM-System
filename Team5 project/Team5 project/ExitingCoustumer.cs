@@ -28,14 +28,14 @@ namespace Team5_project
             conn.Open();
             cmd = conn.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select Id from Costumers";
+            cmd.CommandText = "select Costumer_id from Costumers";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             sda = new SqlDataAdapter(cmd);
             sda.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                comboBox1.Items.Add(dr["Id"].ToString());
+                comboBox1.Items.Add(dr["Costumer_id"].ToString());
             }
             conn.Close();
         }
@@ -55,11 +55,11 @@ namespace Team5_project
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
-                    string sql = "SELECT * FROM Costumers WHERE Id = '" + comboBox1.Text + "'";
+                    string sql = "SELECT * FROM Costumers WHERE Costumer_id = '" + comboBox1.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
 
-                        cmd.Parameters.AddWithValue("id", comboBox1.Text);
+                        cmd.Parameters.AddWithValue("Costumer_id", comboBox1.Text);
 
                         DataTable dt = new DataTable();
                         SqlDataAdapter ad = new SqlDataAdapter(cmd);

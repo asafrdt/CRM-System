@@ -59,7 +59,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(73, 342);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 23);
+            this.label2.Size = new System.Drawing.Size(185, 30);
             this.label2.TabIndex = 24;
             this.label2.Text = "Select Month: ";
             // 
@@ -69,7 +69,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(73, 291);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.Size = new System.Drawing.Size(163, 30);
             this.label1.TabIndex = 23;
             this.label1.Text = "Select Year: ";
             // 
@@ -91,7 +91,7 @@
             "12"});
             this.comboBox3.Location = new System.Drawing.Point(292, 334);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(195, 31);
+            this.comboBox3.Size = new System.Drawing.Size(195, 38);
             this.comboBox3.TabIndex = 2;
             // 
             // comboBox2
@@ -103,7 +103,7 @@
             "2019"});
             this.comboBox2.Location = new System.Drawing.Point(292, 283);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 31);
+            this.comboBox2.Size = new System.Drawing.Size(195, 38);
             this.comboBox2.TabIndex = 1;
             // 
             // button1
@@ -136,7 +136,7 @@
             // 
             // GeneralWorkHours
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1020, 429);
@@ -154,6 +154,7 @@
             this.Name = "GeneralWorkHours";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "GeneralWorkHours";
+            this.Load += new System.EventHandler(this.GeneralWorkHours_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
