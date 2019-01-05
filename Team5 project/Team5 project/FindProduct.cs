@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 namespace Team5_project
 {
     public partial class FindProduct : Form
@@ -67,7 +61,7 @@ namespace Team5_project
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
-                    string sql = "SELECT * FROM Inventory WHERE Product_id = '" + comboBox1.Text + "'";
+                    string sql = "SELECT Product_id as 'Serial number', Product_name as 'Name', Quantity, Price, Suppllier_full_name as 'Suppllier Full name' FROM Inventory WHERE Product_id = '" + comboBox1.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
 
@@ -164,6 +158,11 @@ namespace Team5_project
         }
 
         private void FindProduct_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

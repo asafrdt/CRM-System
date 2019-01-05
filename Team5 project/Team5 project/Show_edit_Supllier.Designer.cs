@@ -41,11 +41,11 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(172, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(227, 13);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(397, 189);
+            this.dataGridView1.Size = new System.Drawing.Size(507, 189);
             this.dataGridView1.TabIndex = 5;
             // 
             // button1
@@ -55,7 +55,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Team5_project.Properties.Resources.update;
-            this.button1.Location = new System.Drawing.Point(380, 210);
+            this.button1.Location = new System.Drawing.Point(486, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 147);
             this.button1.TabIndex = 16;
@@ -72,7 +72,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Team5_project.Properties.Resources.business_report_with_growth1;
-            this.button2.Location = new System.Drawing.Point(201, 210);
+            this.button2.Location = new System.Drawing.Point(307, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(173, 147);
             this.button2.TabIndex = 17;

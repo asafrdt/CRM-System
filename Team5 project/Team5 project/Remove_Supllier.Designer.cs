@@ -40,9 +40,10 @@
             this.label1234.Location = new System.Drawing.Point(288, 16);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(172, 28);
+            this.label1234.Size = new System.Drawing.Size(147, 28);
             this.label1234.TabIndex = 11;
-            this.label1234.Text = "Serial number";
+            this.label1234.Text = "Suppllier id:";
+            //this.label1234.Click += new System.EventHandler(this.label1234_Click);
             // 
             // SubmitBox
             // 

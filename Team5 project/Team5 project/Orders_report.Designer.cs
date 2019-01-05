@@ -48,13 +48,15 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersHeight = 30;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Location = new System.Drawing.Point(17, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(771, 211);
+            this.dataGridView1.Size = new System.Drawing.Size(919, 211);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -81,7 +83,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(90, 327);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 49);
+            this.label2.Size = new System.Drawing.Size(185, 30);
             this.label2.TabIndex = 24;
             this.label2.Text = "Select Month: ";
             // 
@@ -103,7 +105,7 @@
             "12"});
             this.comboBox3.Location = new System.Drawing.Point(309, 319);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(195, 57);
+            this.comboBox3.Size = new System.Drawing.Size(195, 38);
             this.comboBox3.TabIndex = 2;
             // 
             // button1
@@ -126,7 +128,7 @@
             "2019"});
             this.comboBox2.Location = new System.Drawing.Point(309, 268);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 57);
+            this.comboBox2.Size = new System.Drawing.Size(195, 38);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -136,7 +138,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(90, 276);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 49);
+            this.label1.Size = new System.Drawing.Size(163, 30);
             this.label1.TabIndex = 23;
             this.label1.Text = "Select Year: ";
             // 

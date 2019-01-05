@@ -55,7 +55,7 @@ namespace Team5_project
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
                 {
-                    string sql = "SELECT * FROM Costumers WHERE Costumer_id = '" + comboBox1.Text + "'";
+                    string sql = "SELECT Costumer_id as 'Costumer ID', Costumer_Full_name as 'Full name', Costumer_Mobile as 'Phone number' From Costumers WHERE Costumer_id = '" + comboBox1.Text + "'";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
 

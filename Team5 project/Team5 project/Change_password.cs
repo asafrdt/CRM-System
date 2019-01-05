@@ -34,9 +34,9 @@ namespace Team5_project
             if (UpdatePassword1.Text == "" || UpdatePassword2.Text == "" || UpdatePassword1.Text.Trim() != UpdatePassword2.Text.Trim())
             {
                 if (UpdatePassword1.Text == "")
-                    MessageBox.Show("New password is required!");
+                    MessageBox.Show("New password is required!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else if (UpdatePassword2.Text == "")
-                    MessageBox.Show("New password is required!");
+                    MessageBox.Show("New password is required!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else if (UpdatePassword1.Text.Trim() != UpdatePassword2.Text.Trim())
                     MessageBox.Show("The password you've enter doesn't match\n Please try again!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -59,6 +59,11 @@ namespace Team5_project
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Change_password_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

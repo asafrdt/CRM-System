@@ -48,7 +48,6 @@ namespace Team5_project
         {
 
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
-
             SqlDataAdapter sda = new SqlDataAdapter("select type from Employees where username ='" + textBox1.Text + "' and password='" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);

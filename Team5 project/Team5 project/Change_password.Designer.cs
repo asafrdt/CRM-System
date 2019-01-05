@@ -42,7 +42,7 @@
             this.label1234.Location = new System.Drawing.Point(163, 56);
             this.label1234.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1234.Name = "label1234";
-            this.label1234.Size = new System.Drawing.Size(464, 47);
+            this.label1234.Size = new System.Drawing.Size(279, 28);
             this.label1234.TabIndex = 8;
             this.label1234.Text = "Enter a new password :";
             // 
@@ -64,7 +64,7 @@
             this.UpdatePassword1.Location = new System.Drawing.Point(498, 53);
             this.UpdatePassword1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.UpdatePassword1.Name = "UpdatePassword1";
-            this.UpdatePassword1.Size = new System.Drawing.Size(173, 57);
+            this.UpdatePassword1.Size = new System.Drawing.Size(173, 37);
             this.UpdatePassword1.TabIndex = 1;
             // 
             // label1
@@ -74,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(163, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(598, 47);
+            this.label1.Size = new System.Drawing.Size(361, 28);
             this.label1.TabIndex = 10;
             this.label1.Text = "Enter a new password again : ";
             // 
@@ -83,7 +83,7 @@
             this.UpdatePassword2.Location = new System.Drawing.Point(498, 96);
             this.UpdatePassword2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.UpdatePassword2.Name = "UpdatePassword2";
-            this.UpdatePassword2.Size = new System.Drawing.Size(173, 57);
+            this.UpdatePassword2.Size = new System.Drawing.Size(173, 37);
             this.UpdatePassword2.TabIndex = 2;
             // 
             // Change_password
@@ -103,6 +103,7 @@
             this.Name = "Change_password";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Change_password";
+            this.Load += new System.EventHandler(this.Change_password_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
