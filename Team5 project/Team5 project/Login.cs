@@ -55,12 +55,12 @@ namespace Team5_project
             if (dt.Rows.Count>0)
             {
                 Login.UserID = textBox1.Text;
-                //timeLogin = DateTime.Now;
-                //String format = "yyyy-MM-dd HH:mm:ss";
+                timeLogin = DateTime.Now;
+                String format = "yyyy-MM-dd HH:mm:ss";
                 Login.date1 = DateTime.Now;
-                //for (int i = 0; i < 10; i++)
-                //    Login.date += timeLogin.ToString(format)[i];
-                //Login.timeIn = timeLogin.TimeOfDay;
+                for (int i = 0; i < 10; i++)
+                    Login.date += timeLogin.ToString(format)[i];
+                Login.timeIn = timeLogin.TimeOfDay;
                 utype = dt.Rows[0][0].ToString().Trim();
                 if (utype == "Ceo")
                 { Ceo mm = new Ceo();
