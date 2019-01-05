@@ -25,7 +25,7 @@ namespace Team5_project
             SqlDataAdapter da = new SqlDataAdapter(sda1);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
         }
         private void label5_Click(object sender, EventArgs e)
@@ -46,6 +46,7 @@ namespace Team5_project
                 string Name = FullnameBox.Text;
                 string Phone = PhoneBox.Text;
                 Add_customer(conn, Id, Name, Phone);
+                MessageBox.Show("New costumer has been added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

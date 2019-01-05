@@ -24,7 +24,7 @@ namespace Team5_project
             SqlDataAdapter da = new SqlDataAdapter(sda2);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
         }
         private void button1_Click(object sender, EventArgs e)
@@ -45,6 +45,7 @@ namespace Team5_project
                 //da.Fill(ds);
                 //MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Add_Sup(conn, textBox1.Text, textBox2.Text, textBox3.Text);
+                MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

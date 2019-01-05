@@ -28,7 +28,7 @@ namespace Team5_project
             cmd1.CommandText = "delete from Employees where Employee_id='" + id + "'";
             cmd1.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
         }
 
@@ -63,6 +63,7 @@ namespace Team5_project
                 //conn2.Close();
                 //MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Delete_Worker(conn2, DeleteIDBox.Text);
+                MessageBox.Show("Employee has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

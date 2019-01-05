@@ -25,7 +25,7 @@ namespace Team5_project
             SqlDataAdapter da = new SqlDataAdapter(sda1);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
         }
         private void label5_Click(object sender, EventArgs e)
@@ -40,19 +40,7 @@ namespace Team5_project
             }
             else
             {
-               // SqlCommand sda1 = new SqlCommand("INSERT INTO Employees (username,password,type,Employee_id,Employee_full_name,Employee_mobile,Gender) VALUES ('" + UsernameBox.Text + "','" + PasswordBox.Text + "','" + TypeBox.Text + "','" + IDBox.Text + "','" + FullnameBox.Text + "','" + PhoneBox.Text + "','" + GenderBox.Text + "')", conn); 
-               //// SqlCommand sda2= new SqlCommand("INSERT INTO Extend_Employees (Full_name, mobile, id, gender) VALUES ('" + FullnameBox.Text + "','" +  PhoneBox.Text + "','" + IDBox.Text + "','" + GenderBox.Text + "')", conn);
-               // //SqlCommand sda3 = new SqlCommand("INSERT INTO UserKey (UserId,UserName) VALUES ('" + UsernameBox.Text + "','" + IDBox.Text + "')", conn);
-               // SqlDataAdapter da = new SqlDataAdapter(sda1);
-               // //SqlDataAdapter da1 = new SqlDataAdapter(sda2);
-               //// SqlDataAdapter da2 = new SqlDataAdapter(sda3);
-               // DataSet ds = new DataSet();
-               // da.Fill(ds);
-               // //DataSet ds1 = new DataSet();
-               // //da1.Fill(ds1);
-               //// DataSet ds2 = new DataSet();
-               //// da1.Fill(ds2);
-               // MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 string username = UsernameBox.Text;
                 string password = PasswordBox.Text;
                 string type = TypeBox.Text;
@@ -61,6 +49,7 @@ namespace Team5_project
                 string Employee_mobile = PhoneBox.Text;
                 string Gender = GenderBox.Text;
                 Add_Worker(conn, username, password, type, Employee_id, Employee_full_name, Employee_mobile, Gender);
+                MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

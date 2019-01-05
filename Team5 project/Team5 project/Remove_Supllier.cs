@@ -26,7 +26,7 @@ namespace Team5_project
             cmd.CommandText = "delete from Suppllier where Suppllier_id='" + id + "'";
             cmd.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Supllier has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
         }
         private void SubmitBox_Click(object sender, EventArgs e)
@@ -49,6 +49,7 @@ namespace Team5_project
                 //conn.Close();
                 //MessageBox.Show("Product has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Delete_Supllier(conn, DeleteSerialNumberBox.Text);
+                MessageBox.Show("Supllier has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

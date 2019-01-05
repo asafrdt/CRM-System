@@ -17,7 +17,17 @@ namespace Team5_project
         {
             InitializeComponent();
         }
+        public void Change_pas(SqlConnection con,string pass,string id)
+        {
 
+            SqlCommand sda1 = new SqlCommand(" update Employees set password = '" + pass + " ' where username ='" + id + "'", con);
+            SqlDataAdapter da = new SqlDataAdapter(sda1);
+            DataTable dt1 = new DataTable();
+            da.Fill(dt1);
+            MessageBox.Show("Password has been changed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
         private void SubmitBox_Click(object sender, EventArgs e)
         {
 
@@ -35,12 +45,7 @@ namespace Team5_project
                 try
                 {
                     SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
-
-                    SqlCommand sda1 = new SqlCommand(" update Employees set password = '" + UpdatePassword1.Text + " ' where username ='" + Login.UserID + "'", con);
-                    SqlDataAdapter da = new SqlDataAdapter(sda1);
-                    DataTable dt1 = new DataTable();
-                    da.Fill(dt1);
-                    MessageBox.Show("Password has been changed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Change_pas(con, UpdatePassword2.Text, Login.UserID);
 
                 }
                 catch (Exception ex)

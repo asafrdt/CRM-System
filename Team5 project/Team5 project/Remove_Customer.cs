@@ -27,7 +27,7 @@ namespace Team5_project
             cmd.CommandText = "delete from Costumers where Costumer_id='" + id + "'";
             cmd.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Customer has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
 
         }
         private void SubmitBox_Click(object sender, EventArgs e)
@@ -44,6 +44,7 @@ namespace Team5_project
             {
 
                 Delete_customer(conn, DeleteSerialNumberBox.Text);
+                MessageBox.Show("Customer has been deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
           
         }
