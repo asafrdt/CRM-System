@@ -43,9 +43,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(542, 221);
+            this.button1.Location = new System.Drawing.Point(379, 254);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 87);
+            this.button1.Size = new System.Drawing.Size(212, 72);
             this.button1.TabIndex = 4;
             this.button1.Text = "Show Employee";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,18 +70,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(77, 262);
+            this.label5.Location = new System.Drawing.Point(83, 262);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(314, 30);
+            this.label5.Size = new System.Drawing.Size(218, 30);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Choose employee name";
+            this.label5.Text = "Employee name:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(542, 320);
+            this.button3.Location = new System.Drawing.Point(379, 332);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(217, 87);
+            this.button3.Size = new System.Drawing.Size(212, 70);
             this.button3.TabIndex = 5;
             this.button3.Text = "Show all";
             this.button3.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Team5_project.Properties.Resources.business_report_with_growth;
-            this.button4.Location = new System.Drawing.Point(802, 278);
+            this.button4.Location = new System.Drawing.Point(615, 254);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 117);
+            this.button4.Size = new System.Drawing.Size(164, 140);
             this.button4.TabIndex = 6;
             this.button4.Text = "Export hours report to Excel";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -107,9 +107,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(296, 254);
+            this.comboBox1.Location = new System.Drawing.Point(246, 254);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 38);
+            this.comboBox1.Size = new System.Drawing.Size(106, 38);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -120,9 +120,9 @@
             "2017",
             "2018",
             "2019"});
-            this.comboBox2.Location = new System.Drawing.Point(296, 313);
+            this.comboBox2.Location = new System.Drawing.Point(246, 310);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 38);
+            this.comboBox2.Size = new System.Drawing.Size(106, 38);
             this.comboBox2.TabIndex = 2;
             // 
             // comboBox3
@@ -141,36 +141,36 @@
             "10",
             "11",
             "12"});
-            this.comboBox3.Location = new System.Drawing.Point(296, 364);
+            this.comboBox3.Location = new System.Drawing.Point(246, 364);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(195, 38);
+            this.comboBox3.Size = new System.Drawing.Size(106, 38);
             this.comboBox3.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(77, 321);
+            this.label1.Location = new System.Drawing.Point(83, 313);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 30);
+            this.label1.Size = new System.Drawing.Size(82, 30);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Select Year: ";
+            this.label1.Text = "Year: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 372);
+            this.label2.Location = new System.Drawing.Point(83, 364);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 30);
+            this.label2.Size = new System.Drawing.Size(104, 30);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Select Month: ";
+            this.label2.Text = "Month: ";
             // 
             // Work_Hours
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(800, 420);
+            this.ClientSize = new System.Drawing.Size(790, 420);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox3);

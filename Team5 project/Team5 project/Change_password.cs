@@ -24,7 +24,6 @@ namespace Team5_project
             SqlDataAdapter da = new SqlDataAdapter(sda1);
             DataTable dt1 = new DataTable();
             da.Fill(dt1);
-            MessageBox.Show("Password has been changed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
         }
@@ -46,6 +45,8 @@ namespace Team5_project
                 {
                     SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
                     Change_pas(con, UpdatePassword2.Text, Login.UserID);
+                    MessageBox.Show("Password has been changed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
                 }
                 catch (Exception ex)

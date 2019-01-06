@@ -197,7 +197,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Location = new System.Drawing.Point(134, 337);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(163, 34);
+            this.label11.Size = new System.Drawing.Size(404, 34);
             this.label11.TabIndex = 14;
             // 
             // Checkout
