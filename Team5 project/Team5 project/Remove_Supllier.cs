@@ -31,11 +31,14 @@ namespace Team5_project
         }
         private void SubmitBox_Click(object sender, EventArgs e)
         {
+            int parsedValue;
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\StoreMange.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda2 = new SqlDataAdapter("select Suppllier_id from Suppllier where Suppllier_id ='" + DeleteSerialNumberBox.Text + "'", conn);
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
-            if (dt2.Rows.Count == 0)
+            if (!int.TryParse(DeleteSerialNumberBox.Text, out parsedValue))
+                MessageBox.Show("'ID' is a number only field! Enter a vaild id and try again! ");
+            else if (dt2.Rows.Count == 0)
             {
                 MessageBox.Show("This ID does not exist in the system\nplease try again", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -120,6 +120,7 @@
             this.Name = "Add_Supllier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Add_Supllier";
+            this.Load += new System.EventHandler(this.Add_Supllier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

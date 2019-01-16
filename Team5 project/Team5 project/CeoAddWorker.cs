@@ -30,26 +30,35 @@ namespace Team5_project
         }
         private void label5_Click(object sender, EventArgs e)
         {
+            int parsedValue;
+
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select username from Employees where username ='" + UsernameBox.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows.Count ==1 )
+            if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("The username is already exists in the system\nPlease select another user name", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
+                if (UsernameBox.Text == "" || PasswordBox.Text == "" || TypeBox.Text == "" || IDBox.Text == "" || FullnameBox.Text == "" || PhoneBox.Text == "" || GenderBox.Text =="")
+                    MessageBox.Show("Fill out the missing text box please!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (!int.TryParse(IDBox.Text, out parsedValue))
+                    MessageBox.Show("'ID' is a number only field! Enter a vaild id and try again! ");
+                else
+                {
 
-                string username = UsernameBox.Text;
-                string password = PasswordBox.Text;
-                string type = TypeBox.Text;
-                string Employee_id = IDBox.Text;
-                string Employee_full_name = FullnameBox.Text;
-                string Employee_mobile = PhoneBox.Text;
-                string Gender = GenderBox.Text;
-                Add_Worker(conn, username, password, type, Employee_id, Employee_full_name, Employee_mobile, Gender);
-                MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string username = UsernameBox.Text;
+                    string password = PasswordBox.Text;
+                    string type = TypeBox.Text;
+                    string Employee_id = IDBox.Text;
+                    string Employee_full_name = FullnameBox.Text;
+                    string Employee_mobile = PhoneBox.Text;
+                    string Gender = GenderBox.Text;
+                    Add_Worker(conn, username, password, type, Employee_id, Employee_full_name, Employee_mobile, Gender);
+                    MessageBox.Show("New worker has been added to the system", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 

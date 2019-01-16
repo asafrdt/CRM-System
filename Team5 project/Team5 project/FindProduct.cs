@@ -104,7 +104,10 @@ namespace Team5_project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            int parsedValue;
+            if (!int.TryParse(textBox1.Text, out parsedValue))
+                MessageBox.Show("Quantity is a number only field! Enter a vaild Quantity and try again! ");
+            else if (textBox1.Text == "" || textBox1.Text == "0" )
                 MessageBox.Show("Something get wrong, fill the quantity number and try again!", "ERROR", MessageBoxButtons.OK);
             else
             {
@@ -128,7 +131,10 @@ namespace Team5_project
                     int P = Convert.ToInt32(FindProduct.Product_price);
                     int Total_price = Q1 * P;
                     FindProduct.int_Product_price = Total_price;
-                    if (Q1 > Q)
+                    if (Q1<0)
+                        MessageBox.Show("Quantity can't be negative number", "ERROR", MessageBoxButtons.RetryCancel);
+
+                    else if (Q1 > Q)
                         MessageBox.Show("There are not enough products in the store inventory", "ERROR", MessageBoxButtons.RetryCancel);
                     else
                     {

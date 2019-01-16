@@ -21,6 +21,7 @@ namespace Team5_project
         }
         void Fillcombo()
         {
+            
             SqlCommand cmd;
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select * from Suppllier ", conn);
@@ -41,22 +42,35 @@ namespace Team5_project
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            int parsedValue;
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select Product_id from Inventory where Product_id ='" + textBox1.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+             if (!int.TryParse(textBox1.Text, out parsedValue))
+                MessageBox.Show("'Serial number' is a number only field! Enter a vaild Serial number and try again! ");
             if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("Serial number is already exists in the system\nChange the quantity on the Edit window." ,"alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                SqlCommand sda2 = new SqlCommand("INSERT INTO Inventory (Product_id,Product_name,Quantity,Price,Suppllier_full_name) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "')", conn);
-                SqlDataAdapter da = new SqlDataAdapter(sda2);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                MessageBox.Show("New stock has been added", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || comboBox1.Text == "")
+                    MessageBox.Show("Fill out the missing text box please!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                else if (!int.TryParse(textBox3.Text, out parsedValue))
+                    MessageBox.Show("'Quantity' is a number only field! Enter a vaild Quantity and try again! ");
+                else if (!int.TryParse(textBox4.Text, out parsedValue))
+                    MessageBox.Show("'Price' is a number only field! Enter a vaild Price and try again! ");
+                
+                else
+                {
+                    SqlCommand sda2 = new SqlCommand("INSERT INTO Inventory (Product_id,Product_name,Quantity,Price,Suppllier_full_name) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "')", conn);
+                    SqlDataAdapter da = new SqlDataAdapter(sda2);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    MessageBox.Show("New stock has been added", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
@@ -66,6 +80,21 @@ namespace Team5_project
         }
 
         private void AddStock_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

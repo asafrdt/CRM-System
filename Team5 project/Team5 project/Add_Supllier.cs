@@ -29,6 +29,7 @@ namespace Team5_project
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            int parsedValue;
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\PROJECT\TEAM5\TEAM5\TEAM5 PROJECT\DATABASE\STOREMANGE.MDF;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("select Suppllier_id from Suppllier where Suppllier_id ='" + textBox1.Text + "'", conn);
             DataTable dt = new DataTable();
@@ -37,19 +38,27 @@ namespace Team5_project
             {
                 MessageBox.Show("ID is already exists in the system!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             else
             {
-                //SqlCommand sda2 = new SqlCommand("INSERT INTO Suppllier (Suppllier_id,Suppllier_full_name,Suppllier_mobile) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')", conn);
-                //SqlDataAdapter da = new SqlDataAdapter(sda2);
-                //DataSet ds = new DataSet();
-                //da.Fill(ds);
-                //MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Add_Sup(conn, textBox1.Text, textBox2.Text, textBox3.Text);
-                MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text=="")
+                    MessageBox.Show("Fill out the missing text box please!", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (!int.TryParse(textBox1.Text, out parsedValue))
+                    MessageBox.Show("'ID' is a number only field! Enter a vaild id and try again! ");
+                else
+                {
+                    Add_Sup(conn, textBox1.Text, textBox2.Text, textBox3.Text);
+                    MessageBox.Show("New supplier had been added !!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_Supllier_Load(object sender, EventArgs e)
         {
 
         }
